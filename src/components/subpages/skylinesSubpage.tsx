@@ -2,7 +2,7 @@
 
 
 
-export const SkylinesSubpage = () => {
+export default function SkylinesSubpage () {
 
 
     return (

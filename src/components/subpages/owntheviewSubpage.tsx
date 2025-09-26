@@ -1,9 +1,12 @@
+import AudioPlayer from "../audio/audioPlayer"
 
 
-
-export const OwnTheViewSubpage = () => {
+export default function OwnTheViewSubpage () {
 
     return (
+        <>
         <div>Own The View Subpage</div>
+        <AudioPlayer />
+        </>
     )
 }

@@ -2,7 +2,7 @@
 
 
 
-export const Audio = () => {
+export default function AudioPlayer () {
 
 
     return (

@@ -1,4 +1,4 @@
-import { OwnTheViewSubpage } from "../../components/subpages/owntheviewSubpage"
+import OwnTheViewSubpage from "../../components/subpages/owntheviewSubpage"
 
 
 

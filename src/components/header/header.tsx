@@ -2,7 +2,7 @@
 
 
 
-export const Header = () => {
+export default function Header () {
 
     return (
 

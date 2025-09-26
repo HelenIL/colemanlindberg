@@ -1,4 +1,4 @@
-import { MakingMyNameSubpage } from "../../components/subpages/makingmynameSubpage"
+import MakingMyNameSubpage from "../../components/subpages/makingmynameSubpage"
 
 
 

@@ -1,7 +1,7 @@
 
 
 
-export const MakingMyNameSubpage = () => {
+export default function MakingMyNameSubpage ()  {
 
 
     return (
