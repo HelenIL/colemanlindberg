@@ -11,3 +11,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* Header Styles */
+
+#txt .nav-link {
+  font-family: "Michroma", sans-serif;
+  color: #474747;
+  font-weight: 500;
+  font-size: large;
+  margin-top: 1rem;
+/* margin-right: 20px;
+margin-left: 20px; */
+
+}
+
+.header {
+  background-color: #7D7D7D;
+  height: 80px;
+  width: 100%;
+
+}
+
+ .dropdown-item  {
+  font-family: "Michroma", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
