@@ -9,6 +9,7 @@ import OwnTheView from './pages/owntheview/index';
 import MakingMyNamePage from './pages/makingmyname/index';
 import Header from './components/header/header';
 import Home from './pages/home';
+import NotFound from './components/subpages/notFound';
 
 
 const root = ReactDOM.createRoot(
@@ -23,7 +24,7 @@ root.render(
       <Route path="owntheview" element={<OwnTheView />}/>
       <Route path="makingmyname" element={<MakingMyNamePage />}/>
       </Route>
-      <Route path="*" element={<div>404 Not Found</div>} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   </BrowserRouter>,
 );
