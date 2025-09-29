@@ -4,3 +4,4 @@
 03math filter=lfs diff=lfs merge=lfs -text
 04slownewsday filter=lfs diff=lfs merge=lfs -text
 05worthy filter=lfs diff=lfs merge=lfs -text
+06whereiam filter=lfs diff=lfs merge=lfs -text
