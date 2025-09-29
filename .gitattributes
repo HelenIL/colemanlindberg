@@ -1,3 +1,4 @@
 *.wav filter=lfs diff=lfs merge=lfs -text
 01fourinchesaway filter=lfs diff=lfs merge=lfs -text
 02happynow filter=lfs diff=lfs merge=lfs -text
+03math filter=lfs diff=lfs merge=lfs -text
