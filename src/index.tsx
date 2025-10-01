@@ -6,7 +6,7 @@ import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import OwnTheView from './pages/owntheview/index';
-import MakingMyNamePage from './pages/makingmyname/index';
+import Boys from './pages/boys/index';
 import Header from './components/header/header';
 import Home from './pages/home';
 import NotFound from './components/subpages/notFound';
@@ -22,7 +22,7 @@ root.render(
       <Route path="/" element={<Home />} />
       <Route path="albums" >
       <Route path="owntheview" element={<OwnTheView />}/>
-      <Route path="makingmyname" element={<MakingMyNamePage />}/>
+      <Route path="boys" element={<Boys />}/>
       </Route>
       <Route path="*" element={<NotFound />} />
     </Routes>

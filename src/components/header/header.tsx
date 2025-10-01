@@ -14,8 +14,8 @@ export default function Header () {
         </Nav.Item>
         <NavDropdown title="Albums" id="navbarScrollingDropdown">
               <NavDropdown.Item href="/albums/owntheview">Own The View</NavDropdown.Item>
-              <NavDropdown.Item href="/albums/makingmyname">
-                Making My Name
+              <NavDropdown.Item href="/albums/boys">
+                Boys
               </NavDropdown.Item>
             </NavDropdown>
            <img src={logo} alt="logo" width="90" height='60px' style={{ marginTop: '.5rem'}}  />

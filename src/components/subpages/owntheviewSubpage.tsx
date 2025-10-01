@@ -6,7 +6,6 @@ export default function OwnTheViewSubpage () {
 
     return (
         <>
-        <div>Own The View Subpage</div>
         <AudioPlayer tracks={tracks}/>
         </>
     )

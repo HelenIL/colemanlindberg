@@ -15,6 +15,7 @@ const tracks = [
   {
     name: "Gingerbread Man",
     author: "The Brotherbears",
+    album: 'Own The View',
     url: one,
     id: 0,
     image: cover,
@@ -23,6 +24,7 @@ const tracks = [
   {
       name: "Sky As Is",
       author: "The Brotherbears",
+      album: 'Own The View',
       url: two,
       id: 1,
       image: cover,
@@ -31,6 +33,7 @@ const tracks = [
     {
       name: "Fast Food Heaven",
       author: "The Brotherbears",
+      album: 'Own The View',
       url: three,
       id: 2,
       image: cover,
@@ -39,6 +42,7 @@ const tracks = [
     {
       name: "Faded Star",
       author: "The Brotherbears",
+      album: 'Own The View',
       url: four,
       id: 3,
       image: cover,
@@ -47,6 +51,7 @@ const tracks = [
     {
       name: "Own The View",
       author: "The Brotherbears",
+      album: 'Own The View',
       url: five,
       id: 4,
       image: cover,
@@ -55,6 +60,7 @@ const tracks = [
     {
       name: "Resolutions",
       author: "The Brotherbears",
+      album: 'Own The View',
       url: six,
       id: 5,
       image: cover,
@@ -63,6 +69,7 @@ const tracks = [
     {
       name: "Tired Of Snow",
       author: "The Brotherbears",
+      album: 'Own The View',
       url: seven,
       id: 6,
       image: cover,
@@ -71,6 +78,7 @@ const tracks = [
     {
       name: "Gingerbread Man (Painted Whore Remix)",
       author: "The Brotherbears",
+      album: 'Own The View',
       url: eight,
       id: 7,
       image: cover,
@@ -79,6 +87,7 @@ const tracks = [
     {
       name: "Happy Now",
       author: "The Brotherbears",
+      album: 'Own The View',
       url: nine,
       id: 8,
       image: cover,
@@ -87,6 +96,7 @@ const tracks = [
     {
       name: "Slow News Day",
       author: "The Brotherbears",
+      album: 'Own The View',
       url: ten,
       id: 9,
       image: cover,
