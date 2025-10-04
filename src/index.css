@@ -26,9 +26,22 @@ margin-left: 20px; */
 
 }
 
+.navbar-toggler:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: #c6c6c6;
+}
+
+.navbar-toggler {
+  background-color: #c6c6c6 !important;
+}
+
+.navbar {
+  color: #c6c6c6 !important;
+}
 .header {
   background-color: #7D7D7D;
-  height: 80px;
+/* height: 56px; */
   width: 100%;
 
 }
@@ -37,4 +50,43 @@ margin-left: 20px; */
   font-family: "Michroma", sans-serif;
   font-size: 12px;
   font-weight: bold;
+}
+
+
+
+.outDivOTV {
+  width: 100%;
+  background-image: url('./assets/bebe_curv.JPG');
+}
+
+.outDivBoys {
+  width: 100%;
+  background-image: url('./assets/boys_curv.png');
+  /* background-image: url('./assets/boy_exp2.png'); */
+}
+
+.outDivCircus {
+  width: 100%;
+  background-image: url('./assets/circus_curv_2.jpg');
+}
+
+
+
+@media only screen and (max-width: 375px) {
+
+  #txt .nav-link {
+  font-family: "Michroma", sans-serif;
+  color: #474747;
+  font-weight: 500;
+  font-size: 10px;
+  margin-top: 1rem;
+/* margin-right: 20px;
+margin-left: 20px; */
+
+}
+.list {
+  font-size: 12px;
+  border: 2px solid red;
+}
+
 }

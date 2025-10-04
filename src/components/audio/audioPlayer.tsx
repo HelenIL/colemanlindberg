@@ -66,13 +66,13 @@ export default function AudioPlayer ({ tracks }: AudioPlayerProps) {
     }
 
   return (
-    <div className="container">
+    <div className="cont">
 
-        <div  className="audio-div">
+        <div  className="playerDiv audio-div">
           
-                <Card className="playerCard">
+                <Card className="cardStyle border-0 opacity-75">
       <Card.Img variant="top" src={tracks[current]?.image} />
-      <Card.Body style={{width: '100%'}}>
+      <Card.Body>
         <Card.Title style={{ textAlign: 'center'}}>{tracks[current]?.album}</Card.Title>
         <Card.Text style={{ textAlign: 'center'}}>
            
@@ -80,7 +80,7 @@ export default function AudioPlayer ({ tracks }: AudioPlayerProps) {
         Your browser does not support the audio element.
       </audio>
       <Card.Text style={{ textAlign: 'center', marginTop: '10px', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 10 }}>
-      <Button variant="light" onClick={handlePrev} style={{ backgroundColor: '#7D7D7D70' }}>
+      <Button variant="light" onClick={handlePrev} disabled={tracks[current].id === 0} style={{ backgroundColor: '#7D7D7D70' }}>
         <img src={prev} alt="Previous" width="20" height="20" />
       </Button>
       <img style={{ height: '50px', borderRadius: '8px', overflow: 'hidden'}} src={guitar}></img>
@@ -107,8 +107,8 @@ export default function AudioPlayer ({ tracks }: AudioPlayerProps) {
   
 </div>
 
-      <div  className="list audio-div" >
-        <Card style={{ width: '25rem', backgroundColor: '#f0f0f0', fontFamily: 'Oxanium Medium', height: 'auto' }}>
+      <div  className="list audio-div">
+        <Card className="cardStyle opacity-75" >
 
       <Card.Body >
         

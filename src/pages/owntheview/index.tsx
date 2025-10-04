@@ -8,10 +8,11 @@ export default function OwnTheView() {
 
     return (
 
-        <>
-        <div>Own The View</div>
+       
+        <div style={{display: 'flex', alignItems: 'center'}}>
         <OwnTheViewSubpage />
-        </>
+        </div>
+       
         
     )
 }

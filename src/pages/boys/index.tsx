@@ -10,10 +10,9 @@ export default function Boys() {
 
 
     return (
-        <>
-        <div>Boys</div>
+         <div style={{display: 'flex', alignItems: 'center'}}>
         <BoysSubpage />
-        </>
+        </div>
     )
 }
 

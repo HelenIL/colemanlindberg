@@ -6,8 +6,10 @@ export default function BoysSubpage ()  {
 
 
     return (
-        <div>Boys
+        <div className="outDivBoys">
+            <div className="inDiv">
         <AudioPlayer tracks={tracks}/>
+        </div>
         </div>
     )
 

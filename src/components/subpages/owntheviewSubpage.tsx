@@ -6,7 +6,9 @@ export default function OwnTheViewSubpage () {
 
     return (
         <>
+        <div className="outDivOTV">
         <AudioPlayer tracks={tracks}/>
+        </div>
         </>
     )
 }

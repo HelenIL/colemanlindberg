@@ -6,9 +6,8 @@ export default function HomeSubPage () {
 
     return (
 
-        <>
-        <div>Home Subpage</div>
+        <div style={{ marginTop: '50px'}}>
         <Banner />
-        </>
+        </div>
     )
 }
