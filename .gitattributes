@@ -22,3 +22,4 @@ BottleandaGun filter=lfs diff=lfs merge=lfs -text
 ClosetoJesus filter=lfs diff=lfs merge=lfs -text
 ITried filter=lfs diff=lfs merge=lfs -text
 Indiana filter=lfs diff=lfs merge=lfs -text
+InfiniteDecember filter=lfs diff=lfs merge=lfs -text
