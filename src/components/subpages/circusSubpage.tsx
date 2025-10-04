@@ -1,5 +1,5 @@
 import AudioPlayer from "../audio/audioPlayer"
-// import tracks from '../../albums/circus/tracklist'
+import tracks from '../../albums/circus/tracklist'
 
 
 
@@ -16,7 +16,7 @@ export default function CircusSubPage()  {
 
         <div className="outDivCircus">
 
-           {/* <AudioPlayer tracks={tracks}/> */}
+           <AudioPlayer tracks={tracks}/>
         </div>
     )
 }
