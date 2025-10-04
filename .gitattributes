@@ -24,3 +24,4 @@ ITried filter=lfs diff=lfs merge=lfs -text
 Indiana filter=lfs diff=lfs merge=lfs -text
 InfiniteDecember filter=lfs diff=lfs merge=lfs -text
 OnMeNow filter=lfs diff=lfs merge=lfs -text
+Radiate filter=lfs diff=lfs merge=lfs -text
