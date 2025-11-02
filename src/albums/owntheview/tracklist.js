@@ -8,8 +8,8 @@ import seven from "./tracks/07TiredOfSnow.wav";
 import eight from "./tracks/08GingerbreadMan.wav";
 import nine from "./tracks/09HappyNow.wav";
 import ten from "./tracks/10SlowNewsDay.wav";
-import cover from "../../assets/cover2.jpg"
 
+import cover from "../../assets/cover2.jpg";
 
 const tracks = [
   {
@@ -21,7 +21,7 @@ const tracks = [
     image: cover,
     color: "#00aeb0"
   },
-  {
+    {
       name: "Sky As Is",
       author: "The Brotherbears",
       album: 'Own The View',
@@ -84,24 +84,8 @@ const tracks = [
       image: cover,
       color: "#00aeb0"
     },
-    {
-      name: "Happy Now",
-      author: "The Brotherbears",
-      album: 'Own The View',
-      url: nine,
-      id: 8,
-      image: cover,
-      color: "#00aeb0"
-    },
-    {
-      name: "Slow News Day",
-      author: "The Brotherbears",
-      album: 'Own The View',
-      url: ten,
-      id: 9,
-      image: cover,
-      color: "#00aeb0"
-    }
+    { name: "Happy Now", author: "The Brotherbears", album: 'Own The View', url: nine, id: 8, image: cover, color: "#00aeb0" },
+    { name: "Slow News Day", author: "The Brotherbears", album: 'Own The View', url: ten, id: 9, image: cover, color: "#00aeb0" }
 ];
 
 

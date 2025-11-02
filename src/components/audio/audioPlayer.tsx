@@ -1,8 +1,7 @@
-import React, { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
-import cover from '../../assets/cover2.jpg'
 import prev from '../../assets/skip-backward.svg'
 import next from '../../assets/skip-forward.svg'
 import guitar from '../../assets/cl_gt_only.svg'
@@ -19,7 +18,8 @@ type Track = {
 }
 
 type AudioPlayerProps = {
-  tracks: Track[]
+  tracks: Track[];
+  isTrue?: boolean;
 }
 
 export default function AudioPlayer ({ tracks }: AudioPlayerProps) {
@@ -27,16 +27,16 @@ export default function AudioPlayer ({ tracks }: AudioPlayerProps) {
   const audioRef = useRef<HTMLAudioElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
     
-   const handlePlayPause = () => {
+  //  const handlePlayPause = () => {
  
-    if (isPlaying) {
-      audioRef.current?.pause();
-    } else {
-   audioRef.current?.play();
-    }
-    setIsPlaying(!isPlaying);
+  //   if (isPlaying) {
+  //     audioRef.current?.pause();
+  //   } else {
+  //  audioRef.current?.play();
+  //   }
+  //   setIsPlaying(!isPlaying);
 
-  };
+  // };
 
   const handlePlay = (idx: number) => {
     setCurrent(idx);
@@ -66,29 +66,31 @@ export default function AudioPlayer ({ tracks }: AudioPlayerProps) {
     }
 
   return (
-    <div className="cont">
+   
+
+  <div style={{}} className=" cont">
+
+    
 
         <div  className="playerDiv audio-div">
           
                 <Card className="cardStyle border-0 opacity-75">
       <Card.Img variant="top" src={tracks[current]?.image} />
       <Card.Body>
-        <Card.Title style={{ textAlign: 'center'}}>{tracks[current]?.album}</Card.Title>
-        <Card.Text style={{ textAlign: 'center'}}>
+        <Card.Subtitle style={{ textAlign: 'center'}}>{tracks[current]?.album}</Card.Subtitle>
+        <Card.Text style={{ textAlign: 'center', marginTop: '10px'}}>
            
               <audio ref={audioRef} controls src={tracks[current]?.url}>
         Your browser does not support the audio element.
       </audio>
       <Card.Text style={{ textAlign: 'center', marginTop: '10px', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 10 }}>
-      <Button variant="light" onClick={handlePrev} disabled={tracks[current].id === 0} style={{ backgroundColor: '#7D7D7D70' }}>
+      <Button variant="light"  onClick={handlePrev} disabled={tracks[current].id === 0} style={{ backgroundColor: '#7D7D7D70' }}>
         <img src={prev} alt="Previous" width="20" height="20" />
       </Button>
       <img style={{ height: '50px', borderRadius: '8px', overflow: 'hidden'}} src={guitar}></img>
-      {/* <Button variant="light" onClick={handlePlayPause} style={{ marginRight: '10px' }}>
-        <img src={play} alt={isPlaying ? "Pause" : "Play"} width="20" height="20" />
-      </Button> */}
+
       
-      <Button variant="light" onClick={handleNext} style={{ backgroundColor: '#7D7D7D70'}}>
+      <Button variant="light" className="rounded-pill"  onClick={handleNext} style={{ backgroundColor: '#7D7D7D70'}}>
         <img src={next} alt="Next" width="20" height="20" />
       </Button>
       </Card.Text>
@@ -99,29 +101,8 @@ export default function AudioPlayer ({ tracks }: AudioPlayerProps) {
      <Card.Text style={{ textAlign: 'center'}}>
               {tracks[current]?.name}
         </Card.Text>
-        
-      </Card.Body>
+        <Card.Body style={{ flex: 1}}>
 
-    </Card>
-
-  
-</div>
-
-      <div  className="list audio-div">
-        <Card className="cardStyle opacity-75" >
-
-      <Card.Body >
-        
-        
-           {/* <ul style={{ listStyleType: 'none', paddingLeft: 0 }}>
-        {tracks.map((track, idx) => (
-          <li key={track.id}>
-            <button style={{padding: 0, border: 'none', background: 'none', fontFamily: 'Oxanium Medium', fontSize: '14px' }} onClick={() => handlePlay(idx)}>
-             {track.name}
-            </button>
-          </li>
-        ))}
-      </ul> */}
       <ListGroup>
           {tracks.map((t, i) => (
             <ListGroup.Item key={t.id} action  onClick={() => handlePlay(i)}>
@@ -139,12 +120,32 @@ export default function AudioPlayer ({ tracks }: AudioPlayerProps) {
        
      
       </Card.Body>
+      </Card.Body>
 
     </Card>
 
+  
+</div>
 
+     
+      
+
+      <div className="blurb-div" >
+        <div className="mb-3" style={{width: '100%'}}>
+        <Card className="opacity-75" >
+            <Card.Body style={{ flex: 1}}>
+                <Card.Text style={{ fontWeight: 'bold'}}>
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies ac ante ut placerat. Vestibulum magna dui, vulputate non volutpat vel, aliquet ac est. Etiam vestibulum metus at dui rhoncus, quis varius mi vulputate. Aliquam rutrum elementum sagittis. Sed eros est, porttitor sed magna lacinia, cursus viverra dui. Proin condimentum ac nisi non semper. Nulla sed magna vitae urna scelerisque laoreet eu a enim. In vel convallis libero. Suspendisse vel eros in ex tincidunt mattis quis eget mauris. Sed quis augue quis dolor pulvinar malesuada eget ac lectus. In congue ornare nulla, id mattis purus dignissim ut.
+                </Card.Text>
+            </Card.Body>
+        </Card>
+        </div>
       </div>
+
+            
     </div>
+
+
   )
 
 }

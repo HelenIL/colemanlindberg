@@ -5,6 +5,7 @@ import Row from 'react-bootstrap/Row';
 import headshotOne from '../../assets/headshot_bw_1.jpg'
 import headshotTwo from '../../assets/headshot_bw_2.jpg';
 import headshotThree from '../../assets/headshot_bw_3.jpg';
+import './banner.css'
 
 
 
@@ -12,19 +13,20 @@ export default function Banner() {
 
     return (
 <>
-<Container>
-      <Row>
-        <Col xs={6} md={4}>
-          <Image src={headshotOne} thumbnail />
-        </Col>
-        <Col xs={6} md={4}>
-          <Image src={headshotTwo} thumbnail />
-        </Col>
-        <Col xs={6} md={4}>
-          <Image src={headshotThree} thumbnail />
-        </Col>
-      </Row>
-    </Container>
+
+
+    <div className="ima-cont">
+
+      <div className="ima-div">
+        <img className="ima img-fluid" src={headshotOne} />
+      </div>
+      <div className="ima-div">
+        <img className="ima img-fluid" src={headshotTwo} />
+      </div>
+      <div className="ima-div">
+        <img className="ima img-fluid" src={headshotThree}  />
+      </div>
+    </div>
         
 </>
 

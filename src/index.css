@@ -40,11 +40,15 @@ margin-left: 20px; */
   color: #c6c6c6 !important;
 }
 .header {
-  background-color: #7D7D7D;
+  /* background-color: #7D7D7D; */
 /* height: 56px; */
   width: 100%;
 
 }
+
+/* .outerHeader {
+  background-image: url('./assets/mpls_skyline.jpg');
+} */
 
  .dropdown-item  {
   font-family: "Michroma", sans-serif;
@@ -57,11 +61,13 @@ margin-left: 20px; */
 .outDivOTV {
   width: 100%;
   background-image: url('./assets/bebe_curv.JPG');
+  
 }
 
 .outDivBoys {
   width: 100%;
   background-image: url('./assets/boys_curv.png');
+  background-color: #494949;
   /* background-image: url('./assets/boy_exp2.png'); */
 }
 
