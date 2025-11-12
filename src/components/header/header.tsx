@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Container from 'react-bootstrap/Container';
-import { prefetchHomeDebounced, prefetchOwnTheViewDebounced, prefetchBoysDebounced, prefetchCircusDebounced } from '../../prefetch';
+
 
 
 export default function Header () {
@@ -17,14 +17,17 @@ export default function Header () {
           <Nav id="txt" className="justify-content-center header" activeKey="/">
            
         <Nav.Item className="--bs-gray-dark">
-          <Nav.Link href="/" onMouseEnter={prefetchHomeDebounced}>Home</Nav.Link>
+          <Nav.Link href="/">Home</Nav.Link>
+        </Nav.Item>
+         <Nav.Item className="--bs-gray-dark">
+          <Nav.Link href="/test">Test</Nav.Link>
         </Nav.Item>
         <NavDropdown title="Albums" id="collapsible-nav-dropdown">
-              <NavDropdown.Item href="/albums/owntheview" onMouseEnter={prefetchOwnTheViewDebounced}>Own The View</NavDropdown.Item>
-              <NavDropdown.Item href="/albums/boys" onMouseEnter={prefetchBoysDebounced}>
+              <NavDropdown.Item href="/albums/owntheview">Own The View</NavDropdown.Item>
+              <NavDropdown.Item href="/albums/boys" >
                 Boys
               </NavDropdown.Item>
-              <NavDropdown.Item href="/albums/thecircusofthegrieving" onMouseEnter={prefetchCircusDebounced}>
+              <NavDropdown.Item href="/albums/thecircusofthegrieving" >
                 The Circus of the Grieving
               </NavDropdown.Item>
             </NavDropdown>

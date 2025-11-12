@@ -8,8 +8,8 @@ export default function Home() {
 
     return (
 
-        <>
+        <div style={{display: 'flex', alignItems: 'center', backgroundColor: '#494949'}}>
         <HomeSubPage />
-        </>
+        </div>
     )
 }

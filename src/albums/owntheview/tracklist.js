@@ -8,6 +8,7 @@ import seven from "./tracks/07TiredOfSnow.wav";
 import eight from "./tracks/08GingerbreadMan.wav";
 import nine from "./tracks/09HappyNow.wav";
 import ten from "./tracks/10SlowNewsDay.wav";
+import background from '../../assets/bebe_curv.JPG';
 
 import cover from "../../assets/cover2.jpg";
 
@@ -19,6 +20,7 @@ const tracks = [
     url: one,
     id: 0,
     image: cover,
+    background: background,
     color: "#00aeb0"
   },
     {
@@ -28,6 +30,7 @@ const tracks = [
       url: two,
       id: 1,
       image: cover,
+      background: background,
       color: "#00aeb0"
     },
     {
@@ -37,6 +40,7 @@ const tracks = [
       url: three,
       id: 2,
       image: cover,
+      background: background,
       color: "#00aeb0"
     },
     {
@@ -46,6 +50,7 @@ const tracks = [
       url: four,
       id: 3,
       image: cover,
+      background: background,
       color: "#00aeb0"
     },
     {
@@ -55,6 +60,7 @@ const tracks = [
       url: five,
       id: 4,
       image: cover,
+      background: background,
       color: "#00aeb0"
     },
     {
@@ -64,6 +70,7 @@ const tracks = [
       url: six,
       id: 5,
       image: cover,
+      background: background,
       color: "#00aeb0"
     },
     {
@@ -73,6 +80,7 @@ const tracks = [
       url: seven,
       id: 6,
       image: cover,
+      background: background,
       color: "#00aeb0"
     },
     {
@@ -82,10 +90,11 @@ const tracks = [
       url: eight,
       id: 7,
       image: cover,
+      background: background,
       color: "#00aeb0"
     },
-    { name: "Happy Now", author: "The Brotherbears", album: 'Own The View', url: nine, id: 8, image: cover, color: "#00aeb0" },
-    { name: "Slow News Day", author: "The Brotherbears", album: 'Own The View', url: ten, id: 9, image: cover, color: "#00aeb0" }
+    { name: "Happy Now", author: "The Brotherbears", album: 'Own The View', url: nine, id: 8, image: cover, background: background, color: "#00aeb0" },
+    { name: "Slow News Day", author: "The Brotherbears", album: 'Own The View', url: ten, id: 9, image: cover, background: background, color: "#00aeb0" }
 ];
 
 
