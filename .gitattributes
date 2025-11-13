@@ -31,3 +31,4 @@ FirstAve.wav filter=lfs diff=lfs merge=lfs -text
 LakeStreet.wav filter=lfs diff=lfs merge=lfs -text
 Skyline.wav filter=lfs diff=lfs merge=lfs -text
 ColdAsSnow.wav filter=lfs diff=lfs merge=lfs -text
+GoodTimes.wav filter=lfs diff=lfs merge=lfs -text
