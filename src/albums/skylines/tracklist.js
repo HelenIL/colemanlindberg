@@ -9,6 +9,9 @@ import eight from './tracks/StoryOfUs.wav';
 import nine from './tracks/SkylineHeaven.wav';
 import cover from '../../assets/skylines.jpg';
 import cole from '../../assets/cole_city_edit.jpeg'
+import {lyrics} from './extras.js'
+
+const lyricArray = Array.isArray(lyrics) && typeof lyrics[0] === 'string' ? lyrics.map(s => JSON.parse(s)) : lyrics;
 
 const tracks = [
   {
@@ -19,6 +22,7 @@ const tracks = [
     id: 0,
     image: cover,
     pic: cole,
+    lyrics: lyricArray[0].lyrics,
   },
     {
       name: "Lake Street",
@@ -28,6 +32,7 @@ const tracks = [
       id: 1,
       image: cover,
       pic: cole,
+      lyrics: lyricArray[0].lyrics,
     },
     {
       name: "Skyline",
@@ -37,6 +42,7 @@ const tracks = [
       id: 2,
       image: cover,
       pic: cole,
+      lyrics: lyricArray[0].lyrics,
     },
     {
       name: "Cold as Snow",
@@ -46,6 +52,7 @@ const tracks = [
       id: 3,
       image: cover,
       pic: cole,
+      lyrics: lyricArray[0].lyrics,
     },
     {
       name: "Good Times",
@@ -55,6 +62,7 @@ const tracks = [
       id: 4,
       image: cover,
       pic: cole,
+      lyrics: lyricArray[0].lyrics,
     },
     {
       name: "Spring Cocaine",
@@ -64,6 +72,7 @@ const tracks = [
       id: 5,
       image: cover,
       pic: cole,
+      lyrics: lyricArray[0].lyrics,
     },
     {
       name: "The Weight of Not Forgetting You",
@@ -73,6 +82,7 @@ const tracks = [
       id: 6,
       image: cover,
       pic: cole,
+      lyrics: lyricArray[0].lyrics,
     },
     {
       name: "Story of Us",
@@ -82,6 +92,7 @@ const tracks = [
       id: 7,
       image: cover,
       pic: cole,
+      lyrics: lyricArray[0].lyrics,
     },
     { name: "Skyline Heaven", 
       artist: "Coleman Lindberg",
@@ -89,6 +100,7 @@ const tracks = [
       url: nine, id: 8, 
       image: cover, 
       pic: cole, 
+      lyrics: lyricArray[0].lyrics,
     }
     
 ];

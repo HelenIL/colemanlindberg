@@ -11,6 +11,9 @@ import ten from "./tracks/10SlowNewsDay.wav";
 import background from '../../assets/bebe_curv.JPG';
 import cole from '../../assets/cole_city_edit.jpeg'
 import cover from "../../assets/cover2.jpg";
+import {lyrics} from './extras.js'
+
+const lyricArray = Array.isArray(lyrics) && typeof lyrics[0] === 'string' ? lyrics.map(s => JSON.parse(s)) : lyrics;
 
 const tracks = [
   {
@@ -22,7 +25,7 @@ const tracks = [
     image: cover,
     pic: cole,
     background: background,
-    color: "#00aeb0"
+    lyrics: lyricArray[0].lyrics,
   },
     {
       name: "Sky As Is",
@@ -33,7 +36,7 @@ const tracks = [
       image: cover,
       pic: cole,
       background: background,
-      color: "#00aeb0"
+      lyrics: lyricArray[1].lyrics,
     },
     {
       name: "Fast Food Heaven",
@@ -44,7 +47,7 @@ const tracks = [
       image: cover,
       pic: cole,
       background: background,
-      color: "#00aeb0"
+      lyrics: lyricArray[2].lyrics,
     },
     {
       name: "Faded Star",
@@ -55,7 +58,7 @@ const tracks = [
       image: cover,
       pic: cole,
       background: background,
-      color: "#00aeb0"
+      lyrics: lyricArray[3].lyrics,
     },
     {
       name: "Own The View",
@@ -66,7 +69,7 @@ const tracks = [
       image: cover,
       pic: cole,
       background: background,
-      color: "#00aeb0"
+      lyrics: lyricArray[4].lyrics,
     },
     {
       name: "Resolutions",
@@ -77,7 +80,7 @@ const tracks = [
       image: cover,
       pic: cole,
       background: background,
-      color: "#00aeb0"
+      lyrics: lyricArray[5].lyrics,
     },
     {
       name: "Tired Of Snow",
@@ -88,7 +91,7 @@ const tracks = [
       image: cover,
       pic: cole,
       background: background,
-      color: "#00aeb0"
+      lyrics: lyricArray[6].lyrics,
     },
     {
       name: "Gingerbread Man (Painted Whore Remix)",
@@ -99,10 +102,10 @@ const tracks = [
       image: cover,
       pic: cole,
       background: background,
-      color: "#00aeb0"
+      lyrics: lyricArray[7].lyrics
     },
-    { name: "Happy Now", artist: "The Brotherbears", album: 'Own The View', url: nine, id: 8, image: cover, pic: cole, background: background, color: "#00aeb0" },
-    { name: "Slow News Day", artist: "The Brotherbears", album: 'Own The View', url: ten, id: 9, image: cover, pic: cole, background: background, color: "#00aeb0" }
+    { name: "Happy Now", artist: "The Brotherbears", album: 'Own The View', url: nine, id: 8, image: cover, pic: cole, background: background, lyrics: lyricArray[8].lyrics },
+    { name: "Slow News Day", artist: "The Brotherbears", album: 'Own The View', url: ten, id: 9, image: cover, pic: cole, background: background, lyrics: lyricArray[9].lyrics }
 ];
 
 
