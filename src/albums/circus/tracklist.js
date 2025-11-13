@@ -11,7 +11,7 @@ import ten from './tracks/ColdEnough.mp3'
 import cover from '../../assets/album_cover_idea2.jpg'
 import background from '../../assets/circus_curv_2.jpg'
 import {lyrics} from './extras.js'
-
+import cole from '../../assets/cole_city_edit.jpeg'
 
 const lyricArray = Array.isArray(lyrics) && typeof lyrics[0] === 'string' ? lyrics.map(s => JSON.parse(s)) : lyrics;
 
@@ -25,6 +25,7 @@ const tracks = [
     url: one,
     id: 0,
     image: cover,
+    pic: cole,
     background: background,
     color: "#00aeb0",
        lyrics: lyricArray[0].lyrics,
@@ -38,6 +39,7 @@ const tracks = [
       url: two,
       id: 1,
       image: cover,
+      pic: cole,
       background: background,
       color: "#00aeb0",
             lyrics: lyricArray[1].lyrics,
@@ -51,6 +53,7 @@ const tracks = [
       url: three,
       id: 2,
       image: cover,
+      pic: cole,
       background: background,
       color: "#00aeb0",
       lyrics: "In iaculis nulla nulla, id dictum ligula auctor in. Maecenas consectetur tortor non urna luctus, at lobortis quam malesuada. Ut pharetra ex non justo ornare ornare. Donec a massa sem. Fusce et mollis ex, a semper velit. Nulla facilisi. Aenean auctor vestibulum erat, ut vehicula tellus posuere nec. Nullam rhoncus vehicula eros quis vulputate. Nunc non suscipit felis. In hac habitasse platea dictumst.",
@@ -63,6 +66,7 @@ const tracks = [
       url: four,
       id: 3,
       image: cover,
+      pic: cole,
       background: background,
       color: "#00aeb0",
       lyrics: "In iaculis nulla nulla, id dictum ligula auctor in. Maecenas consectetur tortor non urna luctus, at lobortis quam malesuada. Ut pharetra ex non justo ornare ornare. Donec a massa sem. Fusce et mollis ex, a semper velit. Nulla facilisi. Aenean auctor vestibulum erat, ut vehicula tellus posuere nec. Nullam rhoncus vehicula eros quis vulputate. Nunc non suscipit felis. In hac habitasse platea dictumst.",
@@ -75,6 +79,7 @@ const tracks = [
       url: five,
       id: 4,
       image: cover,
+      pic: cole,
       background: background,
       color: "#00aeb0",
       lyrics: "In iaculis nulla nulla, id dictum ligula auctor in. Maecenas consectetur tortor non urna luctus, at lobortis quam malesuada. Ut pharetra ex non justo ornare ornare. Donec a massa sem. Fusce et mollis ex, a semper velit. Nulla facilisi. Aenean auctor vestibulum erat, ut vehicula tellus posuere nec. Nullam rhoncus vehicula eros quis vulputate. Nunc non suscipit felis. In hac habitasse platea dictumst.",
@@ -87,6 +92,7 @@ const tracks = [
       url: six,
       id: 5,
       image: cover,
+      pic: cole,
       background: background,
       color: "#00aeb0",
       lyrics: "In iaculis nulla nulla, id dictum ligula auctor in. Maecenas consectetur tortor non urna luctus, at lobortis quam malesuada. Ut pharetra ex non justo ornare ornare. Donec a massa sem. Fusce et mollis ex, a semper velit. Nulla facilisi. Aenean auctor vestibulum erat, ut vehicula tellus posuere nec. Nullam rhoncus vehicula eros quis vulputate. Nunc non suscipit felis. In hac habitasse platea dictumst.",
@@ -99,6 +105,7 @@ const tracks = [
       url: seven,
       id: 6,
       image: cover,
+      pic: cole,
       background: background,
       color: "#00aeb0",
       lyrics: "In iaculis nulla nulla, id dictum ligula auctor in. Maecenas consectetur tortor non urna luctus, at lobortis quam malesuada. Ut pharetra ex non justo ornare ornare. Donec a massa sem. Fusce et mollis ex, a semper velit. Nulla facilisi. Aenean auctor vestibulum erat, ut vehicula tellus posuere nec. Nullam rhoncus vehicula eros quis vulputate. Nunc non suscipit felis. In hac habitasse platea dictumst.",
@@ -111,6 +118,7 @@ const tracks = [
       url: eight,
       id: 7,
       image: cover,
+      pic: cole,
       background: background,
       color: "#00aeb0",
       lyrics: "In iaculis nulla nulla, id dictum ligula auctor in. Maecenas consectetur tortor non urna luctus, at lobortis quam malesuada. Ut pharetra ex non justo ornare ornare. Donec a massa sem. Fusce et mollis ex, a semper velit. Nulla facilisi. Aenean auctor vestibulum erat, ut vehicula tellus posuere nec. Nullam rhoncus vehicula eros quis vulputate. Nunc non suscipit felis. In hac habitasse platea dictumst.",
@@ -123,6 +131,7 @@ const tracks = [
       url: nine,
       id: 8,
       image: cover,
+      pic: cole,
       background: background,
       color: "#00aeb0",
       lyrics: "In iaculis nulla nulla, id dictum ligula auctor in. Maecenas consectetur tortor non urna luctus, at lobortis quam malesuada. Ut pharetra ex non justo ornare ornare. Donec a massa sem. Fusce et mollis ex, a semper velit. Nulla facilisi. Aenean auctor vestibulum erat, ut vehicula tellus posuere nec. Nullam rhoncus vehicula eros quis vulputate. Nunc non suscipit felis. In hac habitasse platea dictumst.",
@@ -135,6 +144,7 @@ const tracks = [
       url: ten,
       id: 9,
       image: cover,
+      pic: cole,
       background: background,
       color: "#00aeb0",
       lyrics: "In iaculis nulla nulla, id dictum ligula auctor in. Maecenas consectetur tortor non urna luctus, at lobortis quam malesuada. Ut pharetra ex non justo ornare ornare. Donec a massa sem. Fusce et mollis ex, a semper velit. Nulla facilisi. Aenean auctor vestibulum erat, ut vehicula tellus posuere nec. Nullam rhoncus vehicula eros quis vulputate. Nunc non suscipit felis. In hac habitasse platea dictumst.",

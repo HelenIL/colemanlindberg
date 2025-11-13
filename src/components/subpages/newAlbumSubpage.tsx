@@ -148,6 +148,7 @@ export default function NewAlbumSubpage() {
           N e w  &nbsp; A l b u m &nbsp; O u t &nbsp; N o w
         </p>
       </div>
+
       <div style={{ display: "flex", justifyContent: "center" }}>
         <Card className="album-cover">
           <Card.Img src={cover} />
@@ -203,20 +204,7 @@ export default function NewAlbumSubpage() {
                   </Card.Text>
                 </Card.Text>
 
-                {/* <ListGroup>
-          {tracks.map((t, i) => (
-            <ListGroup.Item key={t.id} action  onClick={() => handlePlay(i)}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <div>
-                  <div >{t.name}</div>
-                  
-                </div>
                 
-              </div>
-            </ListGroup.Item>
-          ))}
-        </ListGroup> */}
-
                 <Accordion>
                   {tracks.map((t, i) => (
                     <ListGroup.Item key={t.id} className="p-0 border-0">

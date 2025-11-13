@@ -15,8 +15,8 @@ export default function HomeSubPage () {
                 <p>C&nbsp; O&nbsp; L&nbsp; E&nbsp; M &nbsp;A &nbsp;N &nbsp;&nbsp; L &nbsp;I &nbsp;N &nbsp;D&nbsp; B &nbsp;E &nbsp;R&nbsp; G</p>
                 </div>
             
-        <Banner />
-        <div style={{ textAlign: 'center', marginTop: '30px', fontFamily: "Michroma, sans-serif"}}>
+        {/* <Banner /> */}
+        <div >
             {/* <h1 className="album-header" style={{color: 'white'}}>New Album Out Now</h1> */}
             <div>
                 <NewAlbumSubpage />

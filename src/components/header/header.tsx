@@ -19,17 +19,14 @@ export default function Header () {
         <Nav.Item className="--bs-gray-dark">
           <Nav.Link href="/">Home</Nav.Link>
         </Nav.Item>
-         <Nav.Item className="--bs-gray-dark">
-          <Nav.Link href="/test">Test</Nav.Link>
-        </Nav.Item>
         <NavDropdown title="Albums" id="collapsible-nav-dropdown">
               <NavDropdown.Item href="/albums/owntheview">Own The View</NavDropdown.Item>
               <NavDropdown.Item href="/albums/boys" >
                 Boys
               </NavDropdown.Item>
-              <NavDropdown.Item href="/albums/thecircusofthegrieving" >
+              {/* <NavDropdown.Item href="/albums/thecircusofthegrieving" >
                 The Circus of the Grieving
-              </NavDropdown.Item>
+              </NavDropdown.Item> */}
             </NavDropdown>
              <Navbar.Brand ><img className="d-none d-md-block" src={logo} alt="logo" width="84" height='50px' style={{ }}  /></Navbar.Brand>
         
