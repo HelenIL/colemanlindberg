@@ -34,3 +34,4 @@ ColdAsSnow.wav filter=lfs diff=lfs merge=lfs -text
 GoodTimes.wav filter=lfs diff=lfs merge=lfs -text
 SpringCocaine.wav filter=lfs diff=lfs merge=lfs -text
 Weight.wav filter=lfs diff=lfs merge=lfs -text
+StoryOfUs.wav filter=lfs diff=lfs merge=lfs -text
