@@ -20,7 +20,7 @@ const lyricArray = Array.isArray(lyrics) && typeof lyrics[0] === 'string' ? lyri
 const tracks = [
   {
     name: "Razor In His Hand",
-    author: "Coleman Lindberg",
+    artist: "Coleman Lindberg",
     album: 'The Circus Of The Grieving',
     url: one,
     id: 0,
@@ -34,7 +34,7 @@ const tracks = [
   },
   {
       name: "On Me Now",
-      author: "Coleman Lindberg",
+      artist: "Coleman Lindberg",
       album: 'The Circus Of The Grieving',
       url: two,
       id: 1,
@@ -48,7 +48,7 @@ const tracks = [
     },
     {
       name: "Bottle and a Gun",
-      author: "Coleman Lindberg",
+      artist: "Coleman Lindberg",
       album: 'The Circus Of The Grieving',
       url: three,
       id: 2,
@@ -61,7 +61,7 @@ const tracks = [
     },
     {
       name: "Radiate",
-      author: "Coleman Lindberg",
+      artist: "Coleman Lindberg",
       album: 'The Circus Of The Grieving',
       url: four,
       id: 3,
@@ -74,7 +74,7 @@ const tracks = [
     },
     {
       name: "Close to Jesus",
-      author: "Coleman Lindberg",
+      artist: "Coleman Lindberg",
       album: 'The Circus Of The Grieving',
       url: five,
       id: 4,
@@ -87,7 +87,7 @@ const tracks = [
     },
     {
       name: "Wildflowers",
-      author: "Coleman Lindberg",
+      artist: "Coleman Lindberg",
       album: 'The Circus Of The Grieving',
       url: six,
       id: 5,
@@ -100,7 +100,7 @@ const tracks = [
     },
     {
       name: "I Tried",
-      author: "Coleman Lindberg",
+      artist: "Coleman Lindberg",
       album: 'The Circus Of The Grieving',
       url: seven,
       id: 6,
@@ -113,7 +113,7 @@ const tracks = [
     },
     {
       name: "Infinite December",
-      author: "Coleman Lindberg",
+      artist: "Coleman Lindberg",
       album: 'The Circus Of The Grieving',
       url: eight,
       id: 7,
@@ -126,7 +126,7 @@ const tracks = [
     },
     {
       name: "Indiana",
-      author: "Coleman Lindberg",
+      artist: "Coleman Lindberg",
       album: 'The Circus Of The Grieving',
       url: nine,
       id: 8,
@@ -139,7 +139,7 @@ const tracks = [
     },
     {
       name: "Cold Enough",
-      author: "Coleman Lindberg",
+      artist: "Coleman Lindberg",
       album: 'The Circus Of The Grieving',
       url: ten,
       id: 9,

@@ -15,7 +15,7 @@ import cover from "../../assets/cover2.jpg";
 const tracks = [
   {
     name: "Gingerbread Man",
-    author: "The Brotherbears",
+    artist: "The Brotherbears",
     album: 'Own The View',
     url: one,
     id: 0,
@@ -26,7 +26,7 @@ const tracks = [
   },
     {
       name: "Sky As Is",
-      author: "The Brotherbears",
+      artist: "The Brotherbears",
       album: 'Own The View',
       url: two,
       id: 1,
@@ -37,7 +37,7 @@ const tracks = [
     },
     {
       name: "Fast Food Heaven",
-      author: "The Brotherbears",
+      artist: "The Brotherbears",
       album: 'Own The View',
       url: three,
       id: 2,
@@ -48,7 +48,7 @@ const tracks = [
     },
     {
       name: "Faded Star",
-      author: "The Brotherbears",
+      artist: "The Brotherbears",
       album: 'Own The View',
       url: four,
       id: 3,
@@ -59,7 +59,7 @@ const tracks = [
     },
     {
       name: "Own The View",
-      author: "The Brotherbears",
+      artist: "The Brotherbears",
       album: 'Own The View',
       url: five,
       id: 4,
@@ -70,7 +70,7 @@ const tracks = [
     },
     {
       name: "Resolutions",
-      author: "The Brotherbears",
+      artist: "The Brotherbears",
       album: 'Own The View',
       url: six,
       id: 5,
@@ -81,7 +81,7 @@ const tracks = [
     },
     {
       name: "Tired Of Snow",
-      author: "The Brotherbears",
+      artist: "The Brotherbears",
       album: 'Own The View',
       url: seven,
       id: 6,
@@ -92,7 +92,7 @@ const tracks = [
     },
     {
       name: "Gingerbread Man (Painted Whore Remix)",
-      author: "The Brotherbears",
+      artist: "The Brotherbears",
       album: 'Own The View',
       url: eight,
       id: 7,
@@ -101,8 +101,8 @@ const tracks = [
       background: background,
       color: "#00aeb0"
     },
-    { name: "Happy Now", author: "The Brotherbears", album: 'Own The View', url: nine, id: 8, image: cover, pic: cole, background: background, color: "#00aeb0" },
-    { name: "Slow News Day", author: "The Brotherbears", album: 'Own The View', url: ten, id: 9, image: cover, pic: cole, background: background, color: "#00aeb0" }
+    { name: "Happy Now", artist: "The Brotherbears", album: 'Own The View', url: nine, id: 8, image: cover, pic: cole, background: background, color: "#00aeb0" },
+    { name: "Slow News Day", artist: "The Brotherbears", album: 'Own The View', url: ten, id: 9, image: cover, pic: cole, background: background, color: "#00aeb0" }
 ];
 
 

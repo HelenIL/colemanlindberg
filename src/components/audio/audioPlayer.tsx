@@ -9,7 +9,7 @@ import "./audio.css";
 
 type Track = {
   name: string;
-  author: string;
+  artist: string;
   album: string;
   url: string;
   id: number;

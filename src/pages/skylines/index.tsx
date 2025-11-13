@@ -1,13 +1,13 @@
-import SkylinesSubpage from "../../components/subpages/skylinesSubpage"
+import SkylinesSubpage from "../../components/subpages/skylines/skylinesSubpage"
 
 
 export default function Skylines() {
 
     return (
-        <>
-         <div>Skylines</div>
+        <div style={{display: 'flex', alignItems: 'center'}}>
+
          <SkylinesSubpage />
-        </>
+        </div>
        
        
     )
