@@ -9,6 +9,7 @@ import Accordion from "react-bootstrap/Accordion";
 import { useAccordionButton } from "react-bootstrap/AccordionButton";
 import AccordionContext from "react-bootstrap/AccordionContext";
 import "./audio.css";
+import { PrevButton, NextButton } from "./audioButton";
 
 
 
@@ -41,6 +42,7 @@ type AudioPlayerProps = {
 type Toggle = {
   children: React.ReactNode;
   eventKey: string;
+  color: string;
 };
 
 type AudioHeader = {
@@ -60,7 +62,20 @@ function AudioHeader({props}: AudioHeader) {
   );
 }
 
-function CustomToggle({ children, eventKey }: Toggle) {
+function AudioButton({props}: AudioHeader) {
+  const dynamicStyle = {
+    textShadow: `1px 1px 1px ${props}`,
+    color: 'gray'
+  };
+
+  return (
+    <h4 style={dynamicStyle}>
+      LISTEN  &nbsp; TO  &nbsp; THE  &nbsp; ALBUM
+    </h4>
+  );
+}
+
+function CustomToggle({ children, eventKey, color }: Toggle) {
   const decoratedOnClick = useAccordionButton(eventKey, () => undefined);
 
   const { activeEventKey } = (useContext(AccordionContext) as any) || {};
@@ -84,6 +99,7 @@ function CustomToggle({ children, eventKey }: Toggle) {
         alignItems: "center",
         padding: 4,
         cursor: "pointer",
+        color: color
       }}
       onClick={(e) => {
         e.stopPropagation();
@@ -189,21 +205,24 @@ export default function AudioPlayer({ album }: AudioPlayerProps) {
                     //   gap: 20,
                     // }}
                   >
-                    <Button
+                    <PrevButton color={album.color} onClick={handlePrev}
+                      disabled={album.tracks[current].id === 0}/>
+                    {/* <Button
                       className="ap-player-button rounded-0"
+                      style={{ }}
                       onClick={handlePrev}
                       disabled={album.tracks[current].id === 0}
                     >
                       <img src={prev} alt="Previous" width="20" height="20" />
-                    </Button>
+                    </Button> */}
                     <img
                     className="ap-guitar"
                       src={guitar}
                     ></img>
-
-                    <Button className="ap-player-button rounded-0" onClick={handleNext}>
+                    <NextButton color={album.color} onClick={handleNext} />
+                    {/* <Button className="ap-player-button rounded-0" onClick={handleNext}>
                       <img src={next} alt="Next" width="20" height="20" />
-                    </Button>
+                    </Button> */}
                   </div>
                 </Card.Text>
 
@@ -229,7 +248,7 @@ export default function AudioPlayer({ album }: AudioPlayerProps) {
                             >
                               {t.name}
                             </span>
-                            <CustomToggle eventKey={String(i)}>▾</CustomToggle>
+                            <CustomToggle color={album.color} eventKey={String(i)}>▾</CustomToggle>
                           </div>
                           <Accordion.Body>
                             {t.lyrics}
