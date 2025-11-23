@@ -1,4 +1,4 @@
-import HomeSubPage from "../../components/subpages/homeSubpage"
+import HomeSubPage from "../../components/subpages/home/homeSubpage"
 
 
 
