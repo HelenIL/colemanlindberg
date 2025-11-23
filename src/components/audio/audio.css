@@ -6,6 +6,7 @@
 .card-test {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   /* border: 2px solid green; */
 }
  /* .outer-div {
@@ -229,6 +230,56 @@ audio {
 }
 
 } */
+ @media only screen and (max-width: 480px) {
+
+     .cardStyle {
+  width: 19rem;
+}
+
+
+
+   audio {
+  max-width: 100%;
+}
+
+}
+
+@media only screen and (max-width: 430px) {
+ .card-test {
+  width: 22rem;
+ }
+.ap-card-outer {
+  display: flex;
+  justify-content: center;
+  /* border: 2px solid red; */
+}
+
+audio {
+  max-width: 100%;
+}
+  
+
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 414px) {
+   .cardStyle {
+  width: 19rem;
+}
+
+
+   audio {
+  max-width: 100%;
+}
+
+}
 
 @media only screen and (max-width: 412px) {
 
@@ -254,35 +305,6 @@ audio {
 
 }
 
-
-
-
-
-@media only screen and (max-width: 480px) {
-
-     .cardStyle {
-  width: 19rem;
-}
-
-
-
-   audio {
-  max-width: 100%;
-}
-
-}
-
-@media only screen and (max-width: 414px) {
-   .cardStyle {
-  width: 19rem;
-}
-
-
-   audio {
-  max-width: 100%;
-}
-
-}
 
 @media only screen and (max-width: 393px) {
   /* .card-test {

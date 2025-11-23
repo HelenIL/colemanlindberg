@@ -12,7 +12,7 @@ export default function BoysSubpage() {
           <Card.Img src={album.cover} />
         </Card>
       </div>
-      <div className="boys-outer-comp">
+      <div className="boys-comp-outer">
         <AudioPlayer album={album} />
         <div>
         <AlbumAboutCard about={album.about} album={album.album} color={album.color}/>

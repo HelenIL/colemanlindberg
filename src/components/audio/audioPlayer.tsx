@@ -62,18 +62,18 @@ function AudioHeader({props}: AudioHeader) {
   );
 }
 
-function AudioButton({props}: AudioHeader) {
-  const dynamicStyle = {
-    textShadow: `1px 1px 1px ${props}`,
-    color: 'gray'
-  };
+// function AudioButton({props}: AudioHeader) {
+//   const dynamicStyle = {
+//     textShadow: `1px 1px 1px ${props}`,
+//     color: 'gray'
+//   };
 
-  return (
-    <h4 style={dynamicStyle}>
-      LISTEN  &nbsp; TO  &nbsp; THE  &nbsp; ALBUM
-    </h4>
-  );
-}
+//   return (
+//     <h4 style={dynamicStyle}>
+//       LISTEN  &nbsp; TO  &nbsp; THE  &nbsp; ALBUM
+//     </h4>
+//   );
+// }
 
 function CustomToggle({ children, eventKey, color }: Toggle) {
   const decoratedOnClick = useAccordionButton(eventKey, () => undefined);
@@ -173,13 +173,21 @@ export default function AudioPlayer({ album }: AudioPlayerProps) {
 
   return (
     <div className="ap-outer"> 
-    <div className="ap-header">
+    {/* <div className="ap-header">
            <span className="ap-header-span" > <AudioHeader props={album.color}/></span>
           </div>
  
-      <div >
-        <div >
-          <div className="card-test">
+      <div > */}
+        <div style={{display: 'flex', justifyContent: 'center'}}>
+          
+        <div className="card-test">
+            
+            <div className="ap-header">
+           <span className="ap-header-span" > <AudioHeader props={album.color}/></span>
+          </div>
+ 
+        <div>
+          <div className="ap-card-outer">
             <Card className="card-style rounded-0 border-0 opacity-75 ">
               <Card.Body >
                 <Card.Text
@@ -260,6 +268,7 @@ export default function AudioPlayer({ album }: AudioPlayerProps) {
                 </Accordion>
               </Card.Body>
             </Card>
+            </div>
           </div>
 
          

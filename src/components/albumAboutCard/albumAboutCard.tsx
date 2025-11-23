@@ -57,12 +57,18 @@ export default function AlbumAboutCard({about, album, color} : AboutProps) {
 
 
     return (
-        <div>
-           <div className="ac-header-outer">
-           <span className="ac-header-span" ><AboutHeader color={color} album={album}/></span>
+        <div className="ac-outer">
+           {/* <div className="ac-header-outer">
+            <span className="ac-header-span" ><AboutHeader color={color} album={album}/></span>
+          </div> */}
+          <div className="about-out-div test">
+           
+            <div className="ac-header-outer" >
+            <span className="ac-header-span" ><AboutHeader color={color} album={album}/></span>
           </div>
-          <div className="about-out-div">
+
             <div className="about-container">
+              
               <div
                 className="about-card rounded-0 border-0 opacity-75"
                 style={{ backgroundColor: "#e3e3e3" }}
@@ -76,9 +82,9 @@ export default function AlbumAboutCard({about, album, color} : AboutProps) {
                   </p>
                 </div>
               </div>
-</div>
+              </div>
           
-            </div>
+          </div>
         </div>
     )
 }

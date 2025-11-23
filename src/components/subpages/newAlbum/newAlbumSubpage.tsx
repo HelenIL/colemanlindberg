@@ -36,7 +36,7 @@ export default function NewAlbumSubpage() {
       {/* album about */}
       <div className="na-about-outer" >
         
-      <Card className="na-about border-0 opacity-75 rounded-0">
+        <Card className="na-about border-0 opacity-75 rounded-0">
           <Card.Text className="na-about-text">
             <span className="na-about-span">{album.about}</span>
             

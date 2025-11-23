@@ -14,7 +14,7 @@
   width: 20rem;
 }
 
-.boys-outer-comp {
+.boys-comp-outer {
   display: flex;
   justify-content: center;
   margin-top:  40px;
@@ -32,4 +32,16 @@
 .boys-img {
   box-shadow: 3px 1px 2px #9284f1;
   width: 23rem;
+}
+
+
+
+@media only screen and (max-width: 820px) {
+
+.boys-comp-outer {
+ flex-direction: column;
+}
+
+
+
 }
