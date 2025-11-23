@@ -1,11 +1,16 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useContext } from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
-import prev from "../../assets/skip-backward.svg";
-import next from "../../assets/skip-forward.svg";
+import prev from "../../assets/angle-left-solid-full.svg";
+import next from "../../assets/angle-right-solid-full.svg";
 import guitar from "../../assets/cl_gt_only.svg";
+import Accordion from "react-bootstrap/Accordion";
+import { useAccordionButton } from "react-bootstrap/AccordionButton";
+import AccordionContext from "react-bootstrap/AccordionContext";
 import "./audio.css";
+
+
 
 type Track = {
   name: string;
@@ -15,15 +20,98 @@ type Track = {
   id: number;
   image: string;
   pic: string;
-  color?: string;
+  lyrics: string;
 };
 
+type Album = {
+  album: string;
+  cover: string;
+  color: string;
+  pic: string;
+  blurbs?: string;
+  about?: string;
+  tracks: Track[]
+}
+
 type AudioPlayerProps = {
-  tracks: Track[];
+  album: Album;
   isTrue?: boolean;
 };
 
-export default function AudioPlayer({ tracks }: AudioPlayerProps) {
+type Toggle = {
+  children: React.ReactNode;
+  eventKey: string;
+};
+
+type AudioHeader = {
+  props: string;
+}
+
+function AudioHeader({props}: AudioHeader) {
+  const dynamicStyle = {
+    textShadow: `1px 1px 1px ${props}`,
+    color: 'gray'
+  };
+
+  return (
+    <h4 style={dynamicStyle}>
+      LISTEN  &nbsp; TO  &nbsp; THE  &nbsp; ALBUM
+    </h4>
+  );
+}
+
+function CustomToggle({ children, eventKey }: Toggle) {
+  const decoratedOnClick = useAccordionButton(eventKey, () => undefined);
+
+  const { activeEventKey } = (useContext(AccordionContext) as any) || {};
+  const isActive = activeEventKey === eventKey;
+
+  const onKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      decoratedOnClick(e as any);
+    }
+  };
+
+  return (
+    <span
+      role="button"
+      className="custom-arrow"
+      tabIndex={0}
+      aria-expanded={isActive}
+      style={{
+        display: "inline-flex",
+        alignItems: "center",
+        padding: 4,
+        cursor: "pointer",
+      }}
+      onClick={(e) => {
+        e.stopPropagation();
+        decoratedOnClick(e as any);
+      }}
+      onKeyDown={onKeyDown}
+    >
+      <svg
+        width="25"
+        height="25"
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+        style={{
+          transition: "transform 180ms ease",
+          transform: isActive ? "rotate(180deg)" : "rotate(0deg)",
+          display: "block",
+        }}
+      >
+        <path
+          fill="currentColor"
+          d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"
+        />
+      </svg>
+    </span>
+  );
+}
+
+export default function AudioPlayer({ album }: AudioPlayerProps) {
   const [current, setCurrent] = useState<number>(0);
   const audioRef = useRef<HTMLAudioElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -39,170 +127,125 @@ export default function AudioPlayer({ tracks }: AudioPlayerProps) {
 
   // };
 
-  const handlePlay = (idx: number) => {
+  const handlePlay = (idx: number, e?: React.MouseEvent) => {
+    e?.stopPropagation();
     setCurrent(idx);
-
     setTimeout(() => {
-      audioRef.current?.play();
+      audioRef.current
+        ?.play()
+        .catch((err) => console.error("play failed", err));
     }, 0);
   };
 
   const handleNext = () => {
-    setCurrent((prev) => (prev + 1) % tracks.length);
+    setCurrent((prev) => (prev + 1) % album.tracks.length);
     setTimeout(() => {
       audioRef.current?.play();
     }, 0);
 
-    if (current === tracks.length - 1) {
+    if (current === album.tracks.length - 1) {
       setCurrent(0);
     }
   };
 
   const handlePrev = () => {
-    setCurrent((prev) => (prev - 1) % tracks.length);
+    setCurrent((prev) => (prev - 1) % album.tracks.length);
     setTimeout(() => {
       audioRef.current?.play();
     }, 0);
   };
 
   return (
-    <div style={{ marginRight: "30px", marginLeft: "30px", marginTop: "25px" }}>
-      <div className="album-header-div">
-        <p className="album-header" style={{ color: "white" }}>
-          {tracks[current]?.album}
-        </p>
-      </div>
+    <div className="ap-outer"> 
+    <div className="ap-header">
+           <span className="ap-header-span" > <AudioHeader props={album.color}/></span>
+          </div>
+ 
+      <div >
+        <div >
+          <div className="card-test">
+            <Card className="card-style rounded-0 border-0 opacity-75 ">
+              <Card.Body >
+                <Card.Text
+                className="ap-now-playing"
+                  
+                >
+                  Now Playing :
+                </Card.Text>
+                <Card.Text className="ap-current-track">
+                  {album.tracks[current]?.name}
+                </Card.Text>
 
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        <Card className="border-0" >
-          <Card.Img variant="top" src={tracks[current]?.image} height={300} />
-        </Card>
-      </div>
-
-      <div className="playerDiv audio-div" style={{ marginRight: "20px" }}>
-        <div className="outer-div">
-          <div className="inner-div">
-            <div>
-              <Card className="cardStyle border-0 opacity-75 ">
-                {/* <Card.Img variant="top" src={tracks[current]?.image} /> */}
-                <Card.Body>
-                  <Card.Text
-                    style={{
-                      fontSize: "1rem",
-                      color: "gray",
-                      marginTop: "10px",
-                      textAlign: "center",
-                    }}
+                <Card.Text className="ap-audio-error">
+                  <audio ref={audioRef} controls src={album.tracks[current]?.url}>
+                    Your browser does not support the audio element.
+                  </audio>
+                  <div
+                    // style={{
+                    //   textAlign: "center",
+                    //   display: "flex",
+                    //   justifyContent: "center",
+                    //   alignItems: "center",
+                    //   gap: 20,
+                    // }}
                   >
-                    Now Playing :
-                  </Card.Text>
-                  <Card.Text style={{ textAlign: "center" }}>
-                    {tracks[current]?.name}
-                  </Card.Text>
-                  <Card.Text style={{ textAlign: "center", marginTop: "10px" }}>
-                    <audio ref={audioRef} controls src={tracks[current]?.url}>
-                      Your browser does not support the audio element.
-                    </audio>
-                    <Card.Text
-                      style={{
-                        textAlign: "center",
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        gap: 20,
-                      }}
+                    <Button
+                      className="ap-player-button rounded-0"
+                      onClick={handlePrev}
+                      disabled={album.tracks[current].id === 0}
                     >
-                      <Button
-                        className="player-button"
-                        onClick={handlePrev}
-                        disabled={tracks[current].id === 0}
-                      >
-                        <img src={prev} alt="Previous" width="20" height="20" />
-                      </Button>
-                      <img
-                        style={{
-                          height: "50px",
-                          borderRadius: "8px",
-                          overflow: "hidden",
-                        }}
-                        src={guitar}
-                      ></img>
+                      <img src={prev} alt="Previous" width="20" height="20" />
+                    </Button>
+                    <img
+                    className="ap-guitar"
+                      src={guitar}
+                    ></img>
 
-                      <Button className="player-button" onClick={handleNext}>
-                        <img src={next} alt="Next" width="20" height="20" />
-                      </Button>
-                    </Card.Text>
-                  </Card.Text>
+                    <Button className="ap-player-button rounded-0" onClick={handleNext}>
+                      <img src={next} alt="Next" width="20" height="20" />
+                    </Button>
+                  </div>
+                </Card.Text>
 
-                  <Card.Body style={{ flex: 1 }}>
-                    <ListGroup>
-                      {tracks.map((t, i) => (
-                        <ListGroup.Item
-                          key={t.id}
-                          action
-                          onClick={() => handlePlay(i)}
-                        >
+                <Accordion>
+                  {album.tracks.map((t, i) => (
+                    <ListGroup.Item
+                      key={t.id}
+                      className="p-0 border-0 ap-list-item"
+                    >
+                      <Accordion>
+                        <Accordion.Item eventKey={String(i)}>
                           <div
-                            style={{
-                              display: "flex",
-                              justifyContent: "space-between",
-                              alignItems: "center",
-                            }}
+                          className="ap-track"
+                            
                           >
-                            <div>
-                              <div>{t.name}</div>
+                            <span
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                handlePlay(i, e);
+                              }}
+                              className="ap-track-span"
                              
-                            </div>
+                            >
+                              {t.name}
+                            </span>
+                            <CustomToggle eventKey={String(i)}>▾</CustomToggle>
                           </div>
-                        </ListGroup.Item>
-                      ))}
-                    </ListGroup>
-                  </Card.Body>
-                </Card.Body>
-              </Card>
-            </div>
+                          <Accordion.Body>
+                            {t.lyrics}
+                          </Accordion.Body>
+                        </Accordion.Item>
+                      </Accordion>
+                    </ListGroup.Item>
+                  ))}
+                </Accordion>
+              </Card.Body>
+            </Card>
           </div>
 
-          <div className="blurb-div">
-            <div className="mb-3" style={{ width: "100%" }}>
-              <Card className="opacity-75">
-                <Card.Body style={{ flex: 1 }}>
-                  <Card.Text style={{}}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Pellentesque ultricies ac ante ut placerat. Vestibulum magna
-                    dui, vulputate non volutpat vel, aliquet ac est. Etiam
-                    vestibulum metus at dui rhoncus, quis varius mi vulputate.
-                    Aliquam rutrum elementum sagittis. Sed eros est, porttitor
-                    sed magna lacinia, cursus viverra dui. Proin condimentum ac
-                    nisi non semper. Nulla sed magna vitae urna scelerisque
-                    laoreet eu a enim. In vel convallis libero. Suspendisse vel
-                    eros in ex tincidunt mattis quis eget mauris. Sed quis augue
-                    quis dolor pulvinar malesuada eget ac lectus. In congue
-                    ornare nulla, id mattis purus dignissim ut.
-                  </Card.Text>
-                  <Card.Text style={{}}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Pellentesque ultricies ac ante ut placerat. Vestibulum magna
-                    dui, vulputate non volutpat vel, aliquet ac est. Etiam
-                    vestibulum metus at dui rhoncus, quis varius mi vulputate.
-                    Aliquam rutrum elementum sagittis. Sed eros est, porttitor
-                    sed magna lacinia, cursus viverra dui. Proin condimentum ac
-                    nisi non semper. Nulla sed magna vitae urna scelerisque
-                    laoreet eu a enim. In vel convallis libero. Suspendisse vel
-                    eros in ex tincidunt mattis quis eget mauris. Sed quis augue
-                    quis dolor pulvinar malesuada eget ac lectus. In congue
-                    ornare nulla, id mattis purus dignissim ut.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </div>
-            <div>
-              <Card className="border-0">
-                <Card.Img variant="top" src={tracks[current]?.pic} />
-              </Card>
-            </div>
-          </div>
+         
         </div>
+       
       </div>
     </div>
   );

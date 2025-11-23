@@ -1,0 +1,35 @@
+.boys-outer {
+  width: 100%;
+  background-image: url('../../../assets/boys_curv.png');
+  background-color: #494949;
+}
+
+.boys-cover-outer {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.boys-cover {
+  width: 20rem;
+}
+
+.boys-outer-comp {
+  display: flex;
+  justify-content: center;
+  margin-top:  40px;
+  margin-bottom: 40px;
+}
+
+.boys-img-outer {
+  width: 25rem;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boys-img {
+  box-shadow: 3px 1px 2px #9284f1;
+  width: 23rem;
+}

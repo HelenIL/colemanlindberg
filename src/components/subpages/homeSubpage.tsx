@@ -1,28 +1,30 @@
-import Banner from "../banner/banner"
-import AudioPlayer from "../audio/audioPlayer"
-import tracklist from '../../albums/circus/tracklist'
-import NewAlbumSubpage from "./newAlbumSubpage"
-import './home.css'
+import Banner from "../banner/banner";
 
+import tracklist from "../../albums/circus/tracklist";
+import NewAlbumSubpage from "./newAlbum/newAlbumSubpage";
+import AudioPlayer from "../audio/audioPlayer";
+import album from '../../albums/circus/tracklist'
+import "./home.css";
 
+export default function HomeSubPage() {
+  return (
+    <div className="hp-outer" style={{}}>
+      <div className="hp-header">
+        <p>
+          <span className="hp-header-span">
+          C&nbsp; O&nbsp; L&nbsp; E&nbsp; M &nbsp;A &nbsp;N &nbsp;&nbsp; L
+          &nbsp;I &nbsp;N &nbsp;D&nbsp; B &nbsp;E &nbsp;R&nbsp; G </span>
+        </p>
+      </div>
 
-export default function HomeSubPage () {
+    
+      <div>
+       
+        <div className="hp-outer-comp">
+          <NewAlbumSubpage />
 
-    return (
-
-        <div className="out-div" style={{}}>
-            <div className="page-header" >
-                <p>C&nbsp; O&nbsp; L&nbsp; E&nbsp; M &nbsp;A &nbsp;N &nbsp;&nbsp; L &nbsp;I &nbsp;N &nbsp;D&nbsp; B &nbsp;E &nbsp;R&nbsp; G</p>
-                </div>
-            
-        {/* <Banner /> */}
-        <div >
-            {/* <h1 className="album-header" style={{color: 'white'}}>New Album Out Now</h1> */}
-            <div>
-                <NewAlbumSubpage />
-                {/* <AudioPlayer tracks={tracklist} /> */}
-            </div>
         </div>
-        </div>
-    )
+      </div>
+    </div>
+  );
 }

@@ -2,14 +2,14 @@ import logo from "../../assets/cl_gt_only.svg"
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import Container from 'react-bootstrap/Container';
+import './header.css'
 
 
 
 export default function Header () {
 
     return (
-      <Navbar collapseOnSelect expand="lg" className="outerHeader" style={{backgroundColor: '#7D7D7D', width: '100%'}}>
+      <Navbar collapseOnSelect expand="lg" className="outerHeader" style={{backgroundColor: '#7D7D7D'}}>
 
 
           <Navbar.Toggle aria-controls="basic-navbar-nav"  style={{}}/>
