@@ -16,9 +16,9 @@ export default function BoysSubpage() {
         <AudioPlayer album={album} />
         <div>
         <AlbumAboutCard about={album.about} album={album.album} color={album.color}/>
-        <div className="boys-img-outer" >
+        {/* <div className="boys-img-outer" >
           <img className="boys-img" src={album.pic} ></img>
-        </div>
+        </div> */}
         
         </div>
       </div>

@@ -1,9 +1,8 @@
 .na-outer {
-        margin-right: 30px;
-        margin-left: 30px;
-        margin-top: 25px;
-        
-      }
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 25px;
+}
 
 .na-header-outer {
             text-align: center;
@@ -167,17 +166,64 @@ box-shadow: 0 4px 10px #2698c7;
 .na-comp-outer {
   display: flex;
     justify-content: center;
-    width: 20rem;
+    width: 100%;
     flex-direction: column;
-/* border: 2px solid red; */
-    
-    
 }
+
 .na-header {
   font-size: 15px;
 }
 
+.na-outer {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
 
+.na-about {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 16px;
+}
+
+/* .na-cover {
+  width: 100%;
+  max-width: 360px;
+} */
+
+/* Prevent child elements (images, audio, carousels, cards) from overflowing
+   the viewport on very small devices */
+.na-cover img,
+.na-cover picture,
+.na-cover video,
+.na-cover svg,
+.na-cover .cover-img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.na-outer .carousel,
+.na-outer .carousel .carousel-inner,
+.na-outer .carousel-item,
+.na-outer .album-about-card,
+.na-outer .album-about-card .about,
+.na-outer .card,
+.na-outer .list-group,
+.na-outer .audio,
+.na-outer audio,
+.na-outer .audio-player {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.na-outer { overflow-x: hidden; }
 
 }
 
@@ -185,30 +231,41 @@ box-shadow: 0 4px 10px #2698c7;
 @media only screen and (max-width: 393px) {
 
   .na-comp-outer {
-  width: 21rem;
-}
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 
-.na-header {
-  font-size: 15px;
-}
+  .na-header {
+    font-size: 15px;
+  }
 
-audio {
-  max-width: 100%;
-}
+  audio {
+    max-width: 100%;
+  }
 
 
 }
 
 @media only screen and (max-width: 375px) {
-.na-comp-outer {
-  display: flex;
+  .na-comp-outer {
+    display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 20rem;
+    /* width: 100%; */
+  }
 
-    
-    
-}
+
+
+  .na-cover {
+    width: 20rem;
+  }
+
+  .na-about {
+    width: 20rem;
+  }
+
    /* .album-header {
     font-size: 16px;
    } */

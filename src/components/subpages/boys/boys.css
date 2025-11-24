@@ -45,3 +45,20 @@
 
 
 }
+
+/* Small-screen overrides to prevent image/content overflow */
+@media only screen and (max-width: 430px) {
+  .boys-cover,
+  .boys-img-outer,
+  .boys-img {
+    width: 75% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+    height: auto !important;
+  }
+
+  .boys-img {
+    height: auto;
+  }
+}
+

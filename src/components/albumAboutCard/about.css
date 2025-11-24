@@ -31,12 +31,10 @@ h4 {
   font-family: 'oxanium', sans-serif;
 } 
 .about-container {
-  /* border: 2px solid blue; */
+
   width: 25rem;
   margin: 0 auto;
-  /* text-align: center; */
-  /* position: relative; */
-  /* align-items: center; */
+
   justify-content: center;
 }
 
@@ -80,13 +78,19 @@ h4 {
     margin-top: 10px;
   }
 
- .test {
-  width: 22rem;
- }
+  .ac-test {
+    width: 22rem;
+    border: 2px solid blue;
+  }
 
+
+
+ /* .test,
  .about-container {
-  width: 22rem;
- }
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box;
+ } */
 /* .ap-card-outer {
   display: flex;
   justify-content: center;

@@ -19,6 +19,7 @@ const album = {
   album: "Circus of the Grieving",
   cover: cover,
   color: '#2698c7',
+  colorII: '#2698c7',
   pic: cole,
   about: about,
   tracks: [

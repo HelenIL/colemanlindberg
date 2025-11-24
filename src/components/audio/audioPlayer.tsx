@@ -28,6 +28,7 @@ type Album = {
   album: string;
   cover: string;
   color: string;
+  colorII: string;
   pic: string;
   blurbs?: string;
   about?: string;
@@ -180,9 +181,9 @@ export default function AudioPlayer({ album }: AudioPlayerProps) {
       <div > */}
         <div style={{display: 'flex', justifyContent: 'center'}}>
           
-        <div className="card-test">
+        <div className="card-test ">
             
-            <div className="ap-header">
+            <div className="ap-header" style={{}}>
            <span className="ap-header-span" > <AudioHeader props={album.color}/></span>
           </div>
  
@@ -256,7 +257,7 @@ export default function AudioPlayer({ album }: AudioPlayerProps) {
                             >
                               {t.name}
                             </span>
-                            <CustomToggle color={album.color} eventKey={String(i)}>▾</CustomToggle>
+                            <CustomToggle color={album.colorII} eventKey={String(i)}>▾</CustomToggle>
                           </div>
                           <Accordion.Body>
                             {t.lyrics}

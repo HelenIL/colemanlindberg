@@ -16,7 +16,8 @@ const lyricArray = Array.isArray(lyrics) && typeof lyrics[0] === 'string' ? lyri
 const album = {
   album: 'Skylines',
   cover: cover,
-  color: '#dad9c4',
+  color: '#f8f5a7',
+  colorII: '#99925c',
   pic: cole,
   about: 'Sed pretium aliquet rutrum. In sit amet vestibulum orci. Etiam ac commodo est. Duis vitae metus id ex placerat porttitor. Curabitur molestie tempor dolor, sit amet rutrum enim porttitor in. Ut eu magna a lectus mollis scelerisque et vel enim. Nunc quis ipsum finibus, pharetra mauris vitae, ultrices nunc. Proin turpis mi, bibendum sed lacinia vitae, dignissim et arcu.',
   tracks: [

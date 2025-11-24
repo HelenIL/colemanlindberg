@@ -1,10 +1,49 @@
-.outDivOTV {
+.otv-outer {
   width: 100%;
   background-image: url('../../../assets/bebe_curv.JPG');
   
 }
 
+.otv-outer-cover {
+   display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  
+}
 
 .otv-cover {
     width: 20rem;
+}
+
+.otv-comp-outer {
+  display: flex;
+  justify-content: center;
+  margin-top:  40px;
+  margin-bottom: 40px;
+
+
+}
+
+@media only screen and (max-width: 820px) {
+
+.otv-comp-outer {
+ flex-direction: column;
+}
+
+
+
+}
+
+@media only screen and (max-width: 430px) {
+  .otv-cover
+ {
+    width: 75% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+    height: auto !important;
+  }
+
+
+
+
 }

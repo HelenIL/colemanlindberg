@@ -48,7 +48,7 @@
 .card-style {
 width: 22rem;
 text-align: left;
-/* background-color: '#f0f0f0'; */
+
 font-family: 'oxanium', sans-serif;
 
    }
@@ -91,6 +91,24 @@ font-family: 'oxanium', sans-serif;
   overflow: hidden;
 }
 
+/* Restore icon sizes inside the audio player which were affected by
+   the global narrow-breakpoint img rules. Keep icons small and the
+   decorative guitar at its intended height. */
+.ap-outer button img,
+.ap-outer .btn img,
+.ap-outer button svg,
+.ap-outer .btn svg {
+  width: 20px !important;
+  height: 20px !important;
+  max-width: none !important;
+}
+
+.ap-outer .ap-guitar {
+  width: auto !important;
+  height: 50px !important;
+  max-width: none !important;
+}
+
 .ap-list-item {
   margin-bottom: 5px;
 }
@@ -116,7 +134,7 @@ font-family: 'oxanium', sans-serif;
     }
 
     .custom-arrow:hover {
-        background-color: gray;
+        background-color: #cacaca;
         color: white;
 
     }
@@ -310,12 +328,12 @@ audio {
   /* .card-test {
     border: 2px solid red;
    } */
-   .card-style {
+   /* .card-style {
     width: 21rem;
    }
    .ap-header {
      width: 20rem;
-   }
+   } */
 
 audio {
   max-width: 100%;
@@ -327,18 +345,20 @@ audio {
 
 
 @media only screen and (max-width: 375px) {
- /* .card-test {
-    border: 2px solid red;
-   } */
-.card-style {
+ .card-test {
   width: 20rem;
+ }
+.ap-card-outer {
+  display: flex;
+  justify-content: center;
+  /* border: 2px solid red; */
 }
 
 
 
-  .ap-header {
+  /* .ap-header {
     width: 20rem;
-  }
+  } */
      
 audio {
   max-width: 100%;
@@ -348,18 +368,30 @@ audio {
 }
 
 @media only screen and (max-width: 360px) {
+  /* Make cards and headers fluid on very small screens to prevent overflow */
+  .card-style,
+  .card-test,
+  .cardStyle,
+  .ap-header,
+  .ap-card-outer,
+  .album-cover,
+  .blurb-div {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
 
-.card-style {
-  width: 19rem;
-}
+  .album-cover img,
+  .ap-guitar img,
+  .ap-header img {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
 
-  .ap-header {
-     width: 19rem;
-   }
-     
-audio {
-  max-width: 100%;
-}
-
+  audio {
+    max-width: 100%;
+  }
 
 }

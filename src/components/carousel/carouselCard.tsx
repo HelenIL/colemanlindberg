@@ -40,16 +40,16 @@ const nextCard = () => {
     return (
         
         <div className="cc-page-outer" style={{}}>
-          <div className="cc-header-outer" >
-           <span className="cc-header-span"> <h4 className="cc-header-h4" >ABOUT &nbsp; THE &nbsp; SONGS</h4></span>
-          </div>
+          <div style={{ display: 'flex', justifyContent: 'center'}}>
+          <div className="">
+
+             <div className="cc-header-outer" >
+             <span className="cc-header-span"> <h4 className="cc-header-h4" >ABOUT &nbsp; THE &nbsp; SONGS</h4></span>
+              </div>
           
-            <div className="carousel-container ">
-              <div
-                className="carousel-card rounded-0 border-0 opacity-75"
-                style={{ backgroundColor: "#e3e3e3" }}
-              >
-                <div style={{  }}>
+            <div >
+              <div  className="carousel-container" style={{ backgroundColor: "#e3e3e3" }}>
+                <div className="carousel-card rounded-0 border-0 opacity-75">
                   <div style={{display: 'flex', justifyContent: 'space-between'}}>
                     <div className="left-button" style={{}}>
                   <Button
@@ -110,6 +110,8 @@ const nextCard = () => {
                   </Button>
                 </div>
               </div> */}
+            </div>
+            </div>
             </div>
        </div>
     )

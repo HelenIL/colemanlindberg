@@ -41,3 +41,40 @@ margin-left: 20px; */
 }
 
 }
+
+/* Ensure the root elements can use the full viewport width on small devices */
+html, body, #root {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Make box-sizing inherit by default so padding doesn't cause overflow */
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+
+/* Global narrow-breakpoint guard: ensure no element can overflow the viewport
+   at very small widths (catch remaining rem/px fixed-width rules). */
+@media only screen and (max-width: 393px) {
+  html, body, #root {
+    overflow-x: hidden;
+  }
+
+  img, picture, svg, video, iframe,
+  .card-style, .card-test, .cardStyle, .carousel-container, .carousel-card,
+  .about-container, .boys-img, .na-outer, .na-cover, .ap-card-outer,
+  .ap-header, audio, .carousel {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    height: auto !important;
+  }
+}
+
+@media only screen and (max-width: 344px) {
+  /* extra-safety for very small devices */
+  html, body, #root { overflow-x: hidden; }
+  img, picture, svg, video, iframe { width: 100% !important; max-width: 100% !important; height: auto !important; box-sizing: border-box !important; }
+}
