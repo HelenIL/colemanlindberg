@@ -12,6 +12,7 @@ const OwnTheView = React.lazy(() => import('./pages/owntheview'));
 const Boys = React.lazy(() => import('./pages/boys'));
 const Circus = React.lazy(() => import('./pages/circus'));
 const Skylines = React.lazy(() => import('./pages/skylines'));
+const MakingMyName = React.lazy(() => import('./pages/makingmyname'));
 const NotFound = React.lazy(() => import('./components/subpages/notFound/notFound'));
 
 
@@ -25,10 +26,12 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="albums" >
-          <Route path="owntheview" element={<OwnTheView />}/>
-          <Route path="boys" element={<Boys />}/>
           <Route path="thecircusofthegrieving" element={<Circus />}/>
+          <Route path="owntheview" element={<OwnTheView />}/>
+          
+          <Route path="makingmyname" element={<MakingMyName />}/>
           <Route path="skylines" element={<Skylines />}/>
+          <Route path="boys" element={<Boys />}/>
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>

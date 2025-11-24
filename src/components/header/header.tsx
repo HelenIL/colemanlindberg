@@ -21,11 +21,14 @@ export default function Header () {
         </Nav.Item>
         <NavDropdown title="Albums" id="collapsible-nav-dropdown">
               <NavDropdown.Item href="/albums/owntheview">Own The View</NavDropdown.Item>
-              <NavDropdown.Item href="/albums/boys" >
-                Boys
+              <NavDropdown.Item href="/albums/makingmyname" >
+                Making My Name
               </NavDropdown.Item>
               <NavDropdown.Item href="/albums/skylines" >
                 Skylines
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/albums/boys" >
+                Boys
               </NavDropdown.Item>
               {/* <NavDropdown.Item href="/albums/thecircusofthegrieving" >
                 The Circus of the Grieving

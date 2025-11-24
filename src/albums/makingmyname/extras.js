@@ -1,0 +1,10 @@
+export const lyrics = [
+  { track: 'Wounded Winter', lyrics: "MMN 1 Ut enim ad minim veniam,\nquis nostrud exercitation ullamco laboris nisi ut aliquip\nex ea commodo consequat." },
+  { track: 'Crawling Home', lyrics: "MMN 2 Give me your tired, give me your poor\nGive me a kiss and a set of keys to your front door\nYour hands work hard for justice\nI want them on me now\n\nTurn on the christmas lights, get out your pen\nShow me the way you get inspired again\nDon't ask if I'm ok 'cus\nI'll just lie anyway\n\nCan you pick me up some nectarines\nAnd a pack of smokes\nI think, I think that's all I need\nTonight I'll strip you bare\nYou say how far, I'll take you there\n\nYou lie beside me in the dead of night\nWe love the hot buzz of the city lights\nTo be both far and near\nTo be both there and here\n\nGive me your tired, give me your poor\nGive me a kiss and a set of keys to your front door\nYour hands work hard for justice\nI want them on me now\nI want them on me now\nI want them on me now" },
+  { track: 'Closer on the Corners', lyrics: "MMN 3 Ut enim ad minim veniam,\nquis nostrud exercitation ullamco laboris nisi ut aliquip\nex ea commodo consequat." },
+  { track: 'Hard Times, Come Again No More', lyrics: "MMN 4 Ut enim ad minim veniam,\nquis nostrud exercitation ullamco laboris nisi ut aliquip\nex ea commodo consequat." },
+  { track: 'Sky So Blue', lyrics: "MMN 5 Ut enim ad minim veniam,\nquis nostrud exercitation ullamco laboris nisi ut aliquip\nex ea commodo consequat." },
+  { track: 'Making My Name', lyrics: "MMN 6 Ut enim ad minim veniam,\nquis nostrud exercitation ullamco laboris nisi ut aliquip\nex ea commodo consequat." },
+  { track: 'J-Train', lyrics: "MMN 7 Ut enim ad minim veniam,\nquis nostrud exercitation ullamco laboris nisi ut aliquip\nex ea commodo consequat." },
+  
+];
