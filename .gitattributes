@@ -41,3 +41,4 @@ CrawlingHome.wav filter=lfs diff=lfs merge=lfs -text
 CloserCorners.wav filter=lfs diff=lfs merge=lfs -text
 HardTimes.wav filter=lfs diff=lfs merge=lfs -text
 SkySoBlue.wav filter=lfs diff=lfs merge=lfs -text
+MakingMyName.wav filter=lfs diff=lfs merge=lfs -text
