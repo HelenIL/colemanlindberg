@@ -37,3 +37,4 @@ Weight.wav filter=lfs diff=lfs merge=lfs -text
 StoryOfUs.wav filter=lfs diff=lfs merge=lfs -text
 SkylineHeaven.wav filter=lfs diff=lfs merge=lfs -text
 WoundedWinter.wav filter=lfs diff=lfs merge=lfs -text
+CrawlingHome.wav filter=lfs diff=lfs merge=lfs -text
