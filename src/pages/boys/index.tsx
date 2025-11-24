@@ -1,9 +1,18 @@
-import BoysSubpage from "../../components/subpages/boys/boysSubpage";
+import album from "../../albums/boys/tracklist";
+import AlbumSubPage from "../../components/subpages/albumSubPage";
+import AudioPlayer from "../../components/audio/audioPlayer";
+import AlbumAboutCard from "../../components/albumAboutCard/albumAboutCard";
 
 export default function Boys() {
   return (
     <div style={{ display: "flex", alignItems: "center" }}>
-      <BoysSubpage />
+      {/* <BoysSubpage /> */}
+      <AlbumSubPage
+        album={album}
+        background={album.background}
+        AudioPlayer={AudioPlayer}
+        AlbumAboutCard={AlbumAboutCard}
+      />
     </div>
   );
 }

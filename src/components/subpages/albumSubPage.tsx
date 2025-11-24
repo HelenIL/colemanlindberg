@@ -1,0 +1,61 @@
+import Card from "react-bootstrap/Card";
+import type { CSSProperties } from "react";
+import { Album } from "./types";
+import AudioPlayer from "../audio/audioPlayer";
+import AlbumAboutCard from "../albumAboutCard/albumAboutCard";
+import "./subpage.css";
+
+type ContainerProps = {
+  background: string;
+  album: Album;
+  AudioPlayer: React.ElementType;
+  AlbumAboutCard: React.ElementType;
+};
+
+const AlbumSubPage: React.FC<ContainerProps> = ({
+  album,
+  background,
+  AudioPlayer,
+  AlbumAboutCard,
+}) => {
+  const dynamicStyle: CSSProperties = {
+    background: `url(${background})`,
+    width: "100%",
+    backgroundColor: "#494949",
+  };
+
+  return (
+    <div style={dynamicStyle}>
+      <div className="sub-cover-outer">
+        <Card className="sub-cover">
+          <Card.Img src={album.cover} />
+        </Card>
+      </div>
+      <div className="sub-comp-outer">
+        {/* Audio Player here */}
+        <AudioPlayer album={album} />
+        <div>
+          {/* About Card here */}
+          <AlbumAboutCard
+            about={album.about}
+            album={album.album}
+            color={album.color}
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// export default function TestSub({album, background}: ContainerProps) {
+
+// return (
+
+//     <>
+//         <PageContainer />
+//     </>
+// )
+
+// }
+
+export default AlbumSubPage;

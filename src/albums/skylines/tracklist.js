@@ -10,12 +10,14 @@ import nine from './tracks/SkylineHeaven.wav';
 import cover from '../../assets/skylines.jpg';
 import cole from '../../assets/cole_city_edit.jpeg'
 import {lyrics} from './extras.js'
+import background from '../../assets/skylines_edit.jpg'
 
 const lyricArray = Array.isArray(lyrics) && typeof lyrics[0] === 'string' ? lyrics.map(s => JSON.parse(s)) : lyrics;
 
 const album = {
   album: 'Skylines',
   cover: cover,
+  background: background,
   color: '#f8f5a7',
   colorII: '#99925c',
   pic: cole,

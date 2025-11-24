@@ -13,12 +13,14 @@ import twelve from './tracks/12boyslive.mp3';
 import cover from "../../assets/coverBoys.jpg";
 import cole from '../../assets/little-cole_gray3.jpeg'
 import {lyrics} from './extras.js'
+import background from '../../assets/boys_curv.png'
 
 const lyricArray = Array.isArray(lyrics) && typeof lyrics[0] === 'string' ? lyrics.map(s => JSON.parse(s)) : lyrics;
 
 const album = {
   album: "Boys",
   cover: cover,
+  background: background,
   color: '#9284f1',
   colorII: '#9284f1',
   pic: cole,
