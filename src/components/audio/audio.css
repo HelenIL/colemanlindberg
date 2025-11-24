@@ -235,7 +235,11 @@ audio {
 
 @media only screen and (max-width: 820px) {
 
+.header-mobile {
 
+  display: flex;
+  justify-content: center;
+}
   audio {
     max-width: 100%;
   }
@@ -324,16 +328,17 @@ audio {
 }
 
 
-@media only screen and (max-width: 393px) {
+@media only screen and (max-width: 390px) {
   /* .card-test {
     border: 2px solid red;
+
    } */
-   /* .card-style {
+   .card-style {
     width: 21rem;
    }
    .ap-header {
      width: 20rem;
-   } */
+   }
 
 audio {
   max-width: 100%;
@@ -369,7 +374,7 @@ audio {
 
 @media only screen and (max-width: 360px) {
   /* Make cards and headers fluid on very small screens to prevent overflow */
-  .card-style,
+  /* .card-style,
   .card-test,
   .cardStyle,
   .ap-header,
@@ -379,16 +384,16 @@ audio {
     width: 100% !important;
     max-width: 100% !important;
     box-sizing: border-box !important;
-  }
+  } */
 
-  .album-cover img,
+  /* .album-cover img,
   .ap-guitar img,
   .ap-header img {
     width: 100% !important;
     height: auto !important;
     max-width: 100% !important;
     box-sizing: border-box !important;
-  }
+  } */
 
   audio {
     max-width: 100%;

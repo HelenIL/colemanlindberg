@@ -41,14 +41,14 @@ const nextCard = () => {
         
         <div className="cc-page-outer" style={{}}>
           <div style={{ display: 'flex', justifyContent: 'center'}}>
-          <div className="">
-
+          <div className="cc-mobile-test">
+            <div className="cc-header-mobile" >
              <div className="cc-header-outer" >
              <span className="cc-header-span"> <h4 className="cc-header-h4" >ABOUT &nbsp; THE &nbsp; SONGS</h4></span>
               </div>
-          
-            <div >
-              <div  className="carousel-container" style={{ backgroundColor: "#e3e3e3" }}>
+           </div>
+            <div className="cc-card-mobile">
+              <div  className="carousel-container">
                 <div className="carousel-card rounded-0 border-0 opacity-75">
                   <div style={{display: 'flex', justifyContent: 'space-between'}}>
                     <div className="left-button" style={{}}>

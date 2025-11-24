@@ -182,10 +182,10 @@ export default function AudioPlayer({ album }: AudioPlayerProps) {
         <div style={{display: 'flex', justifyContent: 'center'}}>
           
         <div className="card-test ">
-            
+            <div className="header-mobile">
             <div className="ap-header" style={{}}>
            <span className="ap-header-span" > <AudioHeader props={album.color}/></span>
-          </div>
+          </div></div>
  
         <div>
           <div className="ap-card-outer">

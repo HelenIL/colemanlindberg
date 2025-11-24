@@ -26,15 +26,19 @@
 
 @media only screen and (max-width: 820px) {
 
-.otv-comp-outer {
+/* .otv-comp-outer {
  flex-direction: column;
-}
+} */
 
 
 
 }
 
 @media only screen and (max-width: 430px) {
+.otv-comp-outer {
+ flex-direction: column;
+}
+
   .otv-cover
  {
     width: 75% !important;

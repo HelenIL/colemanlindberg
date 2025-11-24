@@ -80,11 +80,17 @@ h4 {
 
   .ac-test {
     width: 22rem;
-    border: 2px solid blue;
+    
   }
 
+.otv-cont-mobile, .ac-card-outer {
+  
+  width: 20rem;
+}
 
-
+.about-card {
+  height: auto;
+}
  /* .test,
  .about-container {
   width: 100% !important;

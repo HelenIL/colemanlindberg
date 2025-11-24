@@ -183,12 +183,16 @@ box-shadow: 0 4px 10px #2698c7;
   box-sizing: border-box;
 }
 
-.na-about {
+/* .na-about {
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
   padding: 16px;
-}
+} */
+
+/* .na-about-mobile {
+
+} */
 
 /* .na-cover {
   width: 100%;
@@ -197,7 +201,7 @@ box-shadow: 0 4px 10px #2698c7;
 
 /* Prevent child elements (images, audio, carousels, cards) from overflowing
    the viewport on very small devices */
-.na-cover img,
+/* .na-cover img,
 .na-cover picture,
 .na-cover video,
 .na-cover svg,
@@ -206,9 +210,9 @@ box-shadow: 0 4px 10px #2698c7;
   height: auto;
   max-width: 100%;
   box-sizing: border-box;
-}
+} */
 
-.na-outer .carousel,
+/* .na-outer .carousel,
 .na-outer .carousel .carousel-inner,
 .na-outer .carousel-item,
 .na-outer .album-about-card,
@@ -221,7 +225,7 @@ box-shadow: 0 4px 10px #2698c7;
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
-}
+} */
 
 .na-outer { overflow-x: hidden; }
 
@@ -241,6 +245,12 @@ box-shadow: 0 4px 10px #2698c7;
     font-size: 15px;
   }
 
+  .na-about-mobile {
+
+  display: flex;
+  justify-content: center;
+}
+
   audio {
     max-width: 100%;
   }
@@ -253,18 +263,24 @@ box-shadow: 0 4px 10px #2698c7;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    /* width: 100%; */
+  /* border: 2px solid blue; */
   }
 
+.na-cover-mobile {
+      /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+}
 
+  .na-cover-outer {
 
-  .na-cover {
     width: 20rem;
   }
 
-  .na-about {
-    width: 20rem;
-  }
+
+.na-about-outer {
+  width: 20rem;
+}
 
    /* .album-header {
     font-size: 16px;

@@ -62,15 +62,14 @@ html, body, #root {
     overflow-x: hidden;
   }
 
-  img, picture, svg, video, iframe,
-  .card-style, .card-test, .cardStyle, .carousel-container, .carousel-card,
-  .about-container, .boys-img, .na-outer, .na-cover, .ap-card-outer,
-  .ap-header, audio, .carousel {
+  /* img, picture, svg, video, iframe,
+   .card-test, .cardStyle, .carousel-container, .carousel-card,
+  .about-container, .boys-img, .na-outer,  .ap-card-outer, .carousel {
     width: 100% !important;
     max-width: 100% !important;
     box-sizing: border-box !important;
     height: auto !important;
-  }
+  } */
 }
 
 @media only screen and (max-width: 344px) {

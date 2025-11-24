@@ -28,12 +28,17 @@ export default function NewAlbumSubpage() {
         </p>
       </div>
       {/* album cover */}
+      <div className="na-cover-mobile">
       <div className="na-cover-outer">
+        <div>
         <Card className="na-cover rounded-0">
           <Card.Img src={album.cover} />
         </Card>
+        </div>
+      </div>
       </div>
       {/* album about */}
+      <div className="na-about-mobile">
       <div className="na-about-outer" >
         
         <Card className="na-about border-0 opacity-75 rounded-0">
@@ -42,6 +47,7 @@ export default function NewAlbumSubpage() {
             
           </Card.Text>
         </Card>
+      </div>
       </div>
       {/* new album pass components */}
       <div className="na-comp-outer" >

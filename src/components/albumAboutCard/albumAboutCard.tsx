@@ -61,7 +61,7 @@ export default function AlbumAboutCard({about, album, color} : AboutProps) {
           
           <div style={{ display: 'flex', justifyContent: 'center'}}>
           
-           <div >
+           <div className="otv-cont-mobile">
 
             <div className="ac-header-outer" >
                 <span className="ac-header-span" ><AboutHeader color={color} album={album}/></span>
