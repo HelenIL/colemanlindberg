@@ -40,7 +40,7 @@ const nextCard = () => {
     return (
         
         <div className="cc-page-outer" style={{}}>
-          <div style={{ display: 'flex', justifyContent: 'center'}}>
+          <div style={{ display: 'flex', justifyContent: 'center', height: '100vh'}}>
           <div className="cc-mobile-test">
             <div className="cc-header-mobile" >
              <div className="cc-header-outer" >

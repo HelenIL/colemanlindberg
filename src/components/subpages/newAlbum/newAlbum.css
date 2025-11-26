@@ -57,6 +57,7 @@ box-shadow: 0 4px 10px #2698c7;
    .na-comp-outer {
     display: flex;
     justify-content: center;
+    /* align-items: stretch; */
 /* border: 2px solid red; */
 
     margin-top: 40px;

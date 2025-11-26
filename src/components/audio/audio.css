@@ -7,16 +7,9 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  /* border: 2px solid green; */
+
 }
- /* .outer-div {
-    display: flex;
-    justify-content: center;
- 
-    margin-top: 40px;
-    margin-bottom: 40px;
- 
-   } */
+
 
  
 
@@ -91,9 +84,7 @@ font-family: 'oxanium', sans-serif;
   overflow: hidden;
 }
 
-/* Restore icon sizes inside the audio player which were affected by
-   the global narrow-breakpoint img rules. Keep icons small and the
-   decorative guitar at its intended height. */
+
 .ap-outer button img,
 .ap-outer .btn img,
 .ap-outer button svg,
@@ -110,7 +101,7 @@ font-family: 'oxanium', sans-serif;
 }
 
 .ap-list-item {
-  margin-bottom: 5px;
+  margin-bottom: 4.7px;
 }
 
 
@@ -140,8 +131,8 @@ font-family: 'oxanium', sans-serif;
     }
 
 .accordion {
-  --bs-accordion-active-bg: gray; /* Example: light gray background when open */
-  --bs-accordion-active-color: white; /* Optional: change text color when open */
+  --bs-accordion-active-bg: gray;
+  --bs-accordion-active-color: white; 
 }
 
 .accordion-button:focus {

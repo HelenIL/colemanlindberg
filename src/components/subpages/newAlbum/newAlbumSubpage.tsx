@@ -51,11 +51,11 @@ export default function NewAlbumSubpage() {
       </div>
       {/* new album pass components */}
       <div className="na-comp-outer" >
-        <div >
+        <div className="one">
    
       <AudioPlayer album={album}/>
       </div>
-     <div>
+     <div className="two">
       <CarouselCard blurbs={blurbs}/>
      </div>
 

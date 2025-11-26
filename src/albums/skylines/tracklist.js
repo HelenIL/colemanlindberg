@@ -7,7 +7,7 @@ import six from './tracks/SpringCocaine.wav';
 import seven from './tracks/Weight.wav';
 import eight from './tracks/StoryOfUs.wav';
 import nine from './tracks/SkylineHeaven.wav';
-import cover from '../../assets/skylines.jpg';
+import cover from '../../assets/skylines_cover.jpg';
 import cole from '../../assets/cole_city_edit.jpeg'
 import {lyrics} from './extras.js'
 import background from '../../assets/skylines_edit.jpg'

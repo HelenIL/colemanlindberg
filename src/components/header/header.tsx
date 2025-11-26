@@ -20,14 +20,14 @@ export default function Header () {
           <Nav.Link href="/">Home</Nav.Link>
         </Nav.Item>
         <NavDropdown title="Albums" id="collapsible-nav-dropdown">
-              <NavDropdown.Item href="/albums/owntheview">Own The View</NavDropdown.Item>
-              <NavDropdown.Item href="/albums/makingmyname" >
+              <NavDropdown.Item id="otv" href="/albums/owntheview">Own The View</NavDropdown.Item>
+              <NavDropdown.Item id="mmn" href="/albums/makingmyname" >
                 Making My Name
               </NavDropdown.Item>
-              <NavDropdown.Item href="/albums/skylines" >
+              <NavDropdown.Item id="sky" href="/albums/skylines" >
                 Skylines
               </NavDropdown.Item>
-              <NavDropdown.Item href="/albums/boys" >
+              <NavDropdown.Item id="boys" href="/albums/boys" >
                 Boys
               </NavDropdown.Item>
               {/* <NavDropdown.Item href="/albums/thecircusofthegrieving" >

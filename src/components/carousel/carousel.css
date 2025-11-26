@@ -1,7 +1,9 @@
-/* .cc-page-outer {
-  
-  border: 2px solid blue;
-} */
+.cc-page-outer {
+  position:relative;
+/* border: 2px solid green; */
+display: flex;
+align-items: stretch;
+}
  .cc-test {
     display: flex;
   justify-content: center;
@@ -30,27 +32,32 @@
   text-shadow: 1px 1px 1px #2698c7;
 }
 .carousel-container {
-  /* display: flex; */
-  /* border: 2px solid blue; */
+
   width: 25rem;
     margin: 0 auto;
 
   justify-content: center;
-  /* margin: 0 auto; */
-  /* text-align: center; */
-  /* position: relative; */
-  /* align-items: center; */
-  /* justify-content: center; */
+
+}
+
+
+.na-comp-outer > .two .cc-page-outer,
+.na-comp-outer > .two .cc-mobile-test,
+.na-comp-outer > .two .cc-card-mobile,
+.na-comp-outer > .two .carousel-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 
 .carousel-card {
   background: #f0f0f0;
-  height: 791px;
-  /* border: 2px solid teal; */
-  padding: 30px 20px;
-  /* border-radius: 10px; */
-  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
-  /* transition: transform 0.4s ease, opacity 0.4s ease; */
+  height: 100%;
+  max-height: 100vh;
+
+  padding: 35px 20px;
+
 }
 
 .blurb-div {

@@ -7,7 +7,7 @@ import six from './tracks/MakingMyName.wav'
 import seven from './tracks/JTrain.wav'
 import {lyrics} from './extras.js'
 import cover from '../../assets/makingmyname_cover.jpg'
-import cole from '../../assets/cole_squat_edit.jpg'
+import cole from '../../assets/cole_edit.jpg'
 import background from '../../assets/making_curv.jpg'
 
 const lyricArray = Array.isArray(lyrics) && typeof lyrics[0] === 'string' ? lyrics.map(s => JSON.parse(s)) : lyrics;

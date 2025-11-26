@@ -40,6 +40,24 @@ margin-left: 20px; */
 }
 
 
+#otv:hover {
+  background-color: #abe081;
+  opacity: .5;
+  font-weight:bolder;
+}
+#mmn:hover {
+  background-color: #dea78e;
+   opacity: .5;
+}
+#sky:hover {
+  background-color: #f8f5a7;
+   opacity: .5;
+}
+#boys:hover {
+  background-color: #d6d1fa;
+   opacity: .5;
+}
+
 /* @media only screen and (max-width: 540px) {
   .outerHeader {
     width: 720px;
