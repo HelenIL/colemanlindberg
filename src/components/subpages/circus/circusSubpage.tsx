@@ -1,6 +1,6 @@
 import AudioPlayer from "../../audio/audioPlayer";
 import album from "../../../albums/circus/tracklist";
-import './circus.css'
+import "./circus.css";
 
 export default function CircusSubPage() {
   return (

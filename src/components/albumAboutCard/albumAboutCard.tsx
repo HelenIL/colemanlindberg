@@ -1,6 +1,6 @@
 import Card from "react-bootstrap/Card";
 import type { CSSProperties } from 'react';
-import './about.css'
+// import './about.css'
 type About = {
     about: string;
 }
@@ -40,13 +40,14 @@ type AboutHeader = {
 function AboutHeader({color, album}: AboutHeader) {
   const dynamicStyle: CSSProperties = {
     textShadow: `1px 1px 1px ${color}`,
-    color: 'gray',
-    textTransform: 'uppercase'
+    color: 'white',
+    backgroundColor: 'gray'
+
   };
 
   return (
     <h4 style={dynamicStyle}>
-     about &nbsp; {album}
+     ABOUT THE ALBUM
     </h4>
   );
 }
@@ -57,38 +58,40 @@ export default function AlbumAboutCard({about, album, color} : AboutProps) {
 
 
     return (
-        <div className="ac-outer">
+        <div className="ac-outer" style={{ padding: "20px", fontFamily: "Michroma, sans-serif" }}>
           
           <div style={{ display: 'flex', justifyContent: 'center'}}>
           
            <div className="otv-cont-mobile">
 
-            <div className="ac-header-outer" >
-                <span className="ac-header-span" ><AboutHeader color={color} album={album}/></span>
+            <div className="ac-header-outer" style={{
+            display: "flex",
+            justifyContent: "center",
+            backgroundColor: "gray",
+          }}>
+                <span className="" style={{}}><AboutHeader color={color} album={album}/></span>
               </div>
 
             <div>
             <div className="about-container ac-card-outer">
-              <Card className="about-card ac-card-style rounded-0 border-0 opacity-75">
+              <Card className="about-card-a ac-card-styl-ae rounded-0 border-0 "style={{
+              width: "30rem",
+              height: "49.5rem",
+              backgroundColor: "rgb(255, 255, 255, .45)",
+            }}>
                 <Card.Body>
                   <Card.Text>
-                    {about}
+                    <span style={{
+                    color: "white",
+                    backgroundColor: "rgb(106, 106, 106, .55)",
+                  }}>
+                      {about}
+                    </span>
+                    {/* {about} */}
                   </Card.Text>
                 </Card.Body>
               </Card>
-              {/* <div
-                className="about-card rounded-0 border-0 opacity-75"
-                style={{ backgroundColor: "#e3e3e3" }}
-              >
-                <div style={{ textAlign: "center" }}>
-                 
-                  <p className="about-text">
-                    <span className="about-span">
-                    {about}
-                    </span>
-                  </p>
-                </div>
-              </div> */}
+             
               </div>
           </div>
           </div>

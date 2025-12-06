@@ -23,6 +23,7 @@ const album = {
   background: background,
   color: '#9284f1',
   colorII: '#9284f1',
+  fontColor: 'white',
   pic: cole,
   about: 'Donec viverra erat quis est commodo viverra. Aenean vitae efficitur ante, a fermentum sem. Phasellus vel ante lobortis, suscipit nibh nec, euismod eros. Proin iaculis a eros at hendrerit. Ut at leo iaculis, ornare neque ut, molestie lorem. Nulla a felis risus. Quisque ac consectetur dolor. Donec placerat eros ligula, vel iaculis ligula laoreet vel. Integer sit amet semper est, in rutrum nibh. Donec lobortis venenatis consectetur. Nulla vitae ornare arcu.',
   tracks: [

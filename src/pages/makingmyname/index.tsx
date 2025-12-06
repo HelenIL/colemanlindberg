@@ -1,15 +1,11 @@
-import album from '../../albums/makingmyname/tracklist'
+import album from "../../albums/makingmyname/tracklist";
 import AlbumSubPage from "../../components/subpages/albumSubPage";
 import AudioPlayer from "../../components/audio/audioPlayer";
 import AlbumAboutCard from "../../components/albumAboutCard/albumAboutCard";
 
-
-
 export default function MakingMyName() {
-
-    return (
+  return (
     <div style={{ display: "flex", alignItems: "center" }}>
-
       <AlbumSubPage
         album={album}
         background={album.background}
@@ -17,5 +13,5 @@ export default function MakingMyName() {
         AlbumAboutCard={AlbumAboutCard}
       />
     </div>
-    )
+  );
 }

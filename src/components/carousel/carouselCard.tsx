@@ -40,18 +40,20 @@ const nextCard = () => {
     return (
         
         <div className="cc-page-outer" style={{}}>
-          <div style={{ display: 'flex', justifyContent: 'center'}}>
+          <div className="cc-mobile-360">
           <div className="cc-mobile-test">
+            {/* header */}
             <div className="cc-header-mobile" >
              <div className="cc-header-outer" >
              <span className="cc-header-span"> <h4 className="cc-header-h4" >ABOUT &nbsp; THE &nbsp; SONGS</h4></span>
               </div>
            </div>
+           {/* carousel */}
             <div className="cc-card-mobile">
               <div  className="carousel-container">
                 <div className="carousel-card rounded-0 border-0 opacity-75">
-                  <div style={{display: 'flex', justifyContent: 'space-between'}}>
-                    <div className="left-button" style={{}}>
+                  <div className="cc-btns">
+                    <div className="left-button">
                   <Button
                     variant="light"
                     className="card-button rounded-0"
@@ -65,8 +67,7 @@ const nextCard = () => {
                   </div>
                   <div className="right-button">
                   <Button
-                    // variant="light"
-                    // id="cc-btn"
+
                     className="card-button rounded-0"
                     onClick={nextCard}
                   >
@@ -74,7 +75,7 @@ const nextCard = () => {
                   </Button>
                 </div>
                   </div>
-                  <p className="blurb-text">
+                  <p className="blurb-text" style={{fontSize: '14px'}}>
                     <span className="blurb-span">
                       {blurbArray[currentCard]?.blurb}
                     </span>
@@ -82,34 +83,7 @@ const nextCard = () => {
                 </div>
               </div>
 
-              {/* <div className="carousel-buttons">
-                <div>
-                  <Button
-                    variant="light"
-                    className="card-button"
-                    onClick={prevCard}
-                  >
-                    <img src={prev} alt="Previous" width="40" height="20" />
-                  </Button>
-                </div>
-                <div className="carousel-indicators">
-                  {blurbs.map((_, index) => (
-                    <span
-                      key={index}
-                      className={`dot ${index === currentCard ? "active" : ""}`}
-                    ></span>
-                  ))}
-                </div>
-                <div>
-                  <Button
-                    variant="light"
-                    className="card-button"
-                    onClick={nextCard}
-                  >
-                    <img src={next} alt="Next" width="30" height="20" />
-                  </Button>
-                </div>
-              </div> */}
+             
             </div>
             </div>
             </div>

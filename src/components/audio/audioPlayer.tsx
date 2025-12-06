@@ -1,38 +1,14 @@
 import { useRef, useState, useContext } from "react";
-import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
-import prev from "../../assets/angle-left-solid-full.svg";
-import next from "../../assets/angle-right-solid-full.svg";
-import guitar from "../../assets/cl_gt_only.svg";
 import Accordion from "react-bootstrap/Accordion";
 import { useAccordionButton } from "react-bootstrap/AccordionButton";
 import AccordionContext from "react-bootstrap/AccordionContext";
-import "./audio.css";
-import { PrevButton, NextButton } from "./audioButton";
+
+import guitar from "../../assets/cl_gt_only.svg";
+import { PrevButton, NextButton } from "../buttons/buttons";
 import { Album } from "../subpages/types";
-
-// type Track = {
-//   name: string;
-//   artist: string;
-//   album: string;
-//   url: string;
-//   id: number;
-//   image: string;
-//   pic: string;
-//   lyrics: string;
-// };
-
-// type Album = {
-//   album: string;
-//   cover: string;
-//   color: string;
-//   colorII: string;
-//   pic: string;
-//   blurbs?: string;
-//   about?: string;
-//   tracks: Track[]
-// }
+import "./audio.css";
 
 type AudioPlayerProps = {
   album: Album;
@@ -49,27 +25,41 @@ type AudioHeader = {
   props: string;
 };
 
+type TrackHeader = {
+  text: string;
+  color: string;
+};
+
 function AudioHeader({ props }: AudioHeader) {
   const dynamicStyle = {
     textShadow: `1px 1px 1px ${props}`,
-    color: "gray",
+    color: "white",
   };
 
-  return <h4 style={dynamicStyle}>LISTEN &nbsp; TO &nbsp; THE &nbsp; ALBUM</h4>;
+  return <h4 style={dynamicStyle}>LISTEN</h4>;
 }
 
-// function AudioButton({props}: AudioHeader) {
-//   const dynamicStyle = {
-//     textShadow: `1px 1px 1px ${props}`,
-//     color: 'gray'
-//   };
+function NowPlaying({ props }: AudioHeader) {
+  const dynamicStyle = {
+    // textShadow: `1px 1px 1px ${props}`,
+    color: `${props}`,
+    backgroundColor: "rgb(94, 94, 94, .45)",
+    borderRadius: '10px',
+    padding: '8px',
+    fontWeight: 'bold'
+  };
 
-//   return (
-//     <h4 style={dynamicStyle}>
-//       LISTEN  &nbsp; TO  &nbsp; THE  &nbsp; ALBUM
-//     </h4>
-//   );
-// }
+  return <span style={dynamicStyle}>Now Playing :</span>;
+}
+
+function TrackHeader({ text, color }: TrackHeader) {
+  const dynamicStyle = {
+    textShadow: `1px 1px 1px ${color}`,
+    color: `white`,
+  };
+
+  return <h4 style={dynamicStyle}><span style={{backgroundColor: `rgb(94, 94, 94, .45)`, borderRadius: '5px'}}>{text}</span></h4>;
+}
 
 function CustomToggle({ children, eventKey, color }: Toggle) {
   const decoratedOnClick = useAccordionButton(eventKey, () => undefined);
@@ -96,6 +86,8 @@ function CustomToggle({ children, eventKey, color }: Toggle) {
         padding: 4,
         cursor: "pointer",
         color: color,
+        backgroundColor: 'gray',
+        // border: '2px solid red'
       }}
       onClick={(e) => {
         e.stopPropagation();
@@ -126,18 +118,6 @@ function CustomToggle({ children, eventKey, color }: Toggle) {
 export default function AudioPlayer({ album }: AudioPlayerProps) {
   const [current, setCurrent] = useState<number>(0);
   const audioRef = useRef<HTMLAudioElement>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
-
-  //  const handlePlayPause = () => {
-
-  //   if (isPlaying) {
-  //     audioRef.current?.pause();
-  //   } else {
-  //  audioRef.current?.play();
-  //   }
-  //   setIsPlaying(!isPlaying);
-
-  // };
 
   const handlePlay = (idx: number, e?: React.MouseEvent) => {
     e?.stopPropagation();
@@ -168,109 +148,103 @@ export default function AudioPlayer({ album }: AudioPlayerProps) {
   };
 
   return (
-    <div className="ap-outer">
-      {/* <div className="ap-header">
-           <span className="ap-header-span" > <AudioHeader props={album.color}/></span>
-          </div>
- 
-      <div > */}
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        <div className="card-test ">
-          <div className="header-mobile">
-            <div className="ap-header" style={{}}>
-              <span className="ap-header-span">
-                {" "}
-                <AudioHeader props={album.color} />
-              </span>
-            </div>
-          </div>
+    <>
+      <div
+        className="audio-page-wrapper"
+        style={{ padding: "20px", fontFamily: "Michroma, sans-serif" }}
+      >
+        {/* audio header */}
+        <div
+          className="audio-header-wrapper"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            backgroundColor: "gray",
+          }}
+        >
+          <span>
+            <AudioHeader props={album.color} />
+          </span>
+        </div>
+        {/* audio player card */}
+       
+        <div className="audio-card-wrapper">
+          <Card
+            className="card-body-style rounded-0 border-0 "
+            style={{ width: "30rem", backgroundColor: "rgb(255, 255, 255, .45)" }}
+          >
+            <Card.Body>
+              
+              <Card.Text
+                className="ap-now-playing"
+                style={{ textAlign: "center", color: 'white' }}
+              >
+                <NowPlaying props={album.color}/>
+              </Card.Text>
+              <Card.Text
+                style={{ textAlign: "center" }}
+                className="ap-current-track"
+              >
+                <TrackHeader
+                  text={album.tracks[current]?.name}
+                  color={album.color}
+                />
+              </Card.Text>
+              <Card.Text className="ap-audio-error">
+                <audio ref={audioRef} controls src={album.tracks[current]?.url}>
+                  Your browser does not support the audio element.
+                </audio>
+                <div>
+                  <PrevButton
+                    color={album.color}
+                    onClick={handlePrev}
+                    disabled={album.tracks[current].id === 0}
+                  />
+                  <img
+                    className="ap-guitar"
+                    style={{ height: "50px", borderRadius: "8px" }}
+                    src={guitar}
+                  ></img>
+                  <NextButton color={album.color} onClick={handleNext} />
+                </div>
+              </Card.Text>
 
-          <div>
-            <div className="ap-card-outer">
-              <Card className="card-style rounded-0 border-0 opacity-75 ">
-                <Card.Body>
-                  <Card.Text className="ap-now-playing">
-                    Now Playing :
-                  </Card.Text>
-                  <Card.Text className="ap-current-track">
-                    {album.tracks[current]?.name}
-                  </Card.Text>
-
-                  <Card.Text className="ap-audio-error">
-                    <audio
-                      ref={audioRef}
-                      controls
-                      src={album.tracks[current]?.url}
-                    >
-                      Your browser does not support the audio element.
-                    </audio>
-                    <div
-                    // style={{
-                    //   textAlign: "center",
-                    //   display: "flex",
-                    //   justifyContent: "center",
-                    //   alignItems: "center",
-                    //   gap: 20,
-                    // }}
-                    >
-                      <PrevButton
-                        color={album.color}
-                        onClick={handlePrev}
-                        disabled={album.tracks[current].id === 0}
-                      />
-                      {/* <Button
-                      className="ap-player-button rounded-0"
-                      style={{ }}
-                      onClick={handlePrev}
-                      disabled={album.tracks[current].id === 0}
-                    >
-                      <img src={prev} alt="Previous" width="20" height="20" />
-                    </Button> */}
-                      <img className="ap-guitar" src={guitar}></img>
-                      <NextButton color={album.color} onClick={handleNext} />
-                      {/* <Button className="ap-player-button rounded-0" onClick={handleNext}>
-                      <img src={next} alt="Next" width="20" height="20" />
-                    </Button> */}
-                    </div>
-                  </Card.Text>
-
-                  <Accordion>
-                    {album.tracks.map((t, i) => (
-                      <ListGroup.Item
-                        key={t.id}
-                        className="p-0 border-0 ap-list-item"
-                      >
-                        <Accordion>
-                          <Accordion.Item eventKey={String(i)}>
-                            <div className="ap-track">
-                              <span
-                                onClick={(e) => {
-                                  e.stopPropagation();
-                                  handlePlay(i, e);
-                                }}
-                                className="ap-track-span"
-                              >
-                                {t.name}
-                              </span>
-                              <CustomToggle
-                                color={album.colorII}
-                                eventKey={String(i)}
-                              >
-                                ▾
-                              </CustomToggle>
-                            </div>
-                            <Accordion.Body>{t.lyrics}</Accordion.Body>
-                          </Accordion.Item>
-                        </Accordion>
-                      </ListGroup.Item>
-                    ))}
-                  </Accordion>
-                </Card.Body>
-              </Card>
-            </div>
-          </div>
+              <Accordion>
+                {album.tracks.map((t, i) => (
+                  <ListGroup.Item
+                    key={t.id}
+                    className="p-0 border-0 ap-list-item"
+                    
+                  >
+                    <Accordion>
+                      <Accordion.Item eventKey={String(i)}  style={{ backgroundColor: 'rgb(106, 106, 106, .55)'}}>
+                        <div className="ap-track">
+                          <span
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              handlePlay(i, e);
+                            }}
+                            className="ap-track-span"
+                          >
+                            {t.name}
+                          </span>
+                          <CustomToggle
+                            color={album.colorII}
+                            eventKey={String(i)}
+                          >
+                            ▾
+                          </CustomToggle>
+                        </div>
+                        <Accordion.Body>{t.lyrics}</Accordion.Body>
+                      </Accordion.Item>
+                    </Accordion>
+                  </ListGroup.Item>
+                ))}
+              </Accordion>
+            </Card.Body>
+          </Card>
         </div>
       </div>
-    </div>
+    </>
   );
 }

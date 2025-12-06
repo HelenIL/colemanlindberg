@@ -1,66 +1,57 @@
-import { useRef, useState, useContext } from "react";
 import Card from "react-bootstrap/Card";
 import album from "../../../albums/circus/tracklist";
 import { blurbs } from "../../../albums/circus/extras";
+import TestAud from "../../audio/audioPlayer";
+import TestCar from "../../testComps/testCar";
+import TestAbout from "../../testComps/testAbout";
+import cole from "../../../assets/cole_grass.jpeg";
+import "./test.css";
 
-
-import AudioPlayer from "../../audio/audioPlayer";
-import CarouselCard from "../../carousel/carouselCard";
-import "./newAlbum.css";
-
-
-export default function NewAlbumSubpage() {
-  const [current, setCurrent] = useState<number>(0);
-  const audioRef = useRef<HTMLAudioElement>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [index, setIndex] = useState(0);
-  const [currentCard, setCurrentCard] = useState(0);
-
-  
-
+export default function Test() {
   return (
-    <div className="na-outer">
-      {/* header */}
-      <div className="na-header-outer">
-        <p className="na-header">
+    <>
+      <div className="page-wrapper" style={{ marginBottom: "40px" }}>
+        {/* page header */}
+        <div
+          className="page-header-wrapper"
+          style={{ textAlign: "center", marginBottom: "40px" }}
+        >
+          <p className="page-header-p">
+            <span className="page-header-span">
+              N e w &nbsp; A l b u m &nbsp; O u t &nbsp; N o w
+            </span>
+          </p>
+        </div>
+        {/* album cover */}
+        <div
+          className="album-cover-wrapper"
+          style={{ display: "flex", justifyContent: "center" }}
+        >
+          <Card style={{ width: "35rem" }}>
+            <Card.Img src={album.cover} />
+          </Card>
+        </div>
+        {/* album about */}
+        <div
+          className="album-about-wrapper"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "40px",
+          }}
+        >
+          <TestAud album={album} />
 
-          <span className="na-header-span">N e w &nbsp; A l b u m &nbsp; O u t &nbsp; N o w</span>
-        </p>
-      </div>
-      {/* album cover */}
-      <div className="na-cover-mobile">
-      <div className="na-cover-outer">
-        <div>
-        <Card className="na-cover rounded-0">
-          <Card.Img src={album.cover} />
-        </Card>
+          <TestCar blurbs={blurbs} album={album} />
+        </div>
+        {/* audio player and carousel compoents */}
+        <div
+          className="components-wrapper"
+          style={{ display: "flex", justifyContent: "center" }}
+        >
+          <TestAbout />
         </div>
       </div>
-      </div>
-      {/* album about */}
-      <div className="na-about-mobile">
-      <div className="na-about-outer" >
-        
-        <Card className="na-about border-0 opacity-75 rounded-0">
-          <Card.Text className="na-about-text">
-            <span className="na-about-span">{album.about}</span>
-            
-          </Card.Text>
-        </Card>
-      </div>
-      </div>
-      {/* new album pass components */}
-      <div className="na-comp-outer" >
-        <div >
-   
-      <AudioPlayer album={album}/>
-      </div>
-     <div>
-      <CarouselCard blurbs={blurbs}/>
-     </div>
-
-      </div>
-     </div>
-
+    </>
   );
 }

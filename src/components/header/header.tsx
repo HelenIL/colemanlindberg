@@ -9,7 +9,7 @@ import './header.css'
 export default function Header () {
 
     return (
-      <Navbar collapseOnSelect expand="lg" className="outerHeader" style={{backgroundColor: '#7D7D7D'}}>
+      <Navbar collapseOnSelect expand="lg" className="outerHeader" style={{backgroundColor: 'rgb(94, 94, 94, .45)'}}>
 
 
           <Navbar.Toggle aria-controls="basic-navbar-nav"  style={{}}/>
@@ -43,6 +43,7 @@ export default function Header () {
          <Nav.Item className="--bs-gray-dark">
           <Nav.Link href="/contact">Merch</Nav.Link>
         </Nav.Item>
+        <Nav.Link href="/test">Test</Nav.Link>
       </Nav>
       </Navbar.Collapse>
  

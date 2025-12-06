@@ -1,8 +1,8 @@
 import Card from "react-bootstrap/Card";
 import type { CSSProperties } from "react";
 import { Album } from "./types";
-import AudioPlayer from "../audio/audioPlayer";
-import AlbumAboutCard from "../albumAboutCard/albumAboutCard";
+// import AudioPlayer from "../audio/audioPlayer";
+// import AlbumAboutCard from "../albumAboutCard/albumAboutCard";
 import "./subpage.css";
 
 type ContainerProps = {

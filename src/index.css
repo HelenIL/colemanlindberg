@@ -12,8 +12,17 @@ code {
     monospace;
 }
 
+/* audio::-webkit-media-controls-play-button,
+     audio::-webkit-media-controls-panel {
+     background-color: white;
+     filter: invert(100%);
 
-/* Header Styles */
+     }
+
+     audio::-webkit-media-controls-play-button {
+ border-radius:  30px;
+} */
+
 
 
 

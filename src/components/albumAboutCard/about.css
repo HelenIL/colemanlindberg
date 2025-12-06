@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
-  height: 27px;
+  /* height: 27px; */
   background-color: gray;;
 }
 
@@ -16,20 +16,12 @@
 
 .ac-header-span {
   background-color: #e3e3e3;
-  height: 27px;
+  /* height: 27px; */
   padding-left: 5px;
   padding-right: 5px;
 }
 
-/* .ac-header-h4 {
-  color: gray;
-  text-shadow: 1px 1px 1px #2698c7;
-  text-transform: uppercase;
-} */
 
-h4 {
-  font-family: 'oxanium', sans-serif;
-} 
 .about-container {
 
   width: 25rem;

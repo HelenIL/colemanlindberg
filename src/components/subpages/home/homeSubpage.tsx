@@ -1,9 +1,10 @@
 import Banner from "../../banner/banner";
 
 import tracklist from "../../../albums/circus/tracklist";
-import NewAlbumSubpage from "./../newAlbum/newAlbumSubpage";
+import NewAlbumSubpage from "../newAlbum/newAlbumSubpage";
+import Test from "../newAlbum/newAlbumSubpage";
 import AudioPlayer from "../../audio/audioPlayer";
-import album from '../../../albums/circus/tracklist'
+import album from "../../../albums/circus/tracklist";
 import "./home.css";
 
 export default function HomeSubPage() {
@@ -12,17 +13,16 @@ export default function HomeSubPage() {
       <div className="hp-header">
         <p>
           <span className="hp-header-span">
-          C&nbsp; O&nbsp; L&nbsp; E&nbsp; M &nbsp;A &nbsp;N &nbsp;&nbsp; L
-          &nbsp;I &nbsp;N &nbsp;D&nbsp; B &nbsp;E &nbsp;R&nbsp; G </span>
+            C&nbsp; O&nbsp; L&nbsp; E&nbsp; M &nbsp;A &nbsp;N &nbsp;&nbsp; L
+            &nbsp;I &nbsp;N &nbsp;D&nbsp; B &nbsp;E &nbsp;R&nbsp; G{" "}
+          </span>
         </p>
       </div>
 
-    
       <div>
-       
         <div className="hp-outer-comp">
-          <NewAlbumSubpage />
-
+          {/* <NewAlbumSubpage /> */}
+          <Test />
         </div>
       </div>
     </div>

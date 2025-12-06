@@ -21,6 +21,7 @@ const album = {
   background: background,
   color: '#74c932',
   colorII: '#74c932',
+  fontColor: 'white',
   pic: cole,
   about: 'Curabitur libero quam, consectetur a sodales vel, tincidunt id odio. Sed finibus, velit efficitur vehicula auctor, massa risus eleifend dui, efficitur pellentesque tortor nunc eu diam. Maecenas lobortis non lacus eu tristique. Aenean vel auctor velit. Fusce eu laoreet eros. Nulla lacinia sagittis nulla eu maximus. Donec sit amet vulputate magna, pellentesque dictum metus. Fusce dolor est, sagittis eget sollicitudin nec, congue ut ante. Mauris dui justo, elementum et viverra nec, rutrum vitae lacus. Curabitur fringilla ipsum at tincidunt scelerisque. Curabitur quis suscipit tortor. Etiam id nisi erat. Quisque urna velit, mollis ut augue non, tincidunt scelerisque neque. Duis a metus velit. Pellentesque ac placerat nibh.',
   tracks: [

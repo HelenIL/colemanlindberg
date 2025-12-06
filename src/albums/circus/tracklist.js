@@ -21,6 +21,7 @@ const album = {
   background: background,
   color: '#2698c7',
   colorII: '#2698c7',
+  fontColor: 'white',
   pic: cole,
   about: about,
   tracks: [

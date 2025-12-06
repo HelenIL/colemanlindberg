@@ -30,27 +30,22 @@
   text-shadow: 1px 1px 1px #2698c7;
 }
 .carousel-container {
-  /* display: flex; */
-  /* border: 2px solid blue; */
   width: 25rem;
     margin: 0 auto;
 
   justify-content: center;
-  /* margin: 0 auto; */
-  /* text-align: center; */
-  /* position: relative; */
-  /* align-items: center; */
-  /* justify-content: center; */
 }
 
 .carousel-card {
   background: #f0f0f0;
-  height: 791px;
-  /* border: 2px solid teal; */
+  height: 49.5rem;
   padding: 30px 20px;
-  /* border-radius: 10px; */
-  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
-  /* transition: transform 0.4s ease, opacity 0.4s ease; */
+ 
+}
+
+.cc-btns {
+  display: flex;
+  justify-content: space-between;
 }
 
 .blurb-div {
@@ -70,7 +65,6 @@
 
 .blurb-span {
   background-color: white;
-  /* margin-bottom: 15px; */
 }
 
 h4 {
@@ -82,7 +76,7 @@ h4 {
 }
 
 .blurb-text {
-  white-space: pre-wrap; /* preserve newlines from parsed strings */
+  white-space: pre-wrap;
 }
 
 .carousel-buttons {
@@ -135,22 +129,22 @@ position: relative;
 
 
 
-/* @media only screen and (max-width: 540px) {
+@media only screen and (max-width: 540px) {
 
   .carousel-container {
-    width: 18rem;
-  }
-  .blurb-text {
-    font-size: 15px;
+    width: 22rem;
   }
 
-} */
+  /* .blurb-text {
+    font-size: 15px;
+  } */
+
+}
 
 @media only screen and (max-width: 430px) {
 .carousel-card {
   height: auto;
   width: 22rem;
-  /* width: 100% !important; */
   max-width: 100% !important;
   box-sizing: border-box;
   margin-left: 0;
@@ -176,7 +170,6 @@ position: relative;
   margin-top: 10px;
   margin-left: 0;
   width: 22rem;
-  /* width: 100% !important; */
   max-width: 100% !important;
   box-sizing: border-box;
 }
@@ -196,7 +189,6 @@ position: relative;
  width: 15%;
  display: flex;
  justify-content: center;
- /* align-items: center; */
 }
 }
 
@@ -250,6 +242,11 @@ position: relative;
     width: 100% !important;
     max-width: 100% !important;
     box-sizing: border-box;
+  }
+
+  .cc-mobile-360 {
+    display: flex;
+    justify-content: center;
   }
 
 .blurb-text {

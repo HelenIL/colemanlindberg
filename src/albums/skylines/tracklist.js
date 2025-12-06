@@ -19,7 +19,8 @@ const album = {
   cover: cover,
   background: background,
   color: '#f8f5a7',
-  colorII: '#99925c',
+  colorII: '#f8f5a7',
+  fontColor: 'black',
   pic: cole,
   about: 'Sed pretium aliquet rutrum. In sit amet vestibulum orci. Etiam ac commodo est. Duis vitae metus id ex placerat porttitor. Curabitur molestie tempor dolor, sit amet rutrum enim porttitor in. Ut eu magna a lectus mollis scelerisque et vel enim. Nunc quis ipsum finibus, pharetra mauris vitae, ultrices nunc. Proin turpis mi, bibendum sed lacinia vitae, dignissim et arcu.',
   tracks: [
