@@ -58,8 +58,8 @@
     }
 
 .accordion {
-  --bs-accordion-active-bg: gray; /* Example: light gray background when open */
-  --bs-accordion-active-color: white; /* Optional: change text color when open */
+  --bs-accordion-active-bg: gray;
+  --bs-accordion-active-color: white; 
 }
 
 .accordion-button:focus {

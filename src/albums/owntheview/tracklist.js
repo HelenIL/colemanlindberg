@@ -9,7 +9,7 @@ import eight from "./tracks/08GingerbreadMan.wav";
 import nine from "./tracks/09HappyNow.wav";
 import ten from "./tracks/10SlowNewsDay.wav";
 import cole from '../../assets/bridge.png'
-import cover from "../../assets/cover2.jpg";
+import cover from "../../assets/otv_cover.jpg";
 import {lyrics} from './extras.js'
 import background from '../../assets/bebe_curv.JPG'
 

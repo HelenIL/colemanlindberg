@@ -10,7 +10,7 @@ import nine from "./tracks/09fourweeks.mp3";
 import ten from "./tracks/10idareyou.mp3";
 import eleven from './tracks/11pieceofsky.mp3';
 import twelve from './tracks/12boyslive.mp3';
-import cover from "../../assets/coverBoys.jpg";
+import cover from "../../assets/boys_cover.jpg";
 import cole from '../../assets/little-cole_gray3.jpeg'
 import {lyrics} from './extras.js'
 import background from '../../assets/boys_curv.png'

@@ -1,7 +1,9 @@
-/* .cc-page-outer {
-  
-  border: 2px solid blue;
-} */
+.cc-page-outer {
+  position:relative;
+/* border: 2px solid green; */
+display: flex;
+align-items: stretch;
+}
  .cc-test {
     display: flex;
   justify-content: center;
