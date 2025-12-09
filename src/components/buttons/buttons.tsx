@@ -4,11 +4,13 @@ import prev from "../../assets/angle-left-solid-full.svg";
 import next from "../../assets/angle-right-solid-full.svg";
 import carouselPrev from '../../assets/angles-left-solid-full.svg'
 import carouselNext from '../../assets/angles-right-solid-full.svg'
+import './index.css'
 
 type CustomButton = {
-  color: string;
-  onClick: () => void;
+  color?: string;
+  onClick?: () => void;
   disabled?: boolean;
+  text?: string;
 };
 
 export const PrevButton = ({ color, onClick, disabled }: CustomButton) => {
@@ -45,7 +47,7 @@ export const PrevButton = ({ color, onClick, disabled }: CustomButton) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <img src={prev} alt="Previous" width="20" height="20" />
+      <img className="btn-btn"  src={prev} alt="Previous"  />
     </Button>
   );
 };
@@ -74,7 +76,7 @@ export const NextButton = ({ color, onClick }: CustomButton) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <img src={next} alt="Next" width="20" height="20" />
+      <img src={next} alt="Next" className="btn-btn" />
     </Button>
   );
 };
@@ -104,7 +106,7 @@ export const CarouselPrevButton = ({ color, onClick }: CustomButton) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <img src={carouselPrev} alt="Next" width="20" height="20" />
+      <img src={carouselPrev} alt="Next" className="btn-btn" />
     </Button>
   );
 };
@@ -135,8 +137,36 @@ export const CarouselNextButton = ({ color, onClick }: CustomButton) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <img src={carouselNext} alt="Next" width="20" height="20" />
+      <img src={carouselNext} alt="Next" className="btn-btn" />
     </Button>
   );
 };
 
+export const BuyButton = (props: any) => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const defaultStyle: CSSProperties = {
+    backgroundColor: "rgb(106, 106, 106, .55)",
+    border: "none",
+    cursor: "pointer",
+  };
+
+  const hoverStyle: CSSProperties = {
+    // color: hoverColor,
+    backgroundColor: 'orange',
+  };
+
+
+
+  return (
+    <Button
+      style={isHovered ? { ...defaultStyle, ...hoverStyle } : defaultStyle}
+ 
+      
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      {/* <img src={next} alt="Next" className="btn-btn" /> */}
+    </Button>
+  );
+};

@@ -2,9 +2,11 @@ import { Button, Card } from "react-bootstrap";
 import prev from "../../assets/angles-left-solid-full.svg";
 import next from "../../assets/angles-right-solid-full.svg";
 import { useRef, useState, useContext, ReactNode } from "react";
-import { Album } from "../subpages/types";
+import { Album } from "../../subpages/types";
 import { isJSDocUnknownTag } from "typescript";
-import { CarouselPrevButton, CarouselNextButton } from "../buttons/buttons";
+import { CarouselPrevButton, CarouselNextButton } from "../../buttons/buttons";
+import './index.css'
+
 
 type Blurb = {
   track: string;
@@ -52,7 +54,9 @@ function BlurbHeader({ props, current, track }: BlurbHeader) {
   return <h4 style={dynamicStyle}>{track}</h4>;
 }
 
-export default function TestCar({ blurbs, album }: CarouselProps) {
+
+
+export default function Carousel({ blurbs, album }: CarouselProps) {
   const [currentCard, setCurrentCard] = useState(0);
 
   const blurbArray: Blurb[] = Array.isArray(blurbs)
@@ -100,32 +104,28 @@ export default function TestCar({ blurbs, album }: CarouselProps) {
 
         <div className="carousel-wrapper" style={{}}>
           <Card
-            className="card-body-style  rounded-0 border-0"
+            className="carousel-card-body-style  rounded-0 border-0"
             style={{
-              width: "30rem",
-              height: "49.5rem",
-              backgroundColor: "rgb(255, 255, 255, .45)",
+     
             }}
           >
             <Card.Title className="">
-             
               {/* carousel header */}
               <div
                 className="carousel-header-wrapper"
                 style={{
                   display: "flex",
-                //   justifyContent: "center",
+                  //   justifyContent: "center",
                   alignItems: "center",
-                  marginTop: '3rem',
-                 
+                  marginTop: "3rem",
                 }}
               >
                 {/* previous button */}
                 <div
                   className="button-wrapper"
-                  style={{ display: "flex",  width: '10%', marginLeft: '1rem' }}
+                  style={{ display: "flex", width: "10%", marginLeft: "1rem" }}
                 >
-                  <div style={{ display: "flex", }}>
+                  <div style={{ display: "flex" }}>
                     <CarouselPrevButton
                       color={album.color}
                       onClick={prevCard}
@@ -135,7 +135,11 @@ export default function TestCar({ blurbs, album }: CarouselProps) {
                 {/* blurb header */}
                 <div
                   className="blurb-header-text-wrapper"
-                  style={{ paddingTop: "2px", textAlign: "center", width: '80%' }}
+                  style={{
+                    paddingTop: "2px",
+                    textAlign: "center",
+                    width: "80%",
+                  }}
                 >
                   <BlurbHeader
                     props={album.color}
@@ -143,7 +147,10 @@ export default function TestCar({ blurbs, album }: CarouselProps) {
                   />
                 </div>
                 {/* next button */}
-                <div className="button-wrapper" style={{ width: '10%', marginRight: '1rem'}}>
+                <div
+                  className="button-wrapper"
+                  style={{ width: "10%", marginRight: "1rem" }}
+                >
                   <CarouselNextButton color={album.color} onClick={nextCard} />
                 </div>
               </div>
@@ -164,6 +171,8 @@ export default function TestCar({ blurbs, album }: CarouselProps) {
             </Card.Body>
           </Card>
         </div>
+
+       
       </div>
     </>
   );

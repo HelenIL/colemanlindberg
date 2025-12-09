@@ -44,12 +44,13 @@ function NowPlaying({ props }: AudioHeader) {
     // textShadow: `1px 1px 1px ${props}`,
     color: `${props}`,
     backgroundColor: "rgb(94, 94, 94, .45)",
+    textShadow: '.5px 0 .5px white',
     borderRadius: '10px',
     padding: '8px',
     fontWeight: 'bold'
   };
 
-  return <span style={dynamicStyle}>Now Playing :</span>;
+  return <span style={dynamicStyle}>N&nbsp;o&nbsp;w P&nbsp;l&nbsp;a&nbsp;y&nbsp;i&nbsp;n&nbsp;g :</span>;
 }
 
 function TrackHeader({ text, color }: TrackHeader) {
@@ -151,7 +152,7 @@ export default function AudioPlayer({ album }: AudioPlayerProps) {
     <>
       <div
         className="audio-page-wrapper"
-        style={{ padding: "20px", fontFamily: "Michroma, sans-serif" }}
+        
       >
         {/* audio header */}
         <div
@@ -171,9 +172,9 @@ export default function AudioPlayer({ album }: AudioPlayerProps) {
         <div className="audio-card-wrapper">
           <Card
             className="card-body-style rounded-0 border-0 "
-            style={{ width: "30rem", backgroundColor: "rgb(255, 255, 255, .45)" }}
+            style={{  }}
           >
-            <Card.Body>
+            <Card.Body className="test">
               
               <Card.Text
                 className="ap-now-playing"
@@ -194,15 +195,16 @@ export default function AudioPlayer({ album }: AudioPlayerProps) {
                 <audio ref={audioRef} controls src={album.tracks[current]?.url}>
                   Your browser does not support the audio element.
                 </audio>
-                <div>
+                <div className="ap-controls-wrapper" style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: '15px', marginTop: '15px' }}>
                   <PrevButton
                     color={album.color}
                     onClick={handlePrev}
                     disabled={album.tracks[current].id === 0}
                   />
                   <img
+                  id="guit"
                     className="ap-guitar"
-                    style={{ height: "50px", borderRadius: "8px" }}
+                    style={{  }}
                     src={guitar}
                   ></img>
                   <NextButton color={album.color} onClick={handleNext} />

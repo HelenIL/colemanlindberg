@@ -2,7 +2,6 @@ import Banner from "../../banner/banner";
 
 import tracklist from "../../../albums/circus/tracklist";
 import NewAlbumSubpage from "../newAlbum/newAlbumSubpage";
-import Test from "../newAlbum/newAlbumSubpage";
 import AudioPlayer from "../../audio/audioPlayer";
 import album from "../../../albums/circus/tracklist";
 import "./home.css";
@@ -18,11 +17,20 @@ export default function HomeSubPage() {
           </span>
         </p>
       </div>
-
+       <div
+          className="page-header-wrapper"
+          style={{ textAlign: "center", marginBottom: "40px" }}
+        >
+          <p className="sub-header-p" style={{}}>
+            <span className="sub-header-span" style={{}}>
+              N e w &nbsp; A l b u m &nbsp; O u t &nbsp; N o w
+            </span>
+          </p>
+        </div>
       <div>
         <div className="hp-outer-comp">
-          {/* <NewAlbumSubpage /> */}
-          <Test />
+          <NewAlbumSubpage />
+    \
         </div>
       </div>
     </div>

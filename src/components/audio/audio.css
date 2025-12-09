@@ -1,11 +1,15 @@
+.audio-page-wrapper {
+  padding: 20px;
+  font-family: "Michroma", sans-serif;
+}
 
+.card-body-style {
+  width: 30rem;
+  background-color: rgb(255, 255, 255, 0.45);
+}
 
-/* .audio-page-wrapper {
-    border: 2px solid red;
-} */
 .ap-list-item {
   margin-bottom: 5px;
-  
 }
 
 .ap-track-span {
@@ -22,44 +26,37 @@
   padding: 0.475rem 1rem;
   cursor: default;
   font-size: 14px;
-  
-
 }
 
-   .ap-audio-error {
-    text-align: center;
-    margin-top: 10px;
-   }
-
+.ap-audio-error {
+  text-align: center;
+  margin-top: 10px;
+}
 
 .accordion-header .accordion-button {
-  font-size: 1rem; 
-  
+  font-size: 1rem;
 }
 
-   .accordion-button {
-        pointer-events: none;
-    }
+.accordion-button {
+  pointer-events: none;
+}
 
-        .accordion-button::after {
-        pointer-events: all;
-        
-       
-    }
+.accordion-button::after {
+  pointer-events: all;
+}
 
-    .custom-arrow {
-      color: #2698c7;
-    }
+.custom-arrow {
+  color: #2698c7;
+}
 
-    .custom-arrow:hover {
-        background-color: #cacaca;
-        color: white;
-
-    }
+.custom-arrow:hover {
+  background-color: #cacaca;
+  color: white;
+}
 
 .accordion {
   --bs-accordion-active-bg: gray;
-  --bs-accordion-active-color: white; 
+  --bs-accordion-active-color: white;
 }
 
 .accordion-button:focus {
@@ -72,24 +69,60 @@
   color: white;
 }
 
+.ap-guitar {
+  height: 50px;
+  border-radius: 8px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .card-body-style {
+    width: 25rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card-body-style {
+    width: 30rem;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .card-body-style {
+    width: 25rem;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .card-body-style {
+    width: 22rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .card-body-style {
+    width: 22rem;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .card-body-style {
+    width: 20rem;
+  }
+}
+
+@media only screen and (max-width: 344px) {
+  .card-body-style {
+    width: 18rem;
+  }
+
+.ap-controls-wrapper {
+    flex-direction: row;
+    /* gap: 10px; */
+  }
 
 
 
-   .na-about-a {
-    width: 1000px;
-    padding: 20px;
-    white-space: pre-wrap;
-      font-family: "Michroma", sans-serif;
-    /* box-shadow: 1px 2px 5px 2px #2698c7; */
-   }
-
-
-   .na-about-span-a {
-    background-color: rgb(106, 106, 106, .55);
-    color: white;
-    margin: 2px;
-    padding-left: 5px;
-    padding-right: 5px;
-   }
-
-   
+  audio {
+    width: 100%;
+  }
+}

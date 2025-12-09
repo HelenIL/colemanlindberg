@@ -16,6 +16,9 @@ const MakingMyName = React.lazy(() => import("./pages/makingmyname"));
 const Test = React.lazy(
   () => import("./components/subpages/newAlbum/newAlbumSubpage")
 );
+const Merch = React.lazy(
+  () => import("./pages/merch/index")
+);
 const NotFound = React.lazy(
   () => import("./components/subpages/notFound/notFound")
 );
@@ -39,6 +42,7 @@ root.render(
           <Route path="boys" element={<Boys />} />
         </Route>
         <Route path="*" element={<NotFound />} />
+        <Route path="/merch" element={<Merch />} />
       </Routes>
     </Suspense>
   </BrowserRouter>

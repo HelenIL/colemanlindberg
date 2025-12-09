@@ -1,7 +1,7 @@
 import album from "../../albums/skylines/tracklist";
 import AlbumSubPage from "../../components/subpages/albumSubPage";
 import AudioPlayer from "../../components/audio/audioPlayer";
-import AlbumAboutCard from "../../components/albumAboutCard/albumAboutCard";
+import AlbumAboutCard from "../../components/albumAbout/albumAboutCard";
 
 export default function Skylines() {
   return (

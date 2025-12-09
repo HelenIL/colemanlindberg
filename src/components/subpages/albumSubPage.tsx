@@ -28,13 +28,15 @@ const AlbumSubPage: React.FC<ContainerProps> = ({
     <div style={dynamicStyle}>
       <div className="sub-cover-outer">
         <Card className="sub-cover">
-          <Card.Img src={album.cover} />
+          <Card.Img className="cover" src={album.cover} />
         </Card>
       </div>
       <div className="sub-comp-outer">
         {/* Audio Player here */}
+        <div className="mobile-div">
         <AudioPlayer album={album} />
-        <div>
+        </div>
+        <div className="mobile-div">
           {/* About Card here */}
           <AlbumAboutCard
             about={album.about}

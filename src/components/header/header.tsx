@@ -41,7 +41,7 @@ export default function Header () {
           <Nav.Link href="/about">Shows</Nav.Link>
         </Nav.Item>
          <Nav.Item className="--bs-gray-dark">
-          <Nav.Link href="/contact">Merch</Nav.Link>
+          <Nav.Link href="/merch">Merch</Nav.Link>
         </Nav.Item>
         <Nav.Link href="/test">Test</Nav.Link>
       </Nav>

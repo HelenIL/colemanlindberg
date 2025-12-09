@@ -40,7 +40,7 @@ margin-left: 20px; */
 }
 
 
-#otv:hover {
+/* #otv:hover {
   background-color: #abe081;
   opacity: .5;
   font-weight:bolder;
@@ -56,7 +56,7 @@ margin-left: 20px; */
 #boys:hover {
   background-color: #d6d1fa;
    opacity: .5;
-}
+} */
 
 /* @media only screen and (max-width: 540px) {
   .outerHeader {

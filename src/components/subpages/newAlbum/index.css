@@ -1,0 +1,55 @@
+
+
+.album-cover {
+    width: 35rem;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1024px) {
+
+    .components-wrapper {
+        flex-direction: column;
+    }
+
+.mobile-wrapper {
+display: flex;
+justify-content: center;
+}
+
+
+}
+
+
+@media only screen and (max-width: 430px) {
+
+.album-cover {
+    width: 25rem;
+}
+
+
+
+}
+
+@media only screen and (max-width: 414px) {
+
+
+
+.album-cover {
+  width: 23rem;
+}
+
+}
+
+
+@media only screen and (max-width: 375px) {
+.album-cover {
+    width: 22rem;
+}
+}

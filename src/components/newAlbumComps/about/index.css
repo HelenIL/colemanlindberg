@@ -1,0 +1,57 @@
+   .na-about {
+    width: 62.5rem;
+    padding: 1rem;
+    white-space: pre-wrap;
+      font-family: "Michroma", sans-serif;
+
+   }
+
+
+   .na-about-span {
+    background-color: rgb(106, 106, 106, .55);
+    color: white;
+    margin: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+   }
+
+
+   @media only screen and (max-width: 1024px) {
+.na-about {
+    width: 42.5rem;
+}
+
+}
+
+
+
+
+   @media only screen and (max-width: 430px) {
+.na-about {
+    width: 25rem;
+}
+
+}
+
+   @media only screen and (max-width: 414px) {
+.na-about {
+    width: 22rem;
+
+}
+
+
+}
+
+@media only screen and (max-width: 375px) {
+.na-about {
+    width: 22rem;
+}
+.mobile-divide {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+
+    background-color: gray;;
+}
+
+}
