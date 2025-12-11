@@ -23,7 +23,12 @@
 
 }
 
-
+@media only screen and (max-width: 768px) {
+  .na-about {
+    width: 25rem;
+  }
+  
+}
 
 
    @media only screen and (max-width: 430px) {
@@ -53,5 +58,14 @@
 
     background-color: gray;;
 }
+
+}
+
+   @media only screen and (max-width: 414px) {
+.na-about {
+    width: 21rem;
+
+}
+
 
 }

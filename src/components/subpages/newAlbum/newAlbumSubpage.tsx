@@ -2,8 +2,8 @@ import Card from "react-bootstrap/Card";
 import album from "../../../albums/circus/tracklist";
 import { blurbs } from "../../../albums/circus/extras";
 import AudioPlayer from "../../audio/audioPlayer";
-import TestCar from "../../newAlbumComps/carousel/carousel";
-import TestAbout from "../../newAlbumComps/about/newAlbumAbout";
+import Carousel from "../../newAlbumComps/carousel/carousel";
+import NewAlbumAbout from "../../newAlbumComps/about/newAlbumAbout";
 import cole from "../../../assets/cole_grass.jpeg";
 import "./index.css";
 import TipJar from "../../tipJar/tipJar";
@@ -32,11 +32,13 @@ export default function Test() {
               marginTop: "40px",
             }}
           >
+            <div  style={{}}>
             <div className="mobile-wrapper">
               <AudioPlayer album={album} />
             </div>
             <div className="mobile-wrapper">
-              <TestCar blurbs={blurbs} album={album} />
+              <Carousel blurbs={blurbs} album={album} />
+            </div>
             </div>
           </div>
           {/* album about */}
@@ -44,7 +46,7 @@ export default function Test() {
             className="album-about-wrapper"
             style={{ display: "flex", justifyContent: "center" }}
           >
-            <TestAbout />
+            <NewAlbumAbout />
           </div>
 
         </div>

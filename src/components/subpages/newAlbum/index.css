@@ -53,3 +53,9 @@ justify-content: center;
     width: 22rem;
 }
 }
+
+@media only screen and (max-width: 360px) {
+.album-cover {
+    width: 20rem;
+}
+}

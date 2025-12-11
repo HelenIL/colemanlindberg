@@ -1,5 +1,5 @@
 .audio-page-wrapper {
-  padding: 20px;
+  /* padding: 20px; */
   font-family: "Michroma", sans-serif;
 }
 
@@ -73,40 +73,52 @@
   height: 50px;
   border-radius: 8px;
 }
+@media only screen and (max-width: 1368px) {
+  .card-body-style {
+    width: 100%;
+  }
+}
 
 @media only screen and (max-width: 1024px) {
   .card-body-style {
-    width: 25rem;
+    width: 20rem;
   }
+
 }
 
 @media only screen and (max-width: 768px) {
   .card-body-style {
-    width: 30rem;
+    width: 25rem;
   }
+  
 }
 
 @media only screen and (max-width: 430px) {
   .card-body-style {
     width: 25rem;
   }
+  
 }
 
 @media only screen and (max-width: 414px) {
   .card-body-style {
     width: 22rem;
+    
   }
+
 }
 
 @media only screen and (max-width: 375px) {
   .card-body-style {
     width: 22rem;
   }
+
 }
 
 @media only screen and (max-width: 360px) {
   .card-body-style {
     width: 20rem;
+   
   }
 }
 

@@ -31,12 +31,12 @@ const AlbumSubPage: React.FC<ContainerProps> = ({
           <Card.Img className="cover" src={album.cover} />
         </Card>
       </div>
-      <div className="sub-comp-outer">
+      <div className="sub-comp-outer d-flex align-items-stretch" style={{gap: '10px'}}>
         {/* Audio Player here */}
-        <div className="mobile-div">
+        <div className="mobile-div" >
         <AudioPlayer album={album} />
         </div>
-        <div className="mobile-div">
+        <div className="mobile-div" >
           {/* About Card here */}
           <AlbumAboutCard
             about={album.about}

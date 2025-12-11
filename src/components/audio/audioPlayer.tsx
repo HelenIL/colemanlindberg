@@ -152,6 +152,7 @@ export default function AudioPlayer({ album }: AudioPlayerProps) {
     <>
       <div
         className="audio-page-wrapper"
+        // style={{border: '2px solid red'}}
         
       >
         {/* audio header */}
@@ -161,6 +162,7 @@ export default function AudioPlayer({ album }: AudioPlayerProps) {
             display: "flex",
             justifyContent: "center",
             backgroundColor: "gray",
+            // width: '480px'
           }}
         >
           <span>

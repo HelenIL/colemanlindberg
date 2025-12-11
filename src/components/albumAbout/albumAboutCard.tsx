@@ -50,10 +50,11 @@ function AboutHeader({ color, album }: AboutHeader) {
 export default function AlbumAboutCard({ about, album, color }: AboutProps) {
   return (
     <div
-      className="ac-outer"
+      className="ac-outer d-flex align-items-stretch"
+      // style={{border: '2px solid green'}}
     >
       <div style={{ display: "flex", justifyContent: "center" }}>
-        <div className="otv-cont-mobile">
+        <div className="otv-cont-mobile " >
           {/* card header */}
           <div
             className="ac-header-outer"
@@ -68,8 +69,8 @@ export default function AlbumAboutCard({ about, album, color }: AboutProps) {
             </span>
           </div>
             {/* about card */}
-          <div>
-            <div className="about-container ac-card-outer">
+          <div className="d-flex align-items-stretch" style={{  height: "100%", }}>
+            <div className="about-container ac-card-outer d-flex align-items-stretch">
               <Card
                 className="ac-card-style rounded-0 border-0 "
                 style={{

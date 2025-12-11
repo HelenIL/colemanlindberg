@@ -2,7 +2,7 @@
     font-family: 'Michroma', sans-serif;
     background-image: url('../../../assets/three_guitars.jpg');
 width: 100%;
-height: 100;
+/* height: 100vh; */
 background-position: center;
 background-size: cover;
 background-repeat: repeat-x;
@@ -17,6 +17,27 @@ background-repeat: repeat-x;
     margin-bottom: 40px;
 }
 
+@media only screen and (max-width: 1280px) {
+.merch-page-outer {
+    height: auto;
+    /* background-image: url('../../../assets/guitar_clip2.jpg');
+    background-position: center; */
+}
+}
+
+/* @media only screen and (max-width: 1024px) {
+.merch-page-outer {
+    height: auto;
+
+}
+} */
+@media only screen and (max-width: 1024px) {
+.merch-page-outer {
+    height: auto;
+    /* background-image: url('../../../assets/guitar_clip2.jpg');
+    background-position: center; */
+}
+}
 @media only screen and (max-width: 660px) {
 .merch-page-outer {
     height: auto;

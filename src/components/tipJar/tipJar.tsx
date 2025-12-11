@@ -12,7 +12,7 @@ export default function TipJar() {
         <Card className="tip-jar-card rounded-0" style={{ marginTop: '20px', width: '30rem',  boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2)', display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '20px', borderRadius: '10px'  }}>
             <Card.Img style={{width: '75px'}} src={piggy}/>
             <Card.Body style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                <Card.Title style={{ textAlign: 'center', fontWeight: 'bold', marginBottom: '15px' }}>Tip Jar</Card.Title>
+                <Card.Title style={{ textAlign: 'center', fontWeight: 'bold', marginBottom: '15px' }}><span style={{textShadow: '1px 1px 1px white', color: '#2698c7'}}>Tip Jar</span></Card.Title>
       <Card.Text>
        <span> If you enjoy the music and would like to support future projects, consider leaving a tip. Your contribution helps cover production costs and fuels creativity. Thank you for your support!</span>
       </Card.Text>
@@ -21,13 +21,13 @@ export default function TipJar() {
   <input type="hidden" name="hosted_button_id" value="TMP88X77W4YAQ" />
   <table>
     <tr>
-      <td>
+      <td style={{textAlign: 'center'}}>
         <input type="hidden" name="on0" value="Leave A Special Note!"/>
-        Leave A Special Note!
+        <span style={{textShadow: '1px 1px 1px white', color: '#2698c7'}}>Leave A Special Note!</span>
       </td>
     </tr>
     <tr>
-      <td>
+      <td >
         <input type="text" name="os0" maxLength={200} />
       </td>
     </tr>
