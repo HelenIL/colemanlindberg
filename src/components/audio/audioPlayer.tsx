@@ -36,12 +36,11 @@ function AudioHeader({ props }: AudioHeader) {
     color: "white",
   };
 
-  return <h4 style={dynamicStyle}>LISTEN</h4>;
+  return <div><h4 style={dynamicStyle}>LISTEN</h4></div>;
 }
 
 function NowPlaying({ props }: AudioHeader) {
   const dynamicStyle = {
-    // textShadow: `1px 1px 1px ${props}`,
     color: `${props}`,
     backgroundColor: "rgb(94, 94, 94, .45)",
     textShadow: '.5px 0 .5px white',

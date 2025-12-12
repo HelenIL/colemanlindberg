@@ -42,6 +42,7 @@ const AlbumSubPage: React.FC<ContainerProps> = ({
             about={album.about}
             album={album.album}
             color={album.color}
+            pic={album.pic}
           />
         </div>
       </div>

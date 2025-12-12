@@ -22,7 +22,7 @@ const album = {
   colorII: '#f8f5a7',
   fontColor: 'black',
   pic: cole,
-  about: 'Sed pretium aliquet rutrum. In sit amet vestibulum orci. Etiam ac commodo est. Duis vitae metus id ex placerat porttitor. Curabitur molestie tempor dolor, sit amet rutrum enim porttitor in. Ut eu magna a lectus mollis scelerisque et vel enim. Nunc quis ipsum finibus, pharetra mauris vitae, ultrices nunc. Proin turpis mi, bibendum sed lacinia vitae, dignissim et arcu.',
+  about: 'One of my greatest long-time loves has been the city of Minneapolis. When I was a kid the skyline always symbolized excitement, energy, danger, and possibility. I grew up along Lake Street–riding buses, digging through record bins, hanging out at coffee shops, and shopping at thrift stores. I was inspired by punk and alternative culture, and I was drawn to the art and music scenes of my hometown. Skylines is a collection of songs about my relationship to (and fascination with) Minneapolis, where the city becomes a main character in my narrative. I decided to record this album in 2013, while I was a student at McNally Smith College of Music, with the help of sound engineer Andy Halvorson. These songs were performed on piano and acoustic guitar and left in raw, demo form–a testament to the struggles and adventures I’ve had in the shadows of the glistening towers of the Minneapolis skyline.',
   tracks: [
     {
     name: "First Avenue",

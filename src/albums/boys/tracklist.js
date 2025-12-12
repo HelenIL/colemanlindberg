@@ -11,7 +11,7 @@ import ten from "./tracks/10idareyou.mp3";
 import eleven from './tracks/11pieceofsky.mp3';
 import twelve from './tracks/12boyslive.mp3';
 import cover from "../../assets/boys_cover.jpg";
-import cole from '../../assets/little-cole_gray3.jpeg'
+import cole from '../../assets/little-cole_gray2.jpeg'
 import {lyrics} from './extras.js'
 import background from '../../assets/boys_curv.png'
 
@@ -25,7 +25,7 @@ const album = {
   colorII: '#9284f1',
   fontColor: 'white',
   pic: cole,
-  about: 'Donec viverra erat quis est commodo viverra. Aenean vitae efficitur ante, a fermentum sem. Phasellus vel ante lobortis, suscipit nibh nec, euismod eros. Proin iaculis a eros at hendrerit. Ut at leo iaculis, ornare neque ut, molestie lorem. Nulla a felis risus. Quisque ac consectetur dolor. Donec placerat eros ligula, vel iaculis ligula laoreet vel. Integer sit amet semper est, in rutrum nibh. Donec lobortis venenatis consectetur. Nulla vitae ornare arcu.',
+  about: 'In 2000, inspired by the DIY ethics and folk/punk aesthetic of Ani Difranco, I released my first full-length album Boys. I had been writing original songs for about 3 years when I put this record out. It reflected my youth, my struggle to find and keep love, my queer rage, my grief at losing my innocence, and the earnest belief that my friends and I could change the world with music, art, and activism. Boys was a true statement of individuality, emotion, passion, and hope. I may be a more accomplished guitarist and singer now, but I don’t think I’ll ever be as open, raw, and honest as I was on Boys.',
   tracks: [
   { name: "4 Inches Away", artist: "Coleman Lindberg", album: 'Boys', url: one, id: 0, image: cover, pic: cole, lyrics: lyricArray[0].lyrics},
   { name: "Happy Now", artist: "Coleman Lindberg", album: 'Boys', url: two, id: 1, image: cover, pic: cole, lyrics: lyricArray[1].lyrics},

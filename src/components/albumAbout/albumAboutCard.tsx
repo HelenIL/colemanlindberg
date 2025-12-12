@@ -1,4 +1,5 @@
 import Card from "react-bootstrap/Card";
+import { Album } from "../subpages/types";
 import type { CSSProperties } from "react";
 import './index.css'
 
@@ -16,25 +17,27 @@ type Track = {
   pic: string;
   lyrics: string;
 };
-type Album = {
-  album: string;
-  cover: string;
-  color: string;
-  pic: string;
-  blurbs?: string;
-  about?: string;
-  tracks?: Track[];
-};
+// type Album = {
+//   album: string;
+//   cover: string;
+//   color: string;
+//   pic: string;
+//   blurbs?: string;
+//   about?: string;
+//   tracks?: Track[];
+// };
 
 type AboutProps = {
   about: string;
   album: string;
   color: string;
+  pic: string;
 };
 
 type AboutHeader = {
   color: string;
   album: string;
+  
 };
 
 function AboutHeader({ color, album }: AboutHeader) {
@@ -47,7 +50,8 @@ function AboutHeader({ color, album }: AboutHeader) {
   return <h4 style={dynamicStyle}>ABOUT THE ALBUM</h4>;
 }
 
-export default function AlbumAboutCard({ about, album, color }: AboutProps) {
+export default function AlbumAboutCard({ about, album, color, pic }: AboutProps) {
+  console.log(album)
   return (
     <div
       className="ac-outer d-flex align-items-stretch"
@@ -89,7 +93,9 @@ export default function AlbumAboutCard({ about, album, color }: AboutProps) {
                     </span>
                     {/* {about} */}
                   </Card.Text>
+                  
                 </Card.Body>
+                <Card.Img style={{padding: '10px'}} variant="bottom" src={pic}/>
               </Card>
             </div>
           </div>

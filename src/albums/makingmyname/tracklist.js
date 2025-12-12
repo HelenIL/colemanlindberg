@@ -7,8 +7,9 @@ import six from './tracks/MakingMyName.wav'
 import seven from './tracks/JTrain.wav'
 import {lyrics} from './extras.js'
 import cover from '../../assets/makingmyname_cover.jpg'
-import cole from '../../assets/cole_edit.jpg'
+// import cole from '../../assets/cole_edit.jpg'
 import background from '../../assets/mmn_curv.jpeg'
+import cole from '../../assets/mmn-back_edit.jpg'
 
 const lyricArray = Array.isArray(lyrics) && typeof lyrics[0] === 'string' ? lyrics.map(s => JSON.parse(s)) : lyrics;
 
@@ -19,8 +20,8 @@ const album = {
     color: '#dca58f',
     colorII: '#dea88e',
     fontColor: 'white',
-    pic: '',
-    about: 'Aliquam vel ex purus. Aliquam ultrices ligula sed orci malesuada tempus. Donec in gravida sem, id bibendum nisl. Nullam ac urna neque. Sed aliquam elit magna, a vestibulum quam malesuada vitae. Sed vulputate volutpat leo, vel lacinia massa. Vestibulum suscipit efficitur arcu sit amet fringilla. Curabitur viverra urna et purus maximus egestas. Nullam vel urna ante. Pellentesque luctus sapien non dui porttitor placerat. Maecenas massa ex, sagittis sed justo sit amet, fringilla euismod turpis.',
+    pic: cole,
+    about: 'In the years following the breakup of Winter Machine I was focused on playing in the churches where my mom was a pastor, performing at services, weddings, and funerals, and writing new original material as well. When my grandmother died in May of 2005 she left my mom some money and she decided to put some of it towards studio time. I enlisted the help of my friend and producer Amy Van Patten and set out to record a new 7-song EP called Making My Name. These songs chronicle my struggles with addiction, my loneliness and longing, my family relationships, my grief at the death of my grandmother, and my hunger to keep pursuing a music career. Released in March of 2006, Making My Name garnered some great reviews in the local press. I worked hard playing shows, contributing to political events, and raising money for nonprofits. This album marks an artistic and spiritual turning point in my life, a time when I was fighting to survive and be heard.',
     tracks: [
         {
             name: "Wounded Winter",

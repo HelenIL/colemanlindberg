@@ -8,7 +8,7 @@ import seven from "./tracks/07TiredOfSnow.wav";
 import eight from "./tracks/08GingerbreadMan.wav";
 import nine from "./tracks/09HappyNow.wav";
 import ten from "./tracks/10SlowNewsDay.wav";
-import cole from '../../assets/bridge.png'
+import cole from '../../assets/cole_grass.jpeg'
 import cover from "../../assets/otv_cover.jpg";
 import {lyrics} from './extras.js'
 import background from '../../assets/bebe_curv.JPG'
@@ -23,7 +23,7 @@ const album = {
   colorII: '#74c932',
   fontColor: 'white',
   pic: cole,
-  about: 'Curabitur libero quam, consectetur a sodales vel, tincidunt id odio. Sed finibus, velit efficitur vehicula auctor, massa risus eleifend dui, efficitur pellentesque tortor nunc eu diam. Maecenas lobortis non lacus eu tristique. Aenean vel auctor velit. Fusce eu laoreet eros. Nulla lacinia sagittis nulla eu maximus. Donec sit amet vulputate magna, pellentesque dictum metus. Fusce dolor est, sagittis eget sollicitudin nec, congue ut ante. Mauris dui justo, elementum et viverra nec, rutrum vitae lacus. Curabitur fringilla ipsum at tincidunt scelerisque. Curabitur quis suscipit tortor. Etiam id nisi erat. Quisque urna velit, mollis ut augue non, tincidunt scelerisque neque. Duis a metus velit. Pellentesque ac placerat nibh.',
+  about: 'During the pandemic I had a lot of time on my hands, and I spent much of it digging through old boxes, reading journals I had saved, and rediscovering music and art that I had forgotten. One day I fired up an old, worn-out laptop and discovered a whole collection of songs I had recorded but never released. Most of them featured Henry Bishop on vocals, guitar, and hand drums. Some had been recorded as demos with Chad Dutton in 2011-2012 and had never made it onto an album. A couple were recorded during the Skylines sessions but were not included on that album for one reason or another. I decided to put these songs out under the name The Brotherbears, an homage to my little niece’s name for me. While not a formal, fully realized album, Own The View is a heartfelt collection of songs that commemorate my friendship with Henry and provide a slice of life from parts of my musical journey that may have never seen the light of day had it not been for those long days in quarantine.',
   tracks: [
      {
     name: "Gingerbread Man",
