@@ -38,12 +38,12 @@ export default function Header () {
         
        
             <Nav.Item className="--bs-gray-dark">
-          <Nav.Link href="/about">Shows</Nav.Link>
+          <Nav.Link href="/shows">Shows</Nav.Link>
         </Nav.Item>
          <Nav.Item className="--bs-gray-dark">
           <Nav.Link href="/merch">Merch</Nav.Link>
         </Nav.Item>
-        <Nav.Link href="/test">Test</Nav.Link>
+
       </Nav>
       </Navbar.Collapse>
  

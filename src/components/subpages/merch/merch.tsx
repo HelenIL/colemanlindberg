@@ -6,10 +6,16 @@ import TipJar from "../../tipJar/tipJar";
 
 export default function MerchSubPage() {
   return (
-    <div className="merch-page-outer" style={{ }}>
+    <div className="merch-page-outer">
         {/* header  */}
-        <div style={{display: 'flex', justifyContent: 'center', marginTop: '20px', marginBottom: '20px'}}>
-      <h4>Merch Page</h4>
+        <div className="merch-header" >
+      <p><span className="merch-header-span">Merchandise</span></p>
+      </div>
+      <div className="merch-sub-header">
+        <p className="merch-sub-header-p"><span className="merch-sub-header-span">CDs are name your own price, pay what you're able.</span></p>
+      </div>
+      <div className="merch-sub-sub-header">
+        <p><span className="merch-sub-sub-span">Any amount is appreciated.</span></p>
       </div>
       {/* paypal cards */}
     <div className="paypal-outer">

@@ -1,3 +1,47 @@
+.merch-header {
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Michroma', sans-serif;
+    color: white; 
+    font-size: 50px;;
+}
+
+.merch-header-span {
+    text-shadow: 3px 1px 2px #62b5b4;
+   
+}
+.merch-sub-header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.merch-sub-sub-header {
+    display: flex;
+    justify-content: center;
+
+}
+
+.merch-sub-header-p {
+    font-size: 25px;
+    color: white;
+    font-family: 'Michroma';
+}
+
+.merch-sub-header-span {
+    text-shadow: 3px 1px 2px #2698c7;
+     background-color: rgb(94, 94, 94, .45);
+}
+
+.merch-sub-sub-span {
+    font-size: 20px;
+    color: white;
+    font-family: 'Michroma';
+    text-shadow: 2px 1px 2px #2698c7;
+     background-color: rgb(94, 94, 94, .45);
+}
+
 .merch-page-outer {
     font-family: 'Michroma', sans-serif;
     background-image: url('../../../assets/three_guitars.jpg');
@@ -17,6 +61,19 @@ background-repeat: repeat-x;
     margin-bottom: 40px;
 }
 
+@media only screen and (max-width: 1368px) {
+
+    .merch-header {
+        font-size: 40px;
+    }
+/* .merch-sub-header-p {
+    font-size: 10px;
+}
+.merch-sub-sub-span {
+    font-size: 15px;
+} */
+}
+
 @media only screen and (max-width: 1280px) {
 .merch-page-outer {
     height: auto;
@@ -34,21 +91,57 @@ background-repeat: repeat-x;
 @media only screen and (max-width: 1024px) {
 .merch-page-outer {
     height: auto;
-    /* background-image: url('../../../assets/guitar_clip2.jpg');
-    background-position: center; */
+  
 }
 }
-@media only screen and (max-width: 660px) {
+
+@media only screen and (max-width: 912px) {
+.merch-page-outer {
+    height: 100vh;
+  
+}
+}
+
+@media only screen and (max-width: 853px) {
+.merch-page-outer {
+    height: 100vh;
+    
+  
+}
+}
+
+@media only screen and (max-width: 768px) {
 .merch-page-outer {
     height: auto;
-    /* background-image: url('../../../assets/guitar_clip2.jpg');
-    background-position: center; */
+
 }
+.merch-sub-header-p {
+    font-size: 20px;
+}
+}
+@media only screen and (max-width: 667px) {
+/* .merch-page-outer {
+    height: auto;
+
+} */
+
+
 .paypal-outer {
     flex-direction: column;
     align-items: center;
 }
  
+
+
+}
+
+@media only screen and (max-width: 430px) {
+
+.merch-sub-header-p, .merch-sub-sub-span {
+    font-size: 18px;
+    
+    
+}
 
 
 }

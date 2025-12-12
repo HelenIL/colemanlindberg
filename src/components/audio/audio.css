@@ -77,11 +77,17 @@
   .card-body-style {
     width: 100%;
   }
+     audio {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
   .card-body-style {
     width: 20rem;
+  }
+     audio {
+    width: 100%;
   }
 
 }
@@ -90,12 +96,19 @@
   .card-body-style {
     width: 25rem;
   }
+     audio {
+    width: 100%;
+  }
   
 }
 
 @media only screen and (max-width: 430px) {
   .card-body-style {
     width: 25rem;
+  }
+
+    audio {
+    width: 100%;
   }
   
 }
@@ -105,12 +118,18 @@
     width: 22rem;
     
   }
+     audio {
+    width: 100%;
+  }
 
 }
 
 @media only screen and (max-width: 375px) {
   .card-body-style {
     width: 22rem;
+  }
+     audio {
+    width: 100%;
   }
 
 }
@@ -119,6 +138,9 @@
   .card-body-style {
     width: 20rem;
    
+  }
+     audio {
+    width: 100%;
   }
 }
 
