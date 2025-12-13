@@ -44,5 +44,6 @@ root.render(
         <Route path="/merch" element={<Merch />} />
       </Routes>
     </Suspense>
+    
   </BrowserRouter>
 );
