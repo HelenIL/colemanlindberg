@@ -1,4 +1,4 @@
-
+import ShowsSubPage from "../../components/subpages/shows/showsSubpage"
 
 
 
@@ -9,7 +9,10 @@ export default function Shows() {
     return (
 
         <>
-        <h4>Shows</h4>
+       
+        <div style={{display: 'flex', alignItems: 'center', backgroundColor: '#494949', width: '100vw'}}>
+        <ShowsSubPage />
+        </div>
         </>
     )
 }
