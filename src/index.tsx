@@ -16,7 +16,7 @@ const Skylines = React.lazy(() => import("./pages/skylines"));
 const MakingMyName = React.lazy(() => import("./pages/makingmyname"));
 const Shows = React.lazy(() => import("./pages/shows"));
 const Merch = React.lazy(
-  () => import("./pages/merch/index")
+  () => import("./pages/merch/merch")
 );
 const NotFound = React.lazy(
   () => import("./components/subpages/notFound/notFound")
