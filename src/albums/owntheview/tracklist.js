@@ -1,13 +1,13 @@
-import one from "./tracks/GingerbreadMan.mp3";
-import two from "./tracks/02SkyAsIs.mp3";
-import three from "./tracks/03FastFoodHeaven.mp3";
-import four from "./tracks/04FadedStar.mp3";
-import five from "./tracks/05OwnTheView.mp3";
-import six from "./tracks/06Resolutions.mp3";
-import seven from "./tracks/07TiredOfSnow.mp3";
-import eight from "./tracks/08GingerbreadMan.mp3";
-import nine from "./tracks/09HappyNow.mp3";
-import ten from "./tracks/10SlowNewsDay.mp3";
+// import one from "./tracks/GingerbreadMan.mp3";
+// import two from "./tracks/02SkyAsIs.mp3";
+// import three from "./tracks/03FastFoodHeaven.mp3";
+// import four from "./tracks/04FadedStar.mp3";
+// import five from "./tracks/05OwnTheView.mp3";
+// import six from "./tracks/06Resolutions.mp3";
+// import seven from "./tracks/07TiredOfSnow.mp3";
+// import eight from "./tracks/08GingerbreadMan.mp3";
+// import nine from "./tracks/09HappyNow.mp3";
+// import ten from "./tracks/10SlowNewsDay.mp3";
 import cole from '../../assets/cole_grass.jpeg'
 import cover from "../../assets/otv_cover.jpg";
 import {lyrics} from './extras.js'
@@ -29,7 +29,7 @@ const album = {
     name: "Gingerbread Man",
     artist: "The Brotherbears",
     album: 'Own The View',
-    url: one,
+    url: '/tracks/owntheview/GingerbreadMan.mp3',
     id: 0,
     image: cover,
     pic: cole,
@@ -40,7 +40,7 @@ const album = {
       name: "Sky As Is",
       artist: "The Brotherbears",
       album: 'Own The View',
-      url: two,
+      url: '/tracks/owntheview/02SkyAsIs.mp3',
       id: 1,
       image: cover,
       pic: cole,
@@ -51,7 +51,7 @@ const album = {
       name: "Fast Food Heaven",
       artist: "The Brotherbears",
       album: 'Own The View',
-      url: three,
+      url: '/tracks/owntheview/03FastFoodHeaven.mp3',
       id: 2,
       image: cover,
       pic: cole,
@@ -62,7 +62,7 @@ const album = {
       name: "Faded Star",
       artist: "The Brotherbears",
       album: 'Own The View',
-      url: four,
+      url: '/tracks/owntheview/04FadedStar.mp3',
       id: 3,
       image: cover,
       pic: cole,
@@ -73,7 +73,7 @@ const album = {
       name: "Own The View",
       artist: "The Brotherbears",
       album: 'Own The View',
-      url: five,
+      url: '/tracks/owntheview/05OwnTheView.mp3',
       id: 4,
       image: cover,
       pic: cole,
@@ -84,7 +84,7 @@ const album = {
       name: "Resolutions",
       artist: "The Brotherbears",
       album: 'Own The View',
-      url: six,
+      url: '/tracks/owntheview/06Resolutions.mp3',
       id: 5,
       image: cover,
       pic: cole,
@@ -95,7 +95,7 @@ const album = {
       name: "Tired Of Snow",
       artist: "The Brotherbears",
       album: 'Own The View',
-      url: seven,
+      url: '/tracks/owntheview/07TiredOfSnow.mp3',
       id: 6,
       image: cover,
       pic: cole,
@@ -106,15 +106,15 @@ const album = {
       name: "Gingerbread Man (Painted Whore Remix)",
       artist: "The Brotherbears",
       album: 'Own The View',
-      url: eight,
+      url: '/tracks/owntheview/08GingerbreadMan.mp3',
       id: 7,
       image: cover,
       pic: cole,
       background: background,
       lyrics: lyricArray[7].lyrics
     },
-    { name: "Happy Now", artist: "The Brotherbears", album: 'Own The View', url: nine, id: 8, image: cover, pic: cole, background: background, lyrics: lyricArray[8].lyrics },
-    { name: "Slow News Day", artist: "The Brotherbears", album: 'Own The View', url: ten, id: 9, image: cover, pic: cole, background: background, lyrics: lyricArray[9].lyrics }
+    { name: "Happy Now", artist: "The Brotherbears", album: 'Own The View', url: '/tracks/owntheview/09HappyNow.mp3', id: 8, image: cover, pic: cole, background: background, lyrics: lyricArray[8].lyrics },
+    { name: "Slow News Day", artist: "The Brotherbears", album: 'Own The View', url: '/tracks/owntheview/10SlowNewsDay.mp3', id: 9, image: cover, pic: cole, background: background, lyrics: lyricArray[9].lyrics }
 ]
 
 }

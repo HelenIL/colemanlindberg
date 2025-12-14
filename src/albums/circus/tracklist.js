@@ -1,13 +1,13 @@
-import one from './tracks/RazorInHisHand.mp3'
-import two from './tracks/OnMeNow.mp3'
-import three from './tracks/BottleandaGun.mp3'
-import four from './tracks/Radiate.mp3'
-import five from './tracks/ClosetoJesus.mp3'
-import six from './tracks/Wildflowers.mp3'
-import seven from './tracks/ITried.mp3'
-import eight from './tracks/InfiniteDecember.mp3'
-import nine from './tracks/Indiana.mp3'
-import ten from './tracks/ColdEnough.mp3'
+// import one from './tracks/RazorInHisHand.mp3'
+// import two from './tracks/OnMeNow.mp3'
+// import three from './tracks/BottleandaGun.mp3'
+// import four from './tracks/Radiate.mp3'
+// import five from './tracks/ClosetoJesus.mp3'
+// import six from './tracks/Wildflowers.mp3'
+// import seven from './tracks/ITried.mp3'
+// import eight from './tracks/InfiniteDecember.mp3'
+// import nine from './tracks/Indiana.mp3'
+// import ten from './tracks/ColdEnough.mp3'
 import cover from '../../assets/circus_cover.jpg'
 import {lyrics, blurbs, about} from './extras.js'
 import cole from '../../assets/cole_city_edit.jpeg'
@@ -29,7 +29,7 @@ const album = {
     name: "Razor In His Hand",
     artist: "Coleman Lindberg",
     album: 'The Circus Of The Grieving',
-    url: one,
+    url: '/tracks/circus/RazorInHisHand.mp3',
     id: 0,
     image: cover,
     pic: cole,
@@ -41,7 +41,7 @@ const album = {
       name: "On Me Now",
       artist: "Coleman Lindberg",
       album: 'The Circus Of The Grieving',
-      url: two,
+      url: '/tracks/circus/OnMeNow.mp3',
       id: 1,
       image: cover,
       pic: cole,
@@ -54,7 +54,7 @@ const album = {
       name: "Bottle and a Gun",
       artist: "Coleman Lindberg",
       album: 'The Circus Of The Grieving',
-      url: three,
+      url: '/tracks/circus/BottleandaGun.mp3',
       id: 2,
       image: cover,
       pic: cole,
@@ -65,7 +65,7 @@ const album = {
       name: "Radiate",
       artist: "Coleman Lindberg",
       album: 'The Circus Of The Grieving',
-      url: four,
+      url: '/tracks/circus/Radiate.mp3',
       id: 3,
       image: cover,
       pic: cole,
@@ -76,7 +76,7 @@ const album = {
       name: "Close to Jesus",
       artist: "Coleman Lindberg",
       album: 'The Circus Of The Grieving',
-      url: five,
+      url: '/tracks/circus/ClosetoJesus.mp3',
       id: 4,
       image: cover,
       pic: cole,
@@ -87,7 +87,7 @@ const album = {
       name: "Wildflowers",
       artist: "Coleman Lindberg",
       album: 'The Circus Of The Grieving',
-      url: six,
+      url: '/tracks/circus/Wildflowers.mp3',
       id: 5,
       image: cover,
       pic: cole,
@@ -98,7 +98,7 @@ const album = {
       name: "I Tried",
       artist: "Coleman Lindberg",
       album: 'The Circus Of The Grieving',
-      url: seven,
+      url: '/tracks/circus/ITried.mp3',
       id: 6,
       image: cover,
       pic: cole,
@@ -109,7 +109,7 @@ const album = {
       name: "Infinite December",
       artist: "Coleman Lindberg",
       album: 'The Circus Of The Grieving',
-      url: eight,
+      url: '/tracks/circus/InfiniteDecember.mp3',
       id: 7,
       image: cover,
       pic: cole,
@@ -120,7 +120,7 @@ const album = {
       name: "Indiana",
       artist: "Coleman Lindberg",
       album: 'The Circus Of The Grieving',
-      url: nine,
+      url: '/tracks/circus/Indiana.mp3',
       id: 8,
       image: cover,
       pic: cole,
@@ -131,7 +131,7 @@ const album = {
       name: "Cold Enough",
       artist: "Coleman Lindberg",
       album: 'The Circus Of The Grieving',
-      url: ten,
+      url: '/tracks/circus/ColdEnough.mp3',
       id: 9,
       image: cover,
       pic: cole,
