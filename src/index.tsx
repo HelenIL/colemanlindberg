@@ -40,8 +40,8 @@ root.render(
           <Route path="boys" element={<Boys />} />
         </Route>
         <Route path="*" element={<NotFound />} />
-        <Route path="/shows" element={<Shows />} />
-        <Route path="/merch" element={<Merch />} />
+        <Route path="shows" element={<Shows />} />
+        <Route path="merch" element={<Merch />} />
       </Routes>
     </Suspense>
     
