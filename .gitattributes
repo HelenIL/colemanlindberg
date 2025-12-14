@@ -54,3 +54,4 @@ JTrain.wav filter=lfs diff=lfs merge=lfs -text
 07TiredOfSnow filter=lfs diff=lfs merge=lfs -text
 08GingerbreadMan filter=lfs diff=lfs merge=lfs -text
 09HappyNow filter=lfs diff=lfs merge=lfs -text
+10SlowNewsDay filter=lfs diff=lfs merge=lfs -text
