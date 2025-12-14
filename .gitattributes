@@ -67,3 +67,4 @@ JTrain.wav filter=lfs diff=lfs merge=lfs -text
 01WoundedWinter.mp3 filter=lfs diff=lfs merge=lfs -text
 02CrawlingHome.mp3 filter=lfs diff=lfs merge=lfs -text
 03CloserOnTheCorners.mp3 filter=lfs diff=lfs merge=lfs -text
+04HardTimes.mp3 filter=lfs diff=lfs merge=lfs -text
