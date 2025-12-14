@@ -195,7 +195,7 @@ export default function AudioPlayer({ album }: AudioPlayerProps) {
                 />
               </Card.Text>
               <Card.Text className="ap-audio-error">
-                <audio ref={audioRef} controls >
+                <audio ref={audioRef} controls preload="metadata">
                   <source
                   src={album.tracks[current]?.url} 
                   type="audio/mpeg"
