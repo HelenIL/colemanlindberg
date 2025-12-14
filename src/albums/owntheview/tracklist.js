@@ -1,4 +1,4 @@
-import one from "./tracks/01GingerbreadMan.mp3";
+import one from "./tracks/GingerbreadMan.mp3";
 import two from "./tracks/02SkyAsIs.mp3";
 import three from "./tracks/03FastFoodHeaven.mp3";
 import four from "./tracks/04FadedStar.mp3";
