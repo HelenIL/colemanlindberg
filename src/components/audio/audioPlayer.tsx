@@ -118,7 +118,7 @@ function CustomToggle({ children, eventKey, color }: Toggle) {
 export default function AudioPlayer({ album }: AudioPlayerProps) {
   const [current, setCurrent] = useState<number>(0);
   const audioRef = useRef<HTMLAudioElement>(null);
-  console.log(album)
+  console.log(album.tracks[current]?.url);
   const handlePlay = (idx: number, e?: React.MouseEvent) => {
     e?.stopPropagation();
     setCurrent(idx);
