@@ -50,3 +50,4 @@ JTrain.wav filter=lfs diff=lfs merge=lfs -text
 03FastFoodHeaven filter=lfs diff=lfs merge=lfs -text
 04FadedStar filter=lfs diff=lfs merge=lfs -text
 05OwnTheView filter=lfs diff=lfs merge=lfs -text
+06Resolutions filter=lfs diff=lfs merge=lfs -text
