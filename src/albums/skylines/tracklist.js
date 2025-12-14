@@ -1,12 +1,3 @@
-// import one from './tracks/FirstAvenue.wav';
-// import three from './tracks/Skyline.wav';
-// import two from './tracks/LakeStreet.wav';
-// import four from './tracks/ColdAsSnow.wav';
-// import five from './tracks/GoodTimes.wav';
-// import six from './tracks/SpringCocaine.wav';
-// import seven from './tracks/Weight.wav';
-// import eight from './tracks/StoryOfUs.wav';
-// import nine from './tracks/SkylineHeaven.wav';
 import cover from '../../assets/skylines_cover.jpg';
 import cole from '../../assets/cole_city_edit.jpeg'
 import {lyrics} from './extras.js'
@@ -28,7 +19,7 @@ const album = {
     name: "First Avenue",
     artist: "Coleman Lindberg",
     album: 'Skylines',
-    url: one,
+    url: '/tracks/skylines/01FirstAvenue.mp3',
     id: 0,
     image: cover,
     pic: '/tracks/skylines/01FirstAvenue.mp3',

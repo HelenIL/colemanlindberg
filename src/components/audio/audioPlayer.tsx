@@ -141,7 +141,9 @@ export default function AudioPlayer({ album }: AudioPlayerProps) {
   };
 
   const handlePrev = () => {
-    setCurrent((prev) => (prev - 1) % album.tracks.length);
+    setCurrent((prev) =>
+  prev === 0 ? album.tracks.length - 1 : prev - 1
+);
     setTimeout(() => {
       audioRef.current?.play();
     }, 0);
@@ -193,7 +195,11 @@ export default function AudioPlayer({ album }: AudioPlayerProps) {
                 />
               </Card.Text>
               <Card.Text className="ap-audio-error">
-                <audio ref={audioRef} controls src={album.tracks[current]?.url}>
+                <audio ref={audioRef} controls >
+                  <source
+                  src={album.tracks[current]?.url} 
+                  type="audio/mpeg"
+                  />
                   Your browser does not support the audio element.
                 </audio>
                 <div className="ap-controls-wrapper" style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: '15px', marginTop: '15px' }}>
