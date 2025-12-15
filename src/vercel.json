@@ -1,0 +1,21 @@
+{
+  "headers": [
+    {
+      "source": "/tracks/(.*)\\.mp3",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "audio/mpeg"
+        },
+        {
+          "key": "Content-Encoding",
+          "value": "identity"
+        },
+        {
+          "key": "Accept-Ranges",
+          "value": "bytes"
+        }
+      ]
+    }
+  ]
+}
