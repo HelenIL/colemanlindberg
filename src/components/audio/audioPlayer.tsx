@@ -1,4 +1,4 @@
-import { useRef, useState, useContext, useEffect } from "react";
+import { useRef, useState, useContext } from "react";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 import Accordion from "react-bootstrap/Accordion";
@@ -118,31 +118,35 @@ function CustomToggle({ children, eventKey, color }: Toggle) {
 export default function AudioPlayer({ album }: AudioPlayerProps) {
   const [current, setCurrent] = useState<number>(0);
   const audioRef = useRef<HTMLAudioElement>(null);
-  console.log(album.tracks[current]?.url);
-
-const loadTrack = (idx: number) => {
-  const audio = audioRef.current;
-  if (!audio) return;
-
-  audio.pause();
-  audio.currentTime = 0;
-  setCurrent(idx);
-};
-
+  
   const handlePlay = (idx: number, e?: React.MouseEvent) => {
-  e?.stopPropagation();
-  loadTrack(idx);
-};
+    e?.stopPropagation();
+    setCurrent(idx);
+    setTimeout(() => {
+      audioRef.current
+        ?.play()
+        .catch((err) => console.error("play failed", err));
+    }, 0);
+  };
 
-const handleNext = () => {
-  loadTrack((current + 1) % album.tracks.length);
-};
+  const handleNext = () => {
+    setCurrent((prev) => (prev + 1) % album.tracks.length);
+    setTimeout(() => {
+      audioRef.current?.play();
+    }, 0);
 
-const handlePrev = () => {
-  loadTrack(
-    current === 0 ? album.tracks.length - 1 : current - 1
-  );
-};
+    if (current === album.tracks.length - 1) {
+      setCurrent(0);
+    }
+  };
+
+  const handlePrev = () => {
+    setCurrent((prev) => (prev - 1) % album.tracks.length);
+    setTimeout(() => {
+      audioRef.current?.play();
+    }, 0);
+  };
+
   return (
     <>
       <div
@@ -189,7 +193,7 @@ const handlePrev = () => {
                 />
               </Card.Text>
               <Card.Text className="ap-audio-error">
-                <audio ref={audioRef} controls src={album.tracks[current]?.url} preload="metadata" key={album.tracks[current]?.url}>
+                <audio ref={audioRef} controls src={album.tracks[current]?.url} key={album.tracks[current]?.url} >
                   Your browser does not support the audio element.
                 </audio>
                 <div className="ap-controls-wrapper" style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: '15px', marginTop: '15px' }}>
