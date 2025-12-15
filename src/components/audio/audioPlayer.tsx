@@ -120,48 +120,29 @@ export default function AudioPlayer({ album }: AudioPlayerProps) {
   const audioRef = useRef<HTMLAudioElement>(null);
   console.log(album.tracks[current]?.url);
 
-  useEffect(() => {
+const loadTrack = (idx: number) => {
   const audio = audioRef.current;
   if (!audio) return;
 
-  const onCanPlay = () => {
-    audio.play().catch(() => {});
-  };
-
-  audio.addEventListener("canplay", onCanPlay);
-  return () => audio.removeEventListener("canplay", onCanPlay);
-}, [current]);
+  audio.pause();
+  audio.currentTime = 0;
+  setCurrent(idx);
+};
 
   const handlePlay = (idx: number, e?: React.MouseEvent) => {
-    e?.stopPropagation();
-    setCurrent(idx);
-    // setTimeout(() => {
-    //   audioRef.current
-    //     ?.play()
-    //     .catch((err) => console.error("play failed", err));
-    // }, 0);
-  };
+  e?.stopPropagation();
+  loadTrack(idx);
+};
 
-  const handleNext = () => {
-    setCurrent((prev) => (prev + 1) % album.tracks.length);
-    // setTimeout(() => {
-    //   audioRef.current?.play();
-    // }, 0);
+const handleNext = () => {
+  loadTrack((current + 1) % album.tracks.length);
+};
 
-    if (current === album.tracks.length - 1) {
-      setCurrent(0);
-    }
-  };
-
-  const handlePrev = () => {
-    setCurrent((prev) =>
-  prev === 0 ? album.tracks.length - 1 : prev - 1
-);
-    // setTimeout(() => {
-    //   audioRef.current?.play();
-    // }, 0);
-  };
-
+const handlePrev = () => {
+  loadTrack(
+    current === 0 ? album.tracks.length - 1 : current - 1
+  );
+};
   return (
     <>
       <div
