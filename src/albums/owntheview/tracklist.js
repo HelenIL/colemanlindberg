@@ -29,7 +29,7 @@ const album = {
     name: "Gingerbread Man",
     artist: "The Brotherbears",
     album: 'Own The View',
-    url: '/tracks/owntheview/GingerbreadMan.mp3',
+    url: '/tracks/owntheview/01GingerbreadMan.mp3',
     id: 0,
     image: cover,
     pic: cole,
