@@ -193,7 +193,7 @@ export default function AudioPlayer({ album }: AudioPlayerProps) {
                 />
               </Card.Text>
               <Card.Text className="ap-audio-error">
-                <audio ref={audioRef} controls src={album.tracks[current]?.url}  >
+                <audio ref={audioRef} controls preload="metadata" src={album.tracks[current]?.url}  >
                   Your browser does not support the audio element.
                 </audio>
                 <div className="ap-controls-wrapper" style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: '15px', marginTop: '15px' }}>
