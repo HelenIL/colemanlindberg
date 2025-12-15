@@ -2,7 +2,7 @@ import React, { Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router";
 import "./index.css";
-import App from "./App";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import Header from "./components/header/header";
