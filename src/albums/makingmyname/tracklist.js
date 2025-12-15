@@ -47,7 +47,7 @@ const album = {
             name: "Closer on the Corners",
             artist: "Coleman Lindberg",
             album: 'Making My Name',
-            url: '/tracks/makingmyname/03CloserOnTheCorners.mp3',
+            url: '/tracks/makingmyname/03Closer.mp3',
             id: 2,
             image: cover,
             pic: cole,

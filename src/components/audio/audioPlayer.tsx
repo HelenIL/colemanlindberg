@@ -1,4 +1,4 @@
-import { useRef, useState, useContext } from "react";
+import { useRef, useState, useContext, useEffect } from "react";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 import Accordion from "react-bootstrap/Accordion";
@@ -119,21 +119,34 @@ export default function AudioPlayer({ album }: AudioPlayerProps) {
   const [current, setCurrent] = useState<number>(0);
   const audioRef = useRef<HTMLAudioElement>(null);
   console.log(album.tracks[current]?.url);
+
+  useEffect(() => {
+  const audio = audioRef.current;
+  if (!audio) return;
+
+  const onCanPlay = () => {
+    audio.play().catch(() => {});
+  };
+
+  audio.addEventListener("canplay", onCanPlay);
+  return () => audio.removeEventListener("canplay", onCanPlay);
+}, [current]);
+
   const handlePlay = (idx: number, e?: React.MouseEvent) => {
     e?.stopPropagation();
     setCurrent(idx);
-    setTimeout(() => {
-      audioRef.current
-        ?.play()
-        .catch((err) => console.error("play failed", err));
-    }, 0);
+    // setTimeout(() => {
+    //   audioRef.current
+    //     ?.play()
+    //     .catch((err) => console.error("play failed", err));
+    // }, 0);
   };
 
   const handleNext = () => {
     setCurrent((prev) => (prev + 1) % album.tracks.length);
-    setTimeout(() => {
-      audioRef.current?.play();
-    }, 0);
+    // setTimeout(() => {
+    //   audioRef.current?.play();
+    // }, 0);
 
     if (current === album.tracks.length - 1) {
       setCurrent(0);
@@ -144,9 +157,9 @@ export default function AudioPlayer({ album }: AudioPlayerProps) {
     setCurrent((prev) =>
   prev === 0 ? album.tracks.length - 1 : prev - 1
 );
-    setTimeout(() => {
-      audioRef.current?.play();
-    }, 0);
+    // setTimeout(() => {
+    //   audioRef.current?.play();
+    // }, 0);
   };
 
   return (
@@ -195,7 +208,7 @@ export default function AudioPlayer({ album }: AudioPlayerProps) {
                 />
               </Card.Text>
               <Card.Text className="ap-audio-error">
-                <audio ref={audioRef} controls src={album.tracks[current]?.url} preload="metadata">
+                <audio ref={audioRef} controls src={album.tracks[current]?.url} preload="metadata" key={album.tracks[current]?.url}>
                   Your browser does not support the audio element.
                 </audio>
                 <div className="ap-controls-wrapper" style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: '15px', marginTop: '15px' }}>
