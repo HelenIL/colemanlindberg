@@ -43,7 +43,6 @@ HardTimes.wav filter=lfs diff=lfs merge=lfs -text
 SkySoBlue.wav filter=lfs diff=lfs merge=lfs -text
 MakingMyName.wav filter=lfs diff=lfs merge=lfs -text
 JTrain.wav filter=lfs diff=lfs merge=lfs -text
-*.mp3 filter=lfs diff=lfs merge=lfs -text
 01GingerbreadMan.mp3 filter=lfs diff=lfs merge=lfs -text
 02SkyAsIs filter=lfs diff=lfs merge=lfs -text
 02SkyAsIs.mp3 filter=lfs diff=lfs merge=lfs -text
