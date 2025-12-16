@@ -77,12 +77,17 @@
 
 }
 
-/* @media only screen and (max-width: 540px) {
-  .hp-outer {
-    width: 720px;
-  }
+@media only screen and (max-width: 540px) {
+   .hp-header p {
+        font-size: 20px;
+    }
+    
+    .sub-header-p {
+        font-size: 20px;
+    }
 
-} */
+
+}
 
 
 
@@ -122,6 +127,13 @@
 @media only screen and (max-width: 360px) {
     .hp-header p {
         font-size: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 344px) {
+    .hp-header p {
+        font-size: 14px;
     }
 
 }

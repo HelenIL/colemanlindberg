@@ -25,7 +25,7 @@ const AlbumSubPage: React.FC<ContainerProps> = ({
   };
 console.log(album)
   return (
-    <div style={dynamicStyle}>
+    <div style={dynamicStyle} className="album-subpage-outer">
       <div className="sub-cover-outer">
         <Card className="sub-cover">
           <Card.Img className="cover" src={album.cover} />

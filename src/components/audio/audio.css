@@ -1,11 +1,13 @@
 .audio-page-wrapper {
   /* padding: 20px; */
   font-family: "Michroma", sans-serif;
+ 
 }
 
 .card-body-style {
-  width: 30rem;
+  /* width: 30rem; */
   background-color: rgb(255, 255, 255, 0.45);
+
 }
 
 .ap-list-item {
@@ -84,7 +86,7 @@
 
 @media only screen and (max-width: 1024px) {
   .card-body-style {
-    width: 20rem;
+    width: 30rem;
   }
      audio {
     width: 100%;
@@ -145,10 +147,7 @@
 }
 
 @media only screen and (max-width: 344px) {
-  .card-body-style {
-    width: 18rem;
-  }
-
+ 
 .ap-controls-wrapper {
     flex-direction: row;
     /* gap: 10px; */

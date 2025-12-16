@@ -15,6 +15,11 @@
     padding-right: 5px;
    }
 
+   .mobile-divide {
+    display: none;
+}
+
+
 
    @media only screen and (max-width: 1024px) {
 .na-about {
@@ -35,6 +40,13 @@
 .na-about {
     width: 25rem;
 }
+.mobile-divide {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+
+    background-color: gray;;
+}
 
 }
 
@@ -51,13 +63,7 @@
 .na-about {
     width: 22rem;
 }
-.mobile-divide {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
 
-    background-color: gray;;
-}
 
 }
 

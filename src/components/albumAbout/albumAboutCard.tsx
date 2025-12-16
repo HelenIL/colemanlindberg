@@ -54,7 +54,7 @@ export default function AlbumAboutCard({ about, album, color, pic }: AboutProps)
   console.log(album)
   return (
     <div
-      className="ac-outer d-flex align-items-stretch"
+      className="ac-outer"
       // style={{border: '2px solid green'}}
     >
       <div style={{ display: "flex", justifyContent: "center" }}>
@@ -73,8 +73,8 @@ export default function AlbumAboutCard({ about, album, color, pic }: AboutProps)
             </span>
           </div>
             {/* about card */}
-          <div className="d-flex align-items-stretch" style={{  height: "100%", }}>
-            <div className="about-container ac-card-outer d-flex align-items-stretch">
+          <div className="" style={{  height: "100%", }}>
+            <div className="about-container ac-card-outer">
               <Card
                 className="ac-card-style rounded-0 border-0 "
                 style={{
