@@ -15,13 +15,9 @@ const Boys = React.lazy(() => import("./pages/boys"));
 const Skylines = React.lazy(() => import("./pages/skylines"));
 const MakingMyName = React.lazy(() => import("./pages/makingmyname"));
 const Shows = React.lazy(() => import("./pages/shows"));
-const Merch = React.lazy(
-  () => import("./pages/merch/merch")
-);
-const NotFound = React.lazy(
-  () => import("./components/subpages/notFound/notFound")
-);
-
+const Merch = React.lazy(() => import("./pages/merch/merch"));
+const NotFound = React.lazy(() => import("./components/subpages/notFound/notFound"));
+const Gallery = React.lazy(() => import("./pages/gallery/index"));
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
@@ -42,6 +38,7 @@ root.render(
         <Route path="*" element={<NotFound />} />
         <Route path="shows" element={<Shows />} />
         <Route path="merch" element={<Merch />} />
+        <Route path="gallery" element={<Gallery />} />
       </Routes>
     </Suspense>
     

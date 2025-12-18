@@ -1,0 +1,68 @@
+.gallery-subpage-outer {
+    background-image: url('../../../assets/dec_curv.jpeg');
+    width: 100%;
+}
+
+
+.gallery-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .25rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.gallery-card-style {
+  width: 30rem;
+  background-color: rgb(255, 255, 255, 0.45);
+
+}
+
+@media only screen and (max-width: 768px) {
+  .card-body-style {
+    width: 25rem;
+  }
+     /* audio {
+    width: 100%;
+  } */
+  
+}
+
+@media only screen and (max-width: 430px) {
+  .gallery-card-style {
+    width: 25rem;
+  }
+
+
+  
+}
+
+@media only screen and (max-width: 414px) {
+  .gallery-card-style {
+    width: 22rem;
+    
+  }
+
+
+}
+
+@media only screen and (max-width: 375px) {
+  .gallery-card-style {
+    width: 22rem;
+  }
+
+}
+
+@media only screen and (max-width: 360px) {
+  .gallery-card-style {
+    width: 20rem;
+   
+  }
+
+}
+
+@media only screen and (max-width: 344px) {
+ 
+
+}

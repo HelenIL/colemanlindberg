@@ -52,7 +52,9 @@ export default function Header() {
               style={{}}
             />
           </Navbar.Brand>
-
+              <Nav.Item className="--bs-gray-dark">
+            <Nav.Link href="/gallery">Gallery</Nav.Link>
+          </Nav.Item>
           <Nav.Item className="--bs-gray-dark">
             <Nav.Link href="/shows">Shows</Nav.Link>
           </Nav.Item>
