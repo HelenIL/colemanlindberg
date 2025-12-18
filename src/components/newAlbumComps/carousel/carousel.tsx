@@ -24,8 +24,7 @@ type CarouselProps = {
 
 type CardHeader = {
   props: string;
-  current: number;
-  track: string;
+
 };
 
 type BlurbHeader = {
@@ -34,7 +33,7 @@ type BlurbHeader = {
   track: ReactNode;
 };
 
-function CardHeader({ props, current, track }: CardHeader) {
+function CardHeader({ props }: CardHeader) {
   const dynamicStyle = {
     textShadow: `1px 1px 1px ${props}`,
     color: "white",
@@ -80,7 +79,7 @@ export default function Carousel({ blurbs, album }: CarouselProps) {
         style={{ padding: "20px", fontFamily: "Michroma, sans-serif" }}
       >
         {/* header starts */}
-        <div
+        {/* <div
           className="header-wrapper"
           style={{
             display: "flex",
@@ -97,7 +96,7 @@ export default function Carousel({ blurbs, album }: CarouselProps) {
               />
             </h4>
           </span>
-        </div>
+        </div> */}
         {/* header ends */}
 
         {/* carousel starts */}
@@ -109,6 +108,24 @@ export default function Carousel({ blurbs, album }: CarouselProps) {
      
             }}
           >
+             <div
+          className="header-wrapper"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            backgroundColor: "gray",
+          }}
+        >
+          <span className="header-span">
+            <h4 className="header-h4">
+              <CardHeader
+               
+                props={album.color}
+                
+              />
+            </h4>
+          </span>
+        </div>
             <Card.Title className="">
               {/* carousel header */}
               <div

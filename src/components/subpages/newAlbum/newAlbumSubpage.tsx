@@ -27,13 +27,14 @@ export default function Test() {
           <div
             className="components-wrapper"
             style={{
+            
               display: "flex",
               justifyContent: "center",
               marginTop: "40px",
             }}
           >
-            <div  style={{}}>
-            <div className="mobile-wrapper">
+            <div  style={{ display: 'flex', flexDirection: 'column', gap: '40px' }}>
+            <div className="mobile-wrapper" style={{ }}>
               <AudioPlayer album={album} />
             </div>
             <div className="mobile-wrapper">

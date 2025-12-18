@@ -4,7 +4,6 @@ import AudioPlayer from "../../components/audio/audioPlayer";
 import AlbumAboutCard from "../../components/albumAbout/albumAboutCard";
 
 export default function Boys() {
-  console.log(album)
   return (
     <div style={{ display: "flex", alignItems: "center" }}>
       {/* <BoysSubpage /> */}

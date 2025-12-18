@@ -15,6 +15,7 @@ export type Album = {
   album: string;
   cover: string;
   color: string;
+  rgbColor: string;
   colorII: string;
   pic: string;
   blurbs?: string;

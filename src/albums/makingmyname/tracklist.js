@@ -1,13 +1,5 @@
-// import one from './tracks/WoundedWinter.wav'
-// import two from './tracks/CrawlingHome.wav'
-// import three from './tracks/CloserCorners.wav'
-// import four from './tracks/HardTimes.wav'
-// import five from './tracks/SkySoBlue.wav'
-// import six from './tracks/MakingMyName.wav'
-// import seven from './tracks/JTrain.wav'
 import {lyrics} from './extras.js'
 import cover from '../../assets/makingmyname_cover.jpg'
-// import cole from '../../assets/cole_edit.jpg'
 import background from '../../assets/mmn_curv.jpeg'
 import cole from '../../assets/mmn-back_edit.jpg'
 
@@ -18,6 +10,7 @@ const album = {
     cover: cover,
     background: background,
     color: '#dca58f',
+    rgbColor: '220, 165, 143',
     colorII: '#dea88e',
     fontColor: 'white',
     pic: cole,
@@ -27,7 +20,7 @@ const album = {
             name: "Wounded Winter",
             artist: "Coleman Lindberg",
             album: 'Making My Name',
-            url: 'https://rlhgqzuuag32i5so.public.blob.vercel-storage.com/makingmyname/01WoundedWinter.mp3',
+            url: `https://rlhgqzuuag32i5so.public.blob.vercel-storage.com/makingmyname/Wounded%20Winter.mp3`,
             id: 0,
             image: cover,
             pic: cole,
@@ -37,7 +30,7 @@ const album = {
             name: "Crawling Home",
             artist: "Coleman Lindberg",
             album: 'Making My Name',
-            url: 'https://rlhgqzuuag32i5so.public.blob.vercel-storage.com/makingmyname/02CrawlingHome.mp3',
+            url: `https://rlhgqzuuag32i5so.public.blob.vercel-storage.com/makingmyname/Crawling%20Home.mp3`,
             id: 1,
             image: cover,
             pic: cole,
@@ -47,7 +40,7 @@ const album = {
             name: "Closer on the Corners",
             artist: "Coleman Lindberg",
             album: 'Making My Name',
-            url: 'https://rlhgqzuuag32i5so.public.blob.vercel-storage.com/makingmyname/03Closer.mp3',
+            url: `https://rlhgqzuuag32i5so.public.blob.vercel-storage.com/makingmyname/Closer%20on%20the%20Corners.mp3`,
             id: 2,
             image: cover,
             pic: cole,
@@ -57,7 +50,7 @@ const album = {
             name: "Hard Times, Come Again No More",
             artist: "Coleman Lindberg",
             album: 'Making My Name',
-            url: 'https://rlhgqzuuag32i5so.public.blob.vercel-storage.com/makingmyname/04HardTimes.mp3',
+            url: `https://rlhgqzuuag32i5so.public.blob.vercel-storage.com/makingmyname/Hard%20Times%2C%20Come%20Again%20No%20More.mp3`,
             id: 3,
             image: cover,
             pic: cole,
@@ -67,7 +60,7 @@ const album = {
             name: "Sky So Blue",
             artist: "Coleman Lindberg",
             album: 'Making My Name',
-            url: 'https://rlhgqzuuag32i5so.public.blob.vercel-storage.com/makingmyname/05SkySoBlue.mp3',
+            url: `https://rlhgqzuuag32i5so.public.blob.vercel-storage.com/makingmyname/Sky%20So%20Blue.mp3`,
             id: 4,
             image: cover,
             pic: cole,
@@ -77,7 +70,7 @@ const album = {
             name: "Making My Name",
             artist: "Coleman Lindberg",
             album: 'Making My Name',
-            url: 'https://rlhgqzuuag32i5so.public.blob.vercel-storage.com/makingmyname/06MakingMyName.mp3',
+            url: `https://rlhgqzuuag32i5so.public.blob.vercel-storage.com/makingmyname/Making%20My%20Name.mp3`,
             id: 5,
             image: cover,
             pic: cole,
@@ -87,7 +80,7 @@ const album = {
             name: "J-Train",
             artist: "Coleman Lindberg",
             album: 'Making My Name',
-            url: 'https://rlhgqzuuag32i5so.public.blob.vercel-storage.com/makingmyname/07JTrain.mp3',
+            url: `https://rlhgqzuuag32i5so.public.blob.vercel-storage.com/makingmyname/J-Train.mp3`,
             id: 6,
             image: cover,
             pic: cole,

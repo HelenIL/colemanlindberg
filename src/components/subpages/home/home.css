@@ -77,6 +77,18 @@
 
 }
 
+@media only screen and (max-width: 579px) {
+   .hp-header p {
+        font-size: 22px;
+    }
+    
+    .sub-header-p {
+        font-size: 20px;
+    }
+
+
+}
+
 @media only screen and (max-width: 540px) {
    .hp-header p {
         font-size: 20px;
@@ -92,7 +104,7 @@
 
 
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 466px) {
     .hp-header p {
         font-size: 18px;
     }
@@ -124,16 +136,25 @@
 
 }
 
-@media only screen and (max-width: 360px) {
+/* @media only screen and (max-width: 360px) {
     .hp-header p {
         font-size: 15px;
     }
 
-}
+} */
 
 @media only screen and (max-width: 344px) {
     .hp-header p {
         font-size: 14px;
     }
 
+}
+
+@media only screen and (max-width: 324px) {
+    .hp-header p {
+        font-size: 12px;
+    }
+        .sub-header-p {
+        font-size: 11px;
+    }
 }
