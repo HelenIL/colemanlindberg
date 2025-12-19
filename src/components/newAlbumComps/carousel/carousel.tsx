@@ -1,9 +1,6 @@
-import { Button, Card } from "react-bootstrap";
-import prev from "../../assets/angles-left-solid-full.svg";
-import next from "../../assets/angles-right-solid-full.svg";
-import { useRef, useState, useContext, ReactNode } from "react";
+import {  Card } from "react-bootstrap";
+import { useState, ReactNode } from "react";
 import { Album } from "../../subpages/types";
-import { isJSDocUnknownTag } from "typescript";
 import { CarouselPrevButton, CarouselNextButton } from "../../buttons/buttons";
 import './index.css'
 
@@ -13,9 +10,7 @@ type Blurb = {
   blurb?: string;
 };
 
-type Blurbs = {
-  blurbs: Blurb[];
-};
+
 
 type CarouselProps = {
   blurbs: Blurb[];
@@ -120,7 +115,7 @@ export default function Carousel({ blurbs, album }: CarouselProps) {
             <h4 className="header-h4">
               <CardHeader
                
-                props={album.color}
+                props={album.colorPrimary}
                 
               />
             </h4>
@@ -144,7 +139,7 @@ export default function Carousel({ blurbs, album }: CarouselProps) {
                 >
                   <div style={{ display: "flex" }}>
                     <CarouselPrevButton
-                      color={album.color}
+                      color={album.colorPrimary}
                       onClick={prevCard}
                     />
                   </div>
@@ -159,7 +154,7 @@ export default function Carousel({ blurbs, album }: CarouselProps) {
                   }}
                 >
                   <BlurbHeader
-                    props={album.color}
+                    props={album.colorPrimary}
                     track={blurbArray[currentCard]?.track}
                   />
                 </div>
@@ -168,7 +163,7 @@ export default function Carousel({ blurbs, album }: CarouselProps) {
                   className="button-wrapper"
                   style={{ width: "10%", marginRight: "1rem" }}
                 >
-                  <CarouselNextButton color={album.color} onClick={nextCard} />
+                  <CarouselNextButton color={album.colorPrimary} onClick={nextCard} />
                 </div>
               </div>
             </Card.Title>

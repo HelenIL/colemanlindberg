@@ -1,5 +1,4 @@
 import Card from "react-bootstrap/Card";
-import { Album } from "../subpages/types";
 import type { CSSProperties } from "react";
 import './index.css'
 

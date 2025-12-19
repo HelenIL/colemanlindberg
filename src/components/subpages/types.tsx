@@ -1,24 +1,22 @@
 
 
 export type Track = {
-  name: string;
-  artist: string;
-  album: string;
+  track: string;
   url: string;
+  downloadURL: string;
   id: number;
-  image: string;
-  pic: string;
   lyrics: string;
 };
 
 export type Album = {
+  artist: string;
   album: string;
+  background: string;
   cover: string;
-  color: string;
+  featured: string;
+  colorPrimary: string;
   rgbColor: string;
-  colorII: string;
-  pic: string;
-  blurbs?: string;
+  colorSecondary: string;
   about?: string;
   tracks: Track[]
 }

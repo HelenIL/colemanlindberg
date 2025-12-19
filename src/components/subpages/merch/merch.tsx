@@ -1,5 +1,5 @@
-import mmn from "../../../assets/makingmyname_cover.jpg";
-import skylines from "../../../assets/skylines_cover.jpg";
+import mmn from "../../../albums/makingmyname/tracklist";
+import skylines from "../../../albums/skylines/tracklist";
 import "./index.css";
 import Card from "react-bootstrap/Card";
 import TipJar from "../../tipJar/tipJar";
@@ -31,7 +31,7 @@ export default function MerchSubPage() {
             
           }}
         >
-          <Card.Img variant="top" src={mmn} />
+          <Card.Img variant="top" src={mmn.cover} />
           <Card.Text style={{ textAlign: "center", marginTop: "10px", fontWeight: 'bold' }}>
             Maiking My Name (CD)
           </Card.Text>
@@ -74,7 +74,7 @@ export default function MerchSubPage() {
             borderRadius: "10px",
           }}
         >
-          <Card.Img variant="top" src={skylines} />
+          <Card.Img variant="top" src={skylines.cover} />
           <Card.Text style={{ textAlign: "center", marginTop: "10px", fontWeight: 'bold' }}>
             Skylines (CD)
           </Card.Text>

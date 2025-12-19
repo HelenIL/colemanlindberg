@@ -1,9 +1,5 @@
-import Banner from "../../banner/banner";
-
-import tracklist from "../../../albums/circus/tracklist";
 import NewAlbumSubpage from "../newAlbum/newAlbumSubpage";
-import AudioPlayer from "../../audio/audioPlayer";
-import album from "../../../albums/circus/tracklist";
+
 import "./home.css";
 
 export default function HomeSubPage() {

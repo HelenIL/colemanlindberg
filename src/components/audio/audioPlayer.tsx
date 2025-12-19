@@ -4,8 +4,7 @@ import ListGroup from "react-bootstrap/ListGroup";
 import Accordion from "react-bootstrap/Accordion";
 import { useAccordionButton } from "react-bootstrap/AccordionButton";
 import AccordionContext from "react-bootstrap/AccordionContext";
-import download from "../../assets/download.svg"
-import guitar from "../../assets/cl_gt_only.svg";
+import {icons} from "../../assets/assets"
 import { PrevButton, NextButton } from "../buttons/buttons";
 import { Album } from "../subpages/types";
 import "./audio.css";
@@ -195,7 +194,7 @@ export default function AudioPlayer({ album, id }: AudioPlayerProps) {
           }}
         >
           
-            <AudioHeader props={album.color} />
+            <AudioHeader props={album.colorPrimary} />
          
         </div>
             <Card.Body className="test">
@@ -204,13 +203,13 @@ export default function AudioPlayer({ album, id }: AudioPlayerProps) {
                 className="ap-now-playing"
                 style={{ textAlign: "center", color: 'white' }}
               >
-                <NowPlaying props={album.color}/>
+                <NowPlaying props={album.colorPrimary}/>
               </Card.Text>
       
               <div style={{ textAlign: "center" }} className="ap-current-track">
                 <TrackHeader
-                  text={album.tracks[current]?.name}
-                  color={album.color}
+                  text={album.tracks[current]?.track}
+                  color={album.colorPrimary}
                 />
                 </div>
           
@@ -220,7 +219,7 @@ export default function AudioPlayer({ album, id }: AudioPlayerProps) {
                 </audio>
                 <div className="ap-controls-wrapper" style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: '15px', marginTop: '15px' }}>
                   <PrevButton
-                    color={album.color}
+                    color={album.colorPrimary}
                     onClick={handlePrev}
                     disabled={album.tracks[current].id === 0}
                   />
@@ -228,9 +227,9 @@ export default function AudioPlayer({ album, id }: AudioPlayerProps) {
                   id="guit"
                     className="ap-guitar"
                     style={{  }}
-                    src={guitar}
+                    src={icons.guitar}
                   ></img>
-                  <NextButton color={album.color} onClick={handleNext} />
+                  <NextButton color={album.colorPrimary} onClick={handleNext} />
                 </div>
                 {/* <div
   className="ap-download-now"
@@ -294,7 +293,7 @@ export default function AudioPlayer({ album, id }: AudioPlayerProps) {
     className="ap-track-span"
     style={{ flex: 1 }}
   >
-    {t.name}
+    {t.track}
   </span>
 
   {/* <button
@@ -325,7 +324,7 @@ export default function AudioPlayer({ album, id }: AudioPlayerProps) {
       }}> <button
     className="ap-track-download"
     style={{
-      color: album.colorII,
+      color: album.colorSecondary,
       border: 'none',
       backgroundColor: `rgb(${album.rgbColor}, .45)`,
       cursor: 'pointer'
@@ -334,12 +333,12 @@ export default function AudioPlayer({ album, id }: AudioPlayerProps) {
       e.stopPropagation();
       window.open(`${t.url}?download=1`, "_blank");
     }}
-    aria-label={`Download ${t.name}`}
+    aria-label={`Download ${t.track}`}
   >
-    <img width={25} height={25} src={download}></img>
+    <img width={25} height={25} src={icons.download}></img>
   </button></span>
                           <CustomToggle
-                            color={album.colorII}
+                            color={album.colorSecondary}
                             eventKey={String(i)}
                           >
                             ▾

@@ -4,9 +4,7 @@ import { blurbs } from "../../../albums/circus/extras";
 import AudioPlayer from "../../audio/audioPlayer";
 import Carousel from "../../newAlbumComps/carousel/carousel";
 import NewAlbumAbout from "../../newAlbumComps/about/newAlbumAbout";
-import cole from "../../../assets/cole_grass.jpeg";
 import "./index.css";
-import TipJar from "../../tipJar/tipJar";
 
 export default function Test() {
   return (

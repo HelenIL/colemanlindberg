@@ -1,89 +1,71 @@
-import {lyrics} from './extras.js'
-import cover from '../../assets/makingmyname_cover.jpg'
-import background from '../../assets/mmn_curv.jpeg'
-import cole from '../../assets/mmn-back_edit.jpg'
+import { lyrics, about } from './extras.js'
+
 
 const lyricArray = Array.isArray(lyrics) && typeof lyrics[0] === 'string' ? lyrics.map(s => JSON.parse(s)) : lyrics;
-
+const audioBlob = 'https://rlhgqzuuag32i5so.public.blob.vercel-storage.com'
+const backgroundBlob ='https://9unmpwrzsbebezg2.public.blob.vercel-storage.com/backgrounds'
+const featuredBlob = 'https://9unmpwrzsbebezg2.public.blob.vercel-storage.com/featured'
+const coverBlob = 'https://9unmpwrzsbebezg2.public.blob.vercel-storage.com/covers'
+    
 const album = {
+    artist: "Coleman Lindberg",
     album: 'Making My Name',
-    cover: cover,
-    background: background,
-    color: '#dca58f',
+    cover: `${coverBlob}/makingmynameCover.jpg`,
+    background: `${backgroundBlob}/makingmynameBackground.jpeg`,
+    colorPrimary: '#dca58f',
     rgbColor: '220, 165, 143',
-    colorII: '#dea88e',
+    colorSecondary: '#dea88e',
     fontColor: 'white',
-    pic: cole,
-    about: 'In the years following the breakup of Winter Machine I was focused on playing in the churches where my mom was a pastor, performing at services, weddings, and funerals, and writing new original material as well. When my grandmother died in May of 2005 she left my mom some money and she decided to put some of it towards studio time. I enlisted the help of my friend and producer Amy Van Patten and set out to record a new 7-song EP called Making My Name. These songs chronicle my struggles with addiction, my loneliness and longing, my family relationships, my grief at the death of my grandmother, and my hunger to keep pursuing a music career. Released in March of 2006, Making My Name garnered some great reviews in the local press. I worked hard playing shows, contributing to political events, and raising money for nonprofits. This album marks an artistic and spiritual turning point in my life, a time when I was fighting to survive and be heard.',
+    featured: `${featuredBlob}/makingmynameFeature.jpg`,
+    about: about,
     tracks: [
         {
-            name: "Wounded Winter",
-            artist: "Coleman Lindberg",
-            album: 'Making My Name',
-            url: `https://rlhgqzuuag32i5so.public.blob.vercel-storage.com/makingmyname/Wounded%20Winter.mp3`,
+            track: "Wounded Winter",
+            url: `${audioBlob}/makingmyname/Wounded%20Winter.mp3`,
+            downloadURL: `${audioBlob}/makingmyname/Wounded%20Winter.mp3?download=1`,
             id: 0,
-            image: cover,
-            pic: cole,
             lyrics: lyricArray[0].lyrics,
         },
                {
-            name: "Crawling Home",
-            artist: "Coleman Lindberg",
-            album: 'Making My Name',
-            url: `https://rlhgqzuuag32i5so.public.blob.vercel-storage.com/makingmyname/Crawling%20Home.mp3`,
+            track: "Crawling Home",
+            url: `${audioBlob}/makingmyname/Crawling%20Home.mp3`,
+            downloadURL: `${audioBlob}/makingmyname/Crawling%20Home.mp3?download=1`,
             id: 1,
-            image: cover,
-            pic: cole,
             lyrics: lyricArray[1].lyrics,
         },
                {
-            name: "Closer on the Corners",
-            artist: "Coleman Lindberg",
-            album: 'Making My Name',
-            url: `https://rlhgqzuuag32i5so.public.blob.vercel-storage.com/makingmyname/Closer%20on%20the%20Corners.mp3`,
+            track: "Closer on the Corners",
+            url: `${audioBlob}/makingmyname/Closer%20on%20the%20Corners.mp3`,
+            downloadURL: `${audioBlob}/makingmyname/Closer%20on%20the%20Corners.mp3?download=1`,
             id: 2,
-            image: cover,
-            pic: cole,
             lyrics: lyricArray[2].lyrics,
         },
                {
-            name: "Hard Times, Come Again No More",
-            artist: "Coleman Lindberg",
-            album: 'Making My Name',
-            url: `https://rlhgqzuuag32i5so.public.blob.vercel-storage.com/makingmyname/Hard%20Times%2C%20Come%20Again%20No%20More.mp3`,
+            track: "Hard Times, Come Again No More",
+            url: `${audioBlob}/makingmyname/Hard%20Times%2C%20Come%20Again%20No%20More.mp3`,
+            downloadURL: `${audioBlob}/makingmyname/Hard%20Times%2C%20Come%20Again%20No%20More.mp3?download=1`,
             id: 3,
-            image: cover,
-            pic: cole,
             lyrics: lyricArray[3].lyrics,
         },
                {
-            name: "Sky So Blue",
-            artist: "Coleman Lindberg",
-            album: 'Making My Name',
-            url: `https://rlhgqzuuag32i5so.public.blob.vercel-storage.com/makingmyname/Sky%20So%20Blue.mp3`,
+            track: "Sky So Blue",
+            url: `${audioBlob}/makingmyname/Sky%20So%20Blue.mp3`,
+            downloadURL: `${audioBlob}/makingmyname/Sky%20So%20Blue.mp3?download=1`,
             id: 4,
-            image: cover,
-            pic: cole,
             lyrics: lyricArray[4].lyrics,
         },
                {
-            name: "Making My Name",
-            artist: "Coleman Lindberg",
-            album: 'Making My Name',
-            url: `https://rlhgqzuuag32i5so.public.blob.vercel-storage.com/makingmyname/Making%20My%20Name.mp3`,
+            track: "Making My Name",
+            url: `${audioBlob}/makingmyname/Making%20My%20Name.mp3`,
+            downloadURL: `${audioBlob}/makingmyname/Making%20My%20Name.mp3?download=1`,
             id: 5,
-            image: cover,
-            pic: cole,
             lyrics: lyricArray[5].lyrics,
         },
                {
-            name: "J-Train",
-            artist: "Coleman Lindberg",
-            album: 'Making My Name',
-            url: `https://rlhgqzuuag32i5so.public.blob.vercel-storage.com/makingmyname/J-Train.mp3`,
+            track: "J-Train",
+            url: `${audioBlob}/makingmyname/J-Train.mp3`,
+            downloadURL: `${audioBlob}/makingmyname/J-Train.mp3?download=1`,
             id: 6,
-            image: cover,
-            pic: cole,
             lyrics: lyricArray[6].lyrics,
         },
     ]

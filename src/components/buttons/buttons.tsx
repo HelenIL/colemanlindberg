@@ -1,9 +1,7 @@
-import React, { useState, CSSProperties } from "react";
+import { useState, CSSProperties } from "react";
 import Button from "react-bootstrap/Button";
-import prev from "../../assets/angle-left-solid-full.svg";
-import next from "../../assets/angle-right-solid-full.svg";
-import carouselPrev from '../../assets/angles-left-solid-full.svg'
-import carouselNext from '../../assets/angles-right-solid-full.svg'
+
+import { icons } from "../../assets/assets";
 import './index.css'
 
 type CustomButton = {
@@ -47,7 +45,7 @@ export const PrevButton = ({ color, onClick, disabled }: CustomButton) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <img className="btn-btn"  src={prev} alt="Previous"  />
+      <img className="btn-btn"  src={icons.doubleLeft} alt="Previous"  />
     </Button>
   );
 };
@@ -76,7 +74,7 @@ export const NextButton = ({ color, onClick }: CustomButton) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <img src={next} alt="Next" className="btn-btn" />
+      <img src={icons.doubleRight} alt="Next" className="btn-btn" />
     </Button>
   );
 };
@@ -106,7 +104,7 @@ export const CarouselPrevButton = ({ color, onClick }: CustomButton) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <img src={carouselPrev} alt="Next" className="btn-btn" />
+      <img src={icons.singleLeft} alt="Next" className="btn-btn" />
     </Button>
   );
 };
@@ -137,7 +135,7 @@ export const CarouselNextButton = ({ color, onClick }: CustomButton) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <img src={carouselNext} alt="Next" className="btn-btn" />
+      <img src={icons.singleRight} alt="Next" className="btn-btn" />
     </Button>
   );
 };

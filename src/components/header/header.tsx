@@ -1,11 +1,9 @@
-import logo from "../../assets/cl_gt_only.svg";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram, faLinkedin, faTiktok } from '@fortawesome/free-brands-svg-icons';
-
-import fb from '../../assets/facebook.svg';
+import { icons } from "../../assets/assets";
 import "./header.css";
 
 export default function Header() {
@@ -45,7 +43,7 @@ export default function Header() {
           <Navbar.Brand>
             <img
               className="d-none d-md-block"
-              src={logo}
+              src={icons.guitar}
               alt="logo"
               width="84"
               height="50px"

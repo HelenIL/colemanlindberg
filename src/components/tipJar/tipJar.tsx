@@ -1,4 +1,4 @@
-import piggy from '../../assets/piggy-bank-solid-full.svg'
+import { icons } from '../../assets/assets';
 import Card from "react-bootstrap/Card";
 import './index.css'
 
@@ -10,7 +10,7 @@ export default function TipJar() {
         <>
       
         <Card className="tip-jar-card rounded-0" style={{ marginTop: '20px', width: '30rem',  boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2)', display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '20px', borderRadius: '10px'  }}>
-            <Card.Img style={{width: '75px'}} src={piggy}/>
+            <Card.Img style={{width: '75px'}} src={icons.piggy}/>
             <Card.Body style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                 <Card.Title style={{ textAlign: 'center', fontWeight: 'bold', marginBottom: '15px' }}><span style={{textShadow: '1px 1px 1px white', color: '#2698c7'}}>Tip Jar</span></Card.Title>
       <Card.Text>

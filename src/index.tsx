@@ -7,7 +7,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import Header from "./components/header/header";
 import Loading from "./components/loading/Loading";
-import { R } from "react-router/dist/development/index-react-server-client-BSxMvS7Z";
 const Home = React.lazy(() => import("./pages/home/home"));
 const OwnTheView = React.lazy(() => import("./pages/owntheview"));
 const Boys = React.lazy(() => import("./pages/boys"));

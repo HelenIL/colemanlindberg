@@ -1,8 +1,6 @@
 import Card from "react-bootstrap/Card";
-import quoteStart from '../../../assets/quotation-mark-white-icon.png'
-import quoteEnd from '../../../assets/quotation-mark-right-white-icon.png'
+import { icons } from "../../../assets/assets";
 import './index.css'
-// import './testcomp.css'
 
 function MobileHeader() {
   const dynamicStyle = {
@@ -34,7 +32,7 @@ export default function NewAlbumAbout() {
           </Card.Text> */}
         <Card.Text>
             <span className="na-about-span">
-           <img style={{height: '20px'}} src={quoteStart}></img>
+           <img style={{height: '20px'}} src={icons.quoteStart}></img>
            </span>
           <span>
             {" "}
@@ -85,7 +83,7 @@ export default function NewAlbumAbout() {
         <Card.Text>
             <span className="na-about-span">Enjoy.</span>
             <span className="na-about-span">
-            <img style={{height: '20px'}} src={quoteEnd}></img>
+            <img style={{height: '20px'}} src={icons.quoteEnd}></img>
             </span>
         </Card.Text>
       </Card>

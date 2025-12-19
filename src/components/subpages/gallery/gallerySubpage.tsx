@@ -3,16 +3,11 @@
 
 import { Card } from "react-bootstrap";
 import './index.css'
-import circus from '../../../albums/circus/tracklist'
-import boys from '../../../albums/boys/tracklist'
-import skylines from '../../../albums/skylines/tracklist'
-import makingmyname from '../../../albums/makingmyname/tracklist'
-import owntheview from '../../../albums/owntheview/tracklist'
+
 
 export default function GallerySubpage() {
 
 
-console.log(circus.color)
     return (        
     <div className="gallery-subpage-outer" >
       

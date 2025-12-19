@@ -41,8 +41,8 @@ console.log(album)
           <AlbumAboutCard
             about={album.about}
             album={album.album}
-            color={album.color}
-            pic={album.pic}
+            color={album.colorPrimary}
+            pic={album.featured}
           />
         </div>
       </div>
