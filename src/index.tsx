@@ -1,6 +1,7 @@
 import React, { Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router";
+import { Analytics } from '@vercel/analytics/next';
 import "./index.css";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -40,6 +41,6 @@ root.render(
         <Route path="gallery" element={<Gallery />} />
       </Routes>
     </Suspense>
-    
+    <Analytics />
   </BrowserRouter>
 );
