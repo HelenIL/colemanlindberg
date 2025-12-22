@@ -12,6 +12,9 @@ code {
     monospace;
 }
 
+html {
+  overflow-x: hidden;
+}
 /* audio::-webkit-media-controls-play-button,
      audio::-webkit-media-controls-panel {
      background-color: white;
