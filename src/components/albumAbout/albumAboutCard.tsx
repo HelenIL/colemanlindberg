@@ -50,7 +50,7 @@ function AboutHeader({ color, album }: AboutHeader) {
 }
 
 export default function AlbumAboutCard({ about, album, color, pic }: AboutProps) {
-  console.log(album)
+
   return (
     <div
       className="ac-outer"

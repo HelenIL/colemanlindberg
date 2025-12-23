@@ -12,6 +12,7 @@ const Home = React.lazy(() => import("./pages/home/home"));
 const OwnTheView = React.lazy(() => import("./pages/owntheview"));
 const Boys = React.lazy(() => import("./pages/boys"));
 // const Circus = React.lazy(() => import("./pages/circus"));
+const AFewThings = React.lazy(() => import("./pages/afewthings"));
 const Skylines = React.lazy(() => import("./pages/skylines"));
 const MakingMyName = React.lazy(() => import("./pages/makingmyname"));
 const Shows = React.lazy(() => import("./pages/shows"));
@@ -30,7 +31,7 @@ root.render(
         <Route path="albums">
           {/* <Route path="thecircusofthegrieving" element={<Circus />} /> */}
           <Route path="owntheview" element={<OwnTheView />} />
-
+          <Route path="afewthingsibelieve" element={<AFewThings />} />
           <Route path="makingmyname" element={<MakingMyName />} />
           <Route path="skylines" element={<Skylines />} />
           <Route path="boys" element={<Boys />} />

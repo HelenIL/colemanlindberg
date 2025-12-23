@@ -36,6 +36,9 @@ export default function Header() {
             <NavDropdown.Item id="boys" href="/albums/boys">
               Boys
             </NavDropdown.Item>
+            <NavDropdown.Item id="afewthingsibelieve" href="/albums/afewthingsibelieve">
+              A Few Things I Believe
+            </NavDropdown.Item>
             {/* <NavDropdown.Item href="/albums/thecircusofthegrieving" >
                 The Circus of the Grieving
               </NavDropdown.Item> */}

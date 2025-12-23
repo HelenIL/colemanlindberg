@@ -23,7 +23,7 @@ const AlbumSubPage: React.FC<ContainerProps> = ({
     width: "100%",
     backgroundColor: "#494949",
   };
-console.log(album)
+
   return (
     <div style={dynamicStyle} className="album-subpage-outer">
       <div className="sub-cover-outer">

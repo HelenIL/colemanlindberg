@@ -1,5 +1,6 @@
 .gallery-subpage-outer {
     background-image: url('https://9unmpwrzsbebezg2.public.blob.vercel-storage.com/backgrounds/galleryBackground.jpeg');
+    /* opacity: 75%; */
     width: 100%;
 }
 
