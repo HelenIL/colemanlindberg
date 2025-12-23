@@ -42,13 +42,6 @@ const album = {
     },
     {
       track: "Radiate",
-      url: `${audioBlob}/circusofthegrieving/Bottle%20and%20a%20Gun.mp3`,
-      downloadURL: `${audioBlob}/circusofthegrieving/Bottle%20and%20a%20Gun.mp3?download=1`,
-      id: 2,
-      lyrics: lyricArray[2].lyrics,
-    },
-    {
-      track: "Radiate",
       url: `${audioBlob}/circusofthegrieving/Radiate.mp3`,
       downloadURL: `${audioBlob}/circusofthegrieving/Radiate.mp3?download=1`,
       id: 3,
