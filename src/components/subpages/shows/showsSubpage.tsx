@@ -1,6 +1,5 @@
 
 import Card from "react-bootstrap/Card";
-import cover from '../../../albums/circus/tracklist'
 import './index.css'
 
 
@@ -15,16 +14,11 @@ export default function ShowsSubPage() {
         </div>
         <div className="shows-card-wrapper">
         <Card className="shows-card" >
-            <Card.Img variant="top" src={cover.cover} />
+           
       <Card.Body>
-        <Card.Title><span className="shows-header-span">New Album Release</span></Card.Title>
-        <Card.Subtitle className="mb-2">December 18th</Card.Subtitle>
-        <Card.Text>
-          Swede Hollow Cafe
-        </Card.Text>
-        <Card.Text>
-          Doors @ 5PM - Music @ 6PM
-        </Card.Text>
+        <Card.Title><span className="shows-header-span">No Upcoming Shows</span></Card.Title>
+        <Card.Subtitle className="mb-2">Check back soon!</Card.Subtitle>
+    
    
       </Card.Body>
     </Card>
