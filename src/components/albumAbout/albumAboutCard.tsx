@@ -3,28 +3,8 @@ import type { CSSProperties } from "react";
 import './index.css'
 
 
-type About = {
-  about: string;
-};
-type Track = {
-  name: string;
-  artist: string;
-  album: string;
-  url: string;
-  id: number;
-  image: string;
-  pic: string;
-  lyrics: string;
-};
-// type Album = {
-//   album: string;
-//   cover: string;
-//   color: string;
-//   pic: string;
-//   blurbs?: string;
-//   about?: string;
-//   tracks?: Track[];
-// };
+
+
 
 type AboutProps = {
   about: string;
@@ -33,13 +13,13 @@ type AboutProps = {
   pic: string;
 };
 
-type AboutHeader = {
+type HeaderProps = {
   color: string;
-  album: string;
+
   
 };
 
-function AboutHeader({ color, album }: AboutHeader) {
+function AboutHeader({ color }: HeaderProps) {
   const dynamicStyle: CSSProperties = {
     textShadow: `1px 1px 1px ${color}`,
     color: "white",
@@ -54,7 +34,7 @@ export default function AlbumAboutCard({ about, album, color, pic }: AboutProps)
   return (
     <div
       className="ac-outer"
-      // style={{border: '2px solid green'}}
+
     >
       <div style={{ display: "flex", justifyContent: "center" }}>
         <div className="otv-cont-mobile " >
@@ -68,7 +48,7 @@ export default function AlbumAboutCard({ about, album, color, pic }: AboutProps)
             }}
           >
             <span className="" style={{}}>
-              <AboutHeader color={color} album={album} />
+              <AboutHeader color={color}  />
             </span>
           </div>
             {/* about card */}

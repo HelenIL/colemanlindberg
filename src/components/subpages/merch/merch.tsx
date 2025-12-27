@@ -1,12 +1,23 @@
 import mmn from "../../../albums/makingmyname/tracklist";
 import skylines from "../../../albums/skylines/tracklist";
+import type { CSSProperties } from "react";
+import { albumZones } from "../../../assets/assets";
 import "./index.css";
 import Card from "react-bootstrap/Card";
 import TipJar from "../../tipJar/tipJar";
 
 export default function MerchSubPage() {
+
+       const dynamicStyle: CSSProperties = {
+    background: `url(${albumZones.background}/merchBackground.jpg)`,
+    width: "100%",
+    backgroundPosition: "center",
+backgroundSize: "cover",
+backgroundRepeat: "repeat-x",
+    backgroundColor: "#494949",
+  };
   return (
-    <div className="merch-page-outer">
+    <div style={dynamicStyle}>
         {/* header  */}
         <div className="merch-header" >
       <p><span className="merch-header-span">Merchandise</span></p>

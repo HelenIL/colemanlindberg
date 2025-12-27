@@ -1,10 +1,18 @@
 import NewAlbumSubpage from "../newAlbum/newAlbumSubpage";
+import type { CSSProperties } from "react";
+import { albumZones } from "../../../assets/assets";
 
 import "./home.css";
 
 export default function HomeSubPage() {
+
+      const dynamicStyle: CSSProperties = {
+    background: `url(${albumZones.background}/homeBackground.jpeg)`,
+    width: "100%",
+    backgroundColor: "#494949",
+  };
   return (
-    <div className="hp-outer" style={{}}>
+    <div style={dynamicStyle}>
       <div className="hp-header">
         <p>
           <span className="hp-header-span">
@@ -32,3 +40,5 @@ export default function HomeSubPage() {
     </div>
   );
 }
+
+

@@ -1,14 +1,16 @@
-.gallery-subpage-outer {
-    background-image: url('https://9unmpwrzsbebezg2.public.blob.vercel-storage.com/backgrounds/galleryBackground.jpeg');
-    /* opacity: 75%; */
-    width: 100%;
+
+
+.gallery-video-span {
+  text-align: center;
+    font-family: 'Michroma', sans-serif;
+    color: white; 
+    text-shadow: 3px 1px 2px #62b5b4;
 }
 
 
 .gallery-wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: .5rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -50,7 +52,7 @@
 
 @media only screen and (max-width: 375px) {
   .gallery-card-style {
-    width: 22rem;
+    width: 20rem;
   }
 
 }

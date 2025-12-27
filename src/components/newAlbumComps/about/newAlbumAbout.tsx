@@ -32,7 +32,7 @@ export default function NewAlbumAbout() {
           </Card.Text> */}
         <Card.Text>
             <span className="na-about-span">
-           <img style={{height: '20px'}} src={icons.quoteStart}></img>
+           <img style={{height: '20px'}} src={icons.quoteStart} alt="begin quote"></img>
            </span>
           <span>
             {" "}
@@ -83,7 +83,7 @@ export default function NewAlbumAbout() {
         <Card.Text>
             <span className="na-about-span">Enjoy.</span>
             <span className="na-about-span">
-            <img style={{height: '20px'}} src={icons.quoteEnd}></img>
+            <img style={{height: '20px'}} alt="end quote" src={icons.quoteEnd}></img>
             </span>
         </Card.Text>
       </Card>

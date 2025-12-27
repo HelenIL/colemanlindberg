@@ -10,7 +10,7 @@ export default function Loading() {
   return (
 
     <div className="img-cont">
-      <div><img src={icons.guitar} className="image"></img></div>
+      <div><img src={icons.guitar} className="image" alt="guitar icon"></img></div>
       <div><Spinner animation="border" variant="secondary" className="spinner"/></div>
        
     </div>

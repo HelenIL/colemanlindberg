@@ -17,18 +17,18 @@ type CarouselProps = {
   album: Album;
 };
 
-type CardHeader = {
+type CardHeaderProps = {
   props: string;
 
 };
 
-type BlurbHeader = {
+type BlurbHeaderProps = {
   props: string;
   current?: number;
   track: ReactNode;
 };
 
-function CardHeader({ props }: CardHeader) {
+function CardHeader({ props }: CardHeaderProps) {
   const dynamicStyle = {
     textShadow: `1px 1px 1px ${props}`,
     color: "white",
@@ -38,7 +38,7 @@ function CardHeader({ props }: CardHeader) {
   return <h4 style={dynamicStyle}>ABOUT &nbsp; THE &nbsp; SONGS</h4>;
 }
 
-function BlurbHeader({ props, current, track }: BlurbHeader) {
+function BlurbHeader({ props, current, track }: BlurbHeaderProps) {
   const dynamicStyle = {
     textShadow: `1px 1px 1px ${props}`,
     color: "white",

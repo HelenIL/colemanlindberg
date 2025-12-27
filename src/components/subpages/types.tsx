@@ -3,14 +3,16 @@
 export type Track = {
   track: string;
   url: string;
-  downloadURL: string;
+  downloadURL?: string;
   id: number;
   lyrics: string;
+  filename?: string;
 };
 
 export type Album = {
   artist: string;
   album: string;
+   downloadURL?: string;
   background: string;
   cover: string;
   featured: string;

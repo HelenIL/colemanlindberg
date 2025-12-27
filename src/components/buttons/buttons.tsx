@@ -45,7 +45,7 @@ export const PrevButton = ({ color, onClick, disabled }: CustomButton) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <img className="btn-btn"  src={icons.doubleLeft} alt="Previous"  />
+      <img className="btn-btn" src={icons.doubleLeft} alt="Previous"  />
     </Button>
   );
 };
@@ -164,7 +164,7 @@ export const BuyButton = (props: any) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      {/* <img src={next} alt="Next" className="btn-btn" /> */}
+     
     </Button>
   );
 };

@@ -21,16 +21,16 @@ type Toggle = {
   color: string;
 };
 
-type AudioHeader = {
+type HeaderProps = {
   props: string;
 };
 
-type TrackHeader = {
+type TrackHeaderProps = {
   text: string;
   color: string;
 };
 
-function AudioHeader({ props }: AudioHeader) {
+function AudioHeader({ props }: HeaderProps) {
   const dynamicStyle = {
     textShadow: `1px 1px 1px ${props}`,
     color: "white",
@@ -39,7 +39,7 @@ function AudioHeader({ props }: AudioHeader) {
   return <div><h4 style={dynamicStyle}>LISTEN</h4></div>;
 }
 
-function NowPlaying({ props }: AudioHeader) {
+function NowPlaying({ props }: HeaderProps) {
   const dynamicStyle = {
     color: `${props}`,
     backgroundColor: "rgb(94, 94, 94, .45)",
@@ -52,7 +52,7 @@ function NowPlaying({ props }: AudioHeader) {
   return <span style={dynamicStyle}>N&nbsp;o&nbsp;w P&nbsp;l&nbsp;a&nbsp;y&nbsp;i&nbsp;n&nbsp;g :</span>;
 }
 
-function TrackHeader({ text, color }: TrackHeader) {
+function TrackHeader({ text, color }: TrackHeaderProps) {
   const dynamicStyle = {
     textShadow: `1px 1px 1px ${color}`,
     color: `white`,
@@ -121,10 +121,7 @@ function CustomToggle({ children, eventKey, color }: Toggle) {
 export default function AudioPlayer({ album, id }: AudioPlayerProps) {
   const [current, setCurrent] = useState<number>(0);
   const audioRef = useRef<HTMLAudioElement>(null);
-   const isIOS =
-    typeof navigator !== "undefined" &&
-    /iPad|iPhone|iPod/.test(navigator.userAgent);
-
+  
   const handlePlay = (idx: number, e?: React.MouseEvent) => {
     e?.stopPropagation();
     setCurrent(idx);
@@ -225,6 +222,7 @@ export default function AudioPlayer({ album, id }: AudioPlayerProps) {
                   />
                   <img
                   id="guit"
+                  alt="guitar icon"
                     className="ap-guitar"
                     style={{  }}
                     src={icons.guitar}
@@ -296,22 +294,7 @@ export default function AudioPlayer({ album, id }: AudioPlayerProps) {
     {t.track}
   </span>
 
-  {/* <button
-    className="ap-track-download"
-    style={{
-      color: album.colorII,
-      border: 'none',
-      backgroundColor: 'rgb(148, 133, 242, .45)',
-      cursor: 'pointer'
-    }}
-    onClick={(e) => {
-      e.stopPropagation();
-      window.open(`${t.url}?download=1`, "_blank");
-    }}
-    aria-label={`Download ${t.name}`}
-  >
-    <img width={15} src={download}></img>
-  </button> */}
+  
 </div>
 <div style={{alignItems: 'center', display: 'flex', gap: '10px'}}> <span style={{
         display: "inline-flex",
@@ -329,13 +312,15 @@ export default function AudioPlayer({ album, id }: AudioPlayerProps) {
       backgroundColor: `rgb(${album.rgbColor}, .45)`,
       cursor: 'pointer'
     }}
-    onClick={(e) => {
-      e.stopPropagation();
-      window.open(`${t.url}?download=1`, "_blank");
-    }}
+    // onClick={(e) => {
+    //   e.stopPropagation();
+    //   window.open(`${t.url}`, "_blank");
+    // }}
     aria-label={`Download ${t.track}`}
   >
-    <img width={25} height={25} src={icons.download}></img>
+    <a href={t.url} download>
+    <img alt="download icon" width={25} height={25} src={icons.download}></img>
+    </a>
   </button></span>
                           <CustomToggle
                             color={album.colorSecondary}

@@ -3,26 +3,37 @@
 
 import { Card } from "react-bootstrap";
 import './index.css'
+import type { CSSProperties } from "react";
+import { albumZones, images } from "../../../assets/assets";
+
+
 
 
 export default function GallerySubpage() {
 
+    const dynamicStyle: CSSProperties = {
+    background: `url(${albumZones.background}/galleryBackground.jpeg)`,
+    width: "100%",
+    backgroundColor: "#494949",
+  };
 
     return (        
-    <div className="gallery-subpage-outer" >
+    <div style={dynamicStyle}>
+
       
         <div className="gallery-wrapper">
+            
             <div style={{display: 'flex', flexDirection: 'column', gap: '40px'}}>
         <Card className="gallery-card-style rounded-0  " style={{border: `1px solid #62b5b4`, boxShadow: '0 0 0 1px #2787ce'}}>
-                <Card.Body >
-                    <Card.Img  variant="top" src={"https://rlhgqzuuag32i5so.public.blob.vercel-storage.com/photos/december16_2025/sixteen.jpeg"} />
+               
+                    <Card.Img  variant="top" src={`${images.decPractice}/sixteen.jpeg`} />
                     {/* <Card.Title style={{ textAlign: 'center'}}>Music Soulmates</Card.Title> */}
                     
-                </Card.Body>
+              
             </Card> 
             <Card className="gallery-card-style rounded-0" style={{border: `1px solid #62b5b4`, boxShadow: '0 0 0 1px #2787ce'}}>
                 <Card.Body >
-                    <Card.Img  variant="top" src={"https://rlhgqzuuag32i5so.public.blob.vercel-storage.com/photos/december16_2025/nineteen.jpeg"} />
+                    <Card.Img  variant="top" src={`${images.decPractice}/nineteen.jpeg`} />
                     {/* <Card.Title style={{ textAlign: 'center'}}>Music Soulmates</Card.Title> */}
                     
                 </Card.Body>
@@ -31,14 +42,14 @@ export default function GallerySubpage() {
             <div style={{display: 'flex', flexDirection: 'column', gap: '40px'}}>
             <Card className="gallery-card-style rounded-0 " style={{border: `1px solid #62b5b4`, boxShadow: '0 0 0 1px #2787ce'}}>
                 <Card.Body >
-                    <Card.Img  variant="top" src={"https://rlhgqzuuag32i5so.public.blob.vercel-storage.com/photos/december16_2025/twentyone.jpeg"} />
+                    <Card.Img  variant="top" src={`${images.decPractice}/twentyone.jpeg`} />
                     {/* <Card.Title style={{ textAlign: 'center'}}>Music Soulmates</Card.Title> */}
                     
                 </Card.Body>
             </Card> 
             <Card className="gallery-card-style rounded-0" style={{border: `1px solid #62b5b4`, boxShadow: '0 0 0 1px #2787ce'}}>
                 <Card.Body >
-                    <Card.Img  variant="top" src={"https://rlhgqzuuag32i5so.public.blob.vercel-storage.com/photos/december16_2025/seven.jpeg"} />
+                    <Card.Img  variant="top" src={`${images.decPractice}/seven.jpeg`} />
                     {/* <Card.Title style={{ textAlign: 'center'}}>Music Soulmates</Card.Title> */}
                     
                 </Card.Body>
@@ -47,29 +58,22 @@ export default function GallerySubpage() {
             <div style={{display: 'flex', flexDirection: 'column', gap: '40px'}}>
             <Card className="gallery-card-style rounded-0" style={{border: `1px solid #62b5b4`, boxShadow: '0 0 0 1px #2787ce'}}>
                 <Card.Body >
-                    <Card.Img  variant="top" src={"https://rlhgqzuuag32i5so.public.blob.vercel-storage.com/photos/december16_2025/thirteen.jpeg"} />
+                    <Card.Img  variant="top" src={`${images.decPractice}/thirteen.jpeg`} />
                     {/* <Card.Title style={{ textAlign: 'center'}}>Music Soulmates</Card.Title> */}
                     
                 </Card.Body>
             </Card> 
             <Card className="gallery-card-style rounded-0 " style={{border: `1px solid #62b5b4`, boxShadow: '0 0 0 1px #2787ce'}}>
                 <Card.Body >
-                    <Card.Img  variant="top" src={"https://rlhgqzuuag32i5so.public.blob.vercel-storage.com/photos/december16_2025/fourteen.jpeg"} />
+                    <Card.Img  variant="top" src={`${images.decPractice}/fourteen.jpeg`} />
                     {/* <Card.Title style={{ textAlign: 'center'}}>Music Soulmates</Card.Title> */}
                     
                 </Card.Body>
             </Card> 
             </div>
         </div>
-        {/* <div style={{display: 'flex', flexDirection: 'column', gap: '30px'}}>
-            <Card style={{width: '30rem'}}>
-                <Card.Body >
-                    <Card.Img  variant="top" src={"https://rlhgqzuuag32i5so.public.blob.vercel-storage.com/photos/december16_2025/nineteen.jpeg"} />
-                    <Card.Title style={{ textAlign: 'center'}}>Music Soulmates</Card.Title>
-                    
-                </Card.Body>
-            </Card> 
-        </div> */}
+        
     </div>
     );
 }
+
