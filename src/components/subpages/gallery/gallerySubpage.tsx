@@ -5,7 +5,7 @@ import {
   albumZones,
   dec16thBandPractice,
   decShow,
-  alt,
+
 } from "../../../assets/assets";
 // import ListGroup from "react-bootstrap/ListGroup";
 import Accordion from "react-bootstrap/Accordion";
