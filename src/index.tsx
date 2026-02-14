@@ -11,7 +11,6 @@ import Header from "./components/header/header";
 // import Footer from "./components/footer/footer";
 import TipJarFooter from "./components/tipJarFooter/tipFooter";
 import Loading from "./components/loading/Loading";
-import { T } from "react-router/dist/development/index-react-server-client-Cv5Q9lf0";
 const Home = React.lazy(() => import("./pages/home/home"));
 const OwnTheView = React.lazy(() => import("./pages/owntheview"));
 const Boys = React.lazy(() => import("./pages/boys"));

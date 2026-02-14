@@ -1,5 +1,5 @@
 import HomeSubPage from "../../components/subpages/home/homeSubpage"
-import Footer from "../../components/footer/footer"
+
 
 
 
