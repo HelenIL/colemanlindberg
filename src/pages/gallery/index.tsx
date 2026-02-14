@@ -6,7 +6,7 @@ export default function Gallery() {
 
 
 
-    return (        <div style={{display: 'flex', alignItems: 'center', backgroundColor: '#494949', width: '100vw'}}>
+    return (        <div style={{display: 'flex', alignItems: 'center', backgroundColor: '#494949', width: '100%'}}>
     <GallerySubpage/>
     </div>
     );

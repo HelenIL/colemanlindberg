@@ -1,6 +1,7 @@
 import Card from "react-bootstrap/Card";
 import type { CSSProperties } from "react";
 import { Album } from "./types";
+import TipJarFooter from "../tipJarFooter/tipFooter";
 // import AudioPlayer from "../audio/audioPlayer";
 // import AlbumAboutCard from "../albumAboutCard/albumAboutCard";
 import "./subpage.css";

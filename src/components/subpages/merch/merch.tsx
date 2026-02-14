@@ -4,7 +4,7 @@ import type { CSSProperties } from "react";
 import { albumZones } from "../../../assets/assets";
 import "./index.css";
 import Card from "react-bootstrap/Card";
-import TipJar from "../../tipJar/tipJar";
+import TipJar from "../../tipJarMerch/tipJar";
 
 export default function MerchSubPage() {
 
@@ -125,7 +125,7 @@ backgroundRepeat: "repeat-x",
  
        
       </div>
-                     <div style={{direction: 'ltr', marginTop: '40px', marginBottom: '40px', display: 'flex', justifyContent: 'center'}}>
+                     <div id="tip" style={{direction: 'ltr', marginTop: '40px', marginBottom: '40px', display: 'flex', justifyContent: 'center'}}>
             <TipJar/>
         </div>
     </div>

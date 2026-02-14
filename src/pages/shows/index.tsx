@@ -10,7 +10,7 @@ export default function Shows() {
 
         <>
        
-        <div style={{display: 'flex', alignItems: 'center', backgroundColor: '#494949', width: '100vw'}}>
+        <div style={{display: 'flex', alignItems: 'center', backgroundColor: '#494949', width: '100%'}}>
         <ShowsSubPage />
         </div>
         </>

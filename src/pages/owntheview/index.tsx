@@ -5,7 +5,7 @@ import AlbumAboutCard from "../../components/albumAbout/albumAboutCard";
 
 export default function OwnTheView() {
   return (
-    <div style={{ display: "flex", alignItems: "center", width: '100vw' }}>
+    <div style={{ display: "flex", alignItems: "center", width: '100%' }}>
       <AlbumSubPage
         album={album}
         background={album.background}

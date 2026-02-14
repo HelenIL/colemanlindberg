@@ -210,10 +210,12 @@ export default function AudioPlayer({ album, id }: AudioPlayerProps) {
                 />
                 </div>
           
-              <Card.Text className="ap-audio-error">
+              <Card.Body className="ap-audio-error">
+                <div>
                 <audio ref={audioRef} controls preload="metadata" src={album.tracks[current]?.url}  >
                   Your browser does not support the audio element.
                 </audio>
+                </div>
                 <div className="ap-controls-wrapper" style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: '15px', marginTop: '15px' }}>
                   <PrevButton
                     color={album.colorPrimary}
@@ -229,40 +231,8 @@ export default function AudioPlayer({ album, id }: AudioPlayerProps) {
                   ></img>
                   <NextButton color={album.colorPrimary} onClick={handleNext} />
                 </div>
-                {/* <div
-  className="ap-download-now"
-  style={{
-    display: "flex",
-    justifyContent: "center",
-    marginTop: "12px",
-  }}
->
-  <button
-    className="ap-download-btn primary"
-    style={{
-      borderColor: album.color,
-      color: album.color,
-    }}
-    onClick={() =>
-      window.open(`${album.tracks[current].url}?download=1`, "_blank")
-    }
-  >
-    ⬇ Download Track
-  </button>
-  {isIOS && (
-  <div
-    style={{
-      fontSize: "0.75rem",
-      opacity: 0.7,
-      textAlign: "center",
-      marginTop: "6px",
-    }}
-  >
-    iPhone: Tap Share → Save to Files
-  </div>
-)}
-</div> */}
-              </Card.Text>
+       
+              </Card.Body>
 
               <Accordion>
                 {album.tracks.map((t, i) => (

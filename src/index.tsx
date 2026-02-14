@@ -8,7 +8,10 @@ import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import Header from "./components/header/header";
+// import Footer from "./components/footer/footer";
+import TipJarFooter from "./components/tipJarFooter/tipFooter";
 import Loading from "./components/loading/Loading";
+import { T } from "react-router/dist/development/index-react-server-client-Cv5Q9lf0";
 const Home = React.lazy(() => import("./pages/home/home"));
 const OwnTheView = React.lazy(() => import("./pages/owntheview"));
 const Boys = React.lazy(() => import("./pages/boys"));
@@ -20,12 +23,14 @@ const Shows = React.lazy(() => import("./pages/shows"));
 const Merch = React.lazy(() => import("./pages/merch/merch"));
 const NotFound = React.lazy(() => import("./components/subpages/notFound/notFound"));
 const Gallery = React.lazy(() => import("./pages/gallery/index"));
+
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <BrowserRouter>
     <Header />
+
     <Suspense fallback={<Loading />}>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -43,7 +48,10 @@ root.render(
         <Route path="gallery" element={<Gallery />} />
       </Routes>
     </Suspense>
+    <TipJarFooter />
+     {/* <Footer /> */}
     <Analytics />
     <SpeedInsights />
+   
   </BrowserRouter>
 );

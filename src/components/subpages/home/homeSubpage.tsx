@@ -37,6 +37,7 @@ export default function HomeSubPage() {
     \
         </div>
       </div>
+
     </div>
   );
 }
