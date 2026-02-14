@@ -29,20 +29,20 @@ export const albumZones = {
 export const dec16thBandPractice = [
         
         // url: 'https://coleman-lindberg-music.b-cdn.net/assets/Dec16th',
-       {main: 'https://coleman-lindberg-music.b-cdn.net/assets/Dec16th/twentyone.jpeg'},
+       {main: 'https://coleman-lindberg-music.b-cdn.net/assets/Dec16th/twentyone.jpeg', alt: 'musicians playing for an audience'},
       
-        {img: 'https://coleman-lindberg-music.b-cdn.net/assets/Dec16th/sixteen.jpeg'},
+        {img: 'https://coleman-lindberg-music.b-cdn.net/assets/Dec16th/sixteen.jpeg', alt: 'musicians playing for an audience'},
         
-        {img: 'https://coleman-lindberg-music.b-cdn.net/assets/Dec16th/nineteen.jpeg'},
-        // {img: 'https://coleman-lindberg-music.b-cdn.net/assets/Dec16th/fifteen.jpeg'}, 
-        {img: 'https://coleman-lindberg-music.b-cdn.net/assets/Dec16th/fourteen.jpeg'},
-        {img: 'https://coleman-lindberg-music.b-cdn.net/assets/Dec16th/thirteen.jpeg'},
-        {img: 'https://coleman-lindberg-music.b-cdn.net/assets/Dec16th/twelve.jpeg'},
+        {img: 'https://coleman-lindberg-music.b-cdn.net/assets/Dec16th/nineteen.jpeg', alt: 'musicians playing for an audience'},
+        // {img: 'https://coleman-lindberg-music.b-cdn.net/assets/Dec16th/fifteen.jpeg', alt: 'musicians playing for an audience'}, 
+        {img: 'https://coleman-lindberg-music.b-cdn.net/assets/Dec16th/fourteen.jpeg', alt: 'musicians playing for an audience'},
+        {img: 'https://coleman-lindberg-music.b-cdn.net/assets/Dec16th/thirteen.jpeg', alt: 'musicians playing for an audience'},
+        {img: 'https://coleman-lindberg-music.b-cdn.net/assets/Dec16th/twelve.jpeg', alt: 'musicians playing for an audience'},
         // {img: 'https://coleman-lindberg-music.b-cdn.net/assets/Dec16th/eleven.jpeg'},
         // {img: 'https://coleman-lindberg-music.b-cdn.net/assets/Dec16th/ten.jpeg'},
         // {img: 'https://coleman-lindberg-music.b-cdn.net/assets/Dec16th/nine.jpeg'},
         // {img: 'https://coleman-lindberg-music.b-cdn.net/assets/Dec16th/eight.jpeg'},
-        {img: 'https://coleman-lindberg-music.b-cdn.net/assets/Dec16th/seven.jpeg'},
+        {img: 'https://coleman-lindberg-music.b-cdn.net/assets/Dec16th/seven.jpeg', alt: 'musicians playing for an audience'},
         // {img: 'https://coleman-lindberg-music.b-cdn.net/assets/Dec16th/six.jpeg'},
         // {img: 'https://coleman-lindberg-music.b-cdn.net/assets/Dec16th/five.jpeg'},
         // {img: 'https://coleman-lindberg-music.b-cdn.net/assets/Dec16th/four.jpeg'},
@@ -59,10 +59,10 @@ export const decShow = [
     {img: 'https://coleman-lindberg-music.b-cdn.net/assets/DecShow/three.jpeg'},
     {img: 'https://coleman-lindberg-music.b-cdn.net/assets/DecShow/four.jpeg'},
     {img: 'https://coleman-lindberg-music.b-cdn.net/assets/DecShow/five.jpeg'},
-    {img: 'https://coleman-lindberg-music.b-cdn.net/assets/DecShow/six.jpeg'},
+    {img: 'https://coleman-lindberg-music.b-cdn.net/assets/DecShow/six.jpeg', },
     {img: 'https://coleman-lindberg-music.b-cdn.net/assets/DecShow/seven.jpeg'},
-    {img: 'https://coleman-lindberg-music.b-cdn.net/assets/DecShow/eight.jpeg'},
-    {img: 'https://coleman-lindberg-music.b-cdn.net/assets/DecShow/nine.jpeg'}
+    {img: 'https://coleman-lindberg-music.b-cdn.net/assets/DecShow/eight.jpg'},
+    {img: 'https://coleman-lindberg-music.b-cdn.net/assets/DecShow/nine.jpg'}
 ]
 
 
