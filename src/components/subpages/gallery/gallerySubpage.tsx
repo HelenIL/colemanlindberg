@@ -5,6 +5,7 @@ import {
   albumZones,
   dec16thBandPractice,
   decShow,
+  alt,
 } from "../../../assets/assets";
 // import ListGroup from "react-bootstrap/ListGroup";
 import Accordion from "react-bootstrap/Accordion";
@@ -80,7 +81,7 @@ export default function GallerySubpage() {
                       marginBottom: "1rem",
                     }}
                   >
-                    <img style={{ width: "400px" }} alt="musicians playing guitar and pianao" src={img.img} />
+                    <img style={{ width: "400px" }} src={img.img} />
                   </div>
                 ))}
               </Accordion.Body>
@@ -132,7 +133,7 @@ export default function GallerySubpage() {
                       marginBottom: "1rem",
                     }}
                   >
-                    <img style={{ width: "400px" }} alt="musicians playing for an audience" src={img.img} />
+                    <img style={{ width: "400px" }} src={img.img} />
                   </div>
                 ))}
               </Accordion.Body>

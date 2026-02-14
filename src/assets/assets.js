@@ -1,7 +1,7 @@
 
 const iconZone = 'https://coleman-lindberg-music.b-cdn.net/assets/icons/'
 
-
+export const alt = 'musicians playing for an audience'
 export const icons = 
 {
     notFound: `${iconZone}/404Icon.png`,
@@ -27,9 +27,10 @@ export const albumZones = {
 }
 
 export const dec16thBandPractice = [
-    
+        
         // url: 'https://coleman-lindberg-music.b-cdn.net/assets/Dec16th',
        {main: 'https://coleman-lindberg-music.b-cdn.net/assets/Dec16th/twentyone.jpeg'},
+      
         {img: 'https://coleman-lindberg-music.b-cdn.net/assets/Dec16th/sixteen.jpeg'},
         
         {img: 'https://coleman-lindberg-music.b-cdn.net/assets/Dec16th/nineteen.jpeg'},
@@ -53,6 +54,7 @@ export const dec16thBandPractice = [
 
 export const decShow = [
     {main: 'https://coleman-lindberg-music.b-cdn.net/assets/DecShow/one.jpeg'},
+    
     {img: 'https://coleman-lindberg-music.b-cdn.net/assets/DecShow/two.jpeg'},
     {img: 'https://coleman-lindberg-music.b-cdn.net/assets/DecShow/three.jpeg'},
     {img: 'https://coleman-lindberg-music.b-cdn.net/assets/DecShow/four.jpeg'},
